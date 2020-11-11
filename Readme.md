@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Elena Veliar](https://up.htmlacademy.ru/adaptive/21/user/1452523).
-* Наставник: `Неизвестно`.
+- Студент: [Elena Veliar](https://up.htmlacademy.ru/adaptive/21/user/1452523).
+- Наставник: Ярослав :fox_face: Шевцов.
 
 ---
 
