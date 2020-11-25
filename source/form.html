@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list logo-list">
+            <li class="logo-list__item">
+              <a class="page-header__logo">
+                <img
+                  class="page-header__logo-image"
+                  src="https://via.placeholder.com/34x38"
+                />
+              </a>
+            </li>
+            <li class="logo-list__item">Cat Energy</li>
+          </ul>
+
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a>Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a>Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
+<main class="main-page__form">
+  <form
+    class="selection-program wrapper"
+    method="Get"
+    action="https://echo.htmlacademy.ru/"
+  >
+    <legend class="form-selection-program__legend">Подбор программы</legend>
+    <p class="form-selection-program__text">
+      Заполните анкету, и мы подберем программу питания для вашего кота
+    </p>
+    <fieldset class="input-data data-list name">
+      <label class="data-item name__label"
+        ><span class="input-data__span data-name">ИМЯ:*</span>
+        <input class="input-data__input data-input" value="Барсик"
+      /></label>
+
+      <label class="input-data__label"
+        ><span class="form-selection-program-weight__text--span"
+          >Вес (кг):*</span
+        >
+        <input class="form-selection-program-weight__text--input" value="7" />
+      </label>
+
+      <label class="form-selection-program-age__text--label"
+        ><span class="form-selection-program-age__text--span">
+          Возраст (лет):</span
+        >
+        <input class="form-selection-program-age__text--input" value="7" />
+      </label>
+    </fieldset>
+
+    <fieldset class="form-selection-program-change__checkbox-list">
+      <label class="form-selection-program-change__checkbox-item">
+        <input
+          class="form-selection-program-change__checkbox-item--input"
+          type="checkbox"
+        /><span class="form-selection-program-change__checkbox-item--span"
+          >Похудение</span
+        ></label
+      >
+      <label class="form-selection-program-change__checkbox-list">
+        <input
+          class="form-selection-program-change__checkbox-item--input"
+          type="checkbox"
+        />
+        <span class="form-selection-program-change__checkbox-item--span"
+          >Набор массы</span
+        >
+      </label>
+      <label class="form-selection-program-change__checkbox-list">
+        <input
+          class="form-selection-program-change__checkbox-item--input"
+          type="checkbox"
+        />
+        <span class="form-selection-program-change__checkbox-item--span">
+          Не знаю (нужен ваш совет)</span
+        >
+      </label>
+    </fieldset>
+
+    <fieldset class="form-selection-program-contacts">
+      <legend class="form-selection-program-contacts--legend">
+        Контактные данные (владельца кота)
+      </legend>
+
+      <label class="form-selection-program-contacts-email--label">
+        <span class="form-selection-program-contacts-email--span"
+          >E-mail:*</span
+        >
+        <div class="form-selection-program-contacts-email--input-image">
+          <input
+            class="form-selection-program-contacts-email--input"
+            value="kuklachev@gmail.com"
+          />
+          <!--image-->
+        </div>
+      </label>
+
+      <label class="form-selection-program-contacts-phone--label">
+        <span class="form-selection-program-contacts-phone--span"
+          >Телефон:*</span
+        >
+        <div class="form-selection-program-contacts-phone--input-image">
+          <input
+            class="form-selection-program-contacts-phone--input"
+            value="8 (960) 900-60-90"
+          />
+        </div>
+      </label>
+    </fieldset>
+
+    <fieldset class="form-selection-program-comments">
+      <legend class="form-selection-program-comments--legend">
+        Комментарий
+      </legend>
+      <textarea
+        class="form-selection-program__comments--textarea"
+        rows="10"
+        cols="45"
+        placeholder="Расскажите обо всех повадках кота"
+      ></textarea>
+    </fieldset>
+
+    <fieldset class="form-selection-program__checkbox-list">
+      <legend>Дополнительно</legend>
+      <label class="form-selection-program__checkbox-item">
+        <input
+          class="form-selection-program__checkbox-item--input"
+          type="checkbox"
+        /><span class="form-selection-program__checkbox-item--span"
+          >Похудение</span
+        ></label
+      >
+      <label class="form-selection-program__checkbox-list">
+        <input
+          class="form-selection-program__checkbox-item--input"
+          type="checkbox"
+        />
+        <span class="form-selection-program__checkbox-item--span"
+          >Набор массы</span
+        >
+      </label>
+      <label class="form-selection-program__checkbox-list">
+        <input
+          class="form-selection-program__checkbox-item--input"
+          type="checkbox"
+        />
+        <span class="form-selection-program__checkbox-item--span">
+          Не знаю (нужен ваш совет)</span
+        >
+      </label>
+    </fieldset>
+  </form>
+</main>
