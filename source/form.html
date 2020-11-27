@@ -6,171 +6,225 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list logo-list">
-            <li class="logo-list__item">
-              <a class="page-header__logo">
-                <img
-                  class="page-header__logo-image"
-                  src="https://via.placeholder.com/34x38"
-                />
-              </a>
-            </li>
-            <li class="logo-list__item">Cat Energy</li>
-          </ul>
+      <nav class="main-nav main-nav--wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img
+            class="page-header__logo-image"
+            src="https://via.placeholder.com/34x38"
+          />
+        </a>
 
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <button class="button-burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a>Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a>Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item ">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item ">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
+
+    <main class="page-main form">
+      <form
+        class="selection-program selection-program--wrapper"
+        method="Get"
+        action="https://echo.htmlacademy.ru/"
+      >
+        <legend class="selection-program__legend">Подбор программы</legend>
+        <p class="selection-program__text">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+
+        <fieldset class="data">
+          <label class="data-label"
+            >ИМЯ:*
+            <input class="data__input" value="Барсик"
+          /></label>
+
+          <label class="data__label">Вес (кг):*
+            <input
+              class="data__input"
+              value="7"
+            />
+          </label>
+
+          <label class="data__label">
+              Возраст (лет):
+            <input class="data__input" value="7" />
+          </label>
+        </fieldset>
+
+        <fieldset class="program-change program-change--wrapper">
+
+          <label class="program-change__item">
+            <input
+              class="program-change__input"
+              type="checkbox"
+            />Похудение<label
+          >
+
+          <label class="program-change__item">
+            <input
+              class="program-change__input"
+              type="checkbox"
+            />
+            Набор массы
+          </label>
+
+          <label class="program-change__item">
+            <input
+              class="program-change__input"
+              type="checkbox"
+            />
+              Не знаю (нужен ваш совет)
+          </label>
+        </fieldset>
+
+        <fieldset class="program-contacts">
+          <legend class="program-contacts__legend">
+            Контактные данные (владельца кота)
+          </legend>
+
+          <label class="program-contacts__label">
+            E-mail:*
+            <div class="program-contacts__input-image">
+              <input
+                class="program-contacts__input"
+                value="kuklachev@gmail.com"
+              />
+              <img>
+            </div>
+          </label>
+
+          <label class="program-contacts__label">
+            Телефон:*
+            <div class="program-contacts__input-image">
+              <input
+                class="program-contacts__input"
+                value="8 (960) 900-60-90"
+              />
+            </div>
+          </label>
+        </fieldset>
+
+        <fieldset class="program-comments">
+          <legend class="program-comments__legend">
+            Комментарий
+          </legend>
+          <textarea
+            class="program-comments__textarea"
+            rows="10"
+            cols="45"
+            placeholder="Расскажите обо всех повадках кота"
+          ></textarea>
+        </fieldset>
+
+        <fieldset class="program-additionally">
+          <legend class="program-additionally__legend">Дополнительно</legend>
+
+          <label class="program-additionally__label">
+            <input
+              class="program-additionally__input"
+              type="checkbox"
+            />
+              Сахарозаменитель</label>
+
+          <label class=program-additionally__label">
+            <input
+              class="program-additionally__input"
+              type="checkbox"
+            />
+              Питьевая вода
+          </label>
+
+          <label class="program-additionally__label">
+            <input
+              class="program-additionally__input"
+              type="checkbox"
+            />
+              Молоко
+          </label>
+
+          <label class="program-additionally__label">
+            <input
+              class="program-additionally__input"
+              type="checkbox"
+            />
+              Витамины
+          </label>
+        </fieldset>
+        <button class="button" type="button">Отправить заявку</button>
+      </form>
+
+      <span class="form__span">* — Обязательные поля</span>
+    </main>
+
+    <footer class="page-footer page-footer--wrapper">
+      <section class="address">
+        <div class="address-text">
+          <h2 class="address-text__tittle">
+            Приглашаем к сотрудничеству дилеров!
+          </h2>
+          <p class="address-text__text">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+      </section>
+
+      <div class="iframe"></div>
+
+      <div class="page-footer__social social">
+        <div class="page-footer__name">Cat Energy</div>
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vkontakte"
+                href="https://vk.com/htmlacademy"
+                  >Мы в Вконтакте</a
+                >
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--instagram"
+                href="https://www.instagram.com/htmlacademy"
+              >
+                Мы в Инстаграме
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--facebook"
+                href="https://www.facebook.com/htmlacademy"
+              >Мы в Фейсбуке
+              </a>
+            </li>
+          </ul>
+
+          <ul class="htmlacademy">
+            <li class="htmlacademy__text">HTML Academy</li>
+            <li class="htmlacademy__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 60 60"
+                width="27px"
+                height="34px"
+              >
+                <path
+                  d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"
+                />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-<main class="main-page__form">
-  <form
-    class="selection-program wrapper"
-    method="Get"
-    action="https://echo.htmlacademy.ru/"
-  >
-    <legend class="form-selection-program__legend">Подбор программы</legend>
-    <p class="form-selection-program__text">
-      Заполните анкету, и мы подберем программу питания для вашего кота
-    </p>
-    <fieldset class="input-data data-list name">
-      <label class="data-item name__label"
-        ><span class="input-data__span data-name">ИМЯ:*</span>
-        <input class="input-data__input data-input" value="Барсик"
-      /></label>
-
-      <label class="input-data__label"
-        ><span class="form-selection-program-weight__text--span"
-          >Вес (кг):*</span
-        >
-        <input class="form-selection-program-weight__text--input" value="7" />
-      </label>
-
-      <label class="form-selection-program-age__text--label"
-        ><span class="form-selection-program-age__text--span">
-          Возраст (лет):</span
-        >
-        <input class="form-selection-program-age__text--input" value="7" />
-      </label>
-    </fieldset>
-
-    <fieldset class="form-selection-program-change__checkbox-list">
-      <label class="form-selection-program-change__checkbox-item">
-        <input
-          class="form-selection-program-change__checkbox-item--input"
-          type="checkbox"
-        /><span class="form-selection-program-change__checkbox-item--span"
-          >Похудение</span
-        ></label
-      >
-      <label class="form-selection-program-change__checkbox-list">
-        <input
-          class="form-selection-program-change__checkbox-item--input"
-          type="checkbox"
-        />
-        <span class="form-selection-program-change__checkbox-item--span"
-          >Набор массы</span
-        >
-      </label>
-      <label class="form-selection-program-change__checkbox-list">
-        <input
-          class="form-selection-program-change__checkbox-item--input"
-          type="checkbox"
-        />
-        <span class="form-selection-program-change__checkbox-item--span">
-          Не знаю (нужен ваш совет)</span
-        >
-      </label>
-    </fieldset>
-
-    <fieldset class="form-selection-program-contacts">
-      <legend class="form-selection-program-contacts--legend">
-        Контактные данные (владельца кота)
-      </legend>
-
-      <label class="form-selection-program-contacts-email--label">
-        <span class="form-selection-program-contacts-email--span"
-          >E-mail:*</span
-        >
-        <div class="form-selection-program-contacts-email--input-image">
-          <input
-            class="form-selection-program-contacts-email--input"
-            value="kuklachev@gmail.com"
-          />
-          <!--image-->
-        </div>
-      </label>
-
-      <label class="form-selection-program-contacts-phone--label">
-        <span class="form-selection-program-contacts-phone--span"
-          >Телефон:*</span
-        >
-        <div class="form-selection-program-contacts-phone--input-image">
-          <input
-            class="form-selection-program-contacts-phone--input"
-            value="8 (960) 900-60-90"
-          />
-        </div>
-      </label>
-    </fieldset>
-
-    <fieldset class="form-selection-program-comments">
-      <legend class="form-selection-program-comments--legend">
-        Комментарий
-      </legend>
-      <textarea
-        class="form-selection-program__comments--textarea"
-        rows="10"
-        cols="45"
-        placeholder="Расскажите обо всех повадках кота"
-      ></textarea>
-    </fieldset>
-
-    <fieldset class="form-selection-program__checkbox-list">
-      <legend>Дополнительно</legend>
-      <label class="form-selection-program__checkbox-item">
-        <input
-          class="form-selection-program__checkbox-item--input"
-          type="checkbox"
-        /><span class="form-selection-program__checkbox-item--span"
-          >Похудение</span
-        ></label
-      >
-      <label class="form-selection-program__checkbox-list">
-        <input
-          class="form-selection-program__checkbox-item--input"
-          type="checkbox"
-        />
-        <span class="form-selection-program__checkbox-item--span"
-          >Набор массы</span
-        >
-      </label>
-      <label class="form-selection-program__checkbox-list">
-        <input
-          class="form-selection-program__checkbox-item--input"
-          type="checkbox"
-        />
-        <span class="form-selection-program__checkbox-item--span">
-          Не знаю (нужен ваш совет)</span
-        >
-      </label>
-    </fieldset>
-  </form>
-</main>
