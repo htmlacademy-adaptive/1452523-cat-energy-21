@@ -18,30 +18,30 @@
 }
 
 .advantages__item {
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 20px;
+  font-family: "Arial", "Helvetica", sans-serif;
+
   padding-bottom: 24px;
   padding-left: 80px;
   font-size: 14px;
   line-height: 18px;
 
   &--leaf {
-    background-image: url(../img/leaf.svg), url(../img/green.svg);
+    background-image: url("../img/leaf.svg"), url("../img/green.svg");
     background-repeat: no-repeat;
   }
 
   &--boiling {
-    background-image: url(../img/boiling.svg), url(../img/green.svg);
+    background-image: url("../img/boiling.svg"), url("../img/green.svg");
     background-repeat: no-repeat;
   }
 
   &--food {
-    background-image: url(../img/food.svg), url(../img/green.svg);
-    background-repeat: no-repeat;
+    background-image: url("../img/food.svg") no-repeat,
+      url("../img/green.svg") no-repeat;
   }
 
   &--alarm {
-    background-image: url(../img/alarm_clock.svg), url(../img/green.svg);
+    background-image: url("../img/alarm_clock.svg"), url("../img/green.svg");
     background-repeat: no-repeat;
   }
 }
