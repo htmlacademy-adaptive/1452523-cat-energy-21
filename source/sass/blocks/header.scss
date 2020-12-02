@@ -1,0 +1,19 @@
+.page-header {
+  background-color: $basic-white;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.site-list__item {
+  list-style-type: none;
+  border-bottom: 1px solid $grey-line-2;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: $basic-black;
+}

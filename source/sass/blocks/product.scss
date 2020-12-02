@@ -1,0 +1,29 @@
+.product {
+  background-image: linear-gradient(
+      to top,
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url(../img/background-cat.jpg);
+
+  background-repeat: no-repeat;
+  color: $basic-white;
+  text-align: center;
+}
+
+.product__title {
+  font-size: 36px;
+  line-height: 36px;
+  background-image: linear-gradient(
+    to top,
+    rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)
+  );
+}
+
+.product__toggle {
+  background-color: $basic-green;
+  padding: 7px 44px;
+  color: $basic-white;
+  text-transform: uppercase;
+}
