@@ -1,6 +1,11 @@
 .page__body {
-  margin: 0;
-  padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  @include oswald;
   width: 320px;
+  background-color: bisque;
+}
+
+.color {
+  background-color: $basic-white;
 }

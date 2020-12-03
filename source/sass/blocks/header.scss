@@ -1,16 +1,28 @@
 .page-header {
   background-color: $basic-white;
-  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
+  min-width: 320px;
+  font-weight: 500;
+}
+
+.main-nav--wrapper {
+  padding: 12px 20px 0 20px;
+}
+
+.site-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-list__item {
   list-style-type: none;
   border-bottom: 1px solid $grey-line-2;
   text-align: center;
+  padding: 12px 20px;
 }
 
 .link {
