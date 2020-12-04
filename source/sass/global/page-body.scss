@@ -1,9 +1,8 @@
 .page__body {
-  margin-left: auto;
-  margin-right: auto;
   @include oswald;
   width: 320px;
   background-color: bisque;
+  margin: 0 auto;
 }
 
 .color {

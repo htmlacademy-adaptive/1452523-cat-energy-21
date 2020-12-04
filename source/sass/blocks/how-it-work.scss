@@ -1,6 +1,6 @@
 .advantages {
   color: $basic-black;
-  padding: 0 20px 40px 20px;
+  padding: 0 20px 42px 20px;
 }
 
 .advantages__tittle {
@@ -27,6 +27,7 @@
   line-height: 18px;
   width: 100%;
   box-sizing: border-box;
+  color: $dark-grey;
 
   &--leaf {
     background-image: url("../img/leaf.svg");
@@ -45,6 +46,11 @@
 
   &--alarm {
     background-image: url("../img/alarm-clock.svg");
+    height: 60px;
     background-repeat: no-repeat;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
   }
 }

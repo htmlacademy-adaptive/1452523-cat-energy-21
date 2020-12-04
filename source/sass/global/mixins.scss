@@ -1,11 +1,21 @@
 @mixin arial {
   font-family: "Arial", "Helvetica", sans-serif;
-  width: 400px;
+  font-weight: 400px;
   font-style: normal;
 }
 
 @mixin oswald {
   font-family: "Oswald", "Verdana", sans-serif;
-  width: 400px;
+  font-weight: 400px;
   font-style: normal;
+}
+
+@mixin margin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin padding-wrapper {
+  padding-right: 23px;
+  padding-left: 20px;
 }

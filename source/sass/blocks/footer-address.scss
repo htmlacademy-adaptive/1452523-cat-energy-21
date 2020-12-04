@@ -1,0 +1,34 @@
+.address {
+  @include padding-wrapper;
+  padding-top: 28px;
+  padding-bottom: 22px;
+}
+
+.address-text {
+  display: grid;
+  grid-template-columns: 140px 140px;
+}
+
+.address-text__tittle {
+  @include oswald;
+  @include margin;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $light-black;
+}
+
+.address-text__text {
+  @include margin;
+  @include arial;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
+}
+
+.iframe {
+  width: 100%;
+  border: 0;
+  background-color: $light-grey;
+}

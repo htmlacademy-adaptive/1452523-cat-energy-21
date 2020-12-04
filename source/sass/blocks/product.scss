@@ -3,13 +3,26 @@
   background-repeat: no-repeat;
   color: $basic-white;
   text-align: center;
+  @include padding-wrapper;
 }
 
 .product__title {
   font-size: 36px;
   line-height: 36px;
-  margin-top: 0;
-  margin-bottom: 0;
+  @include margin;
+  font-weight: 400;
+  padding-top: 27px;
+}
+
+.product__subtitle {
+  @include margin;
+  padding-top: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.product__image {
+  padding-top: 30px;
 }
 
 .product__toggle {
@@ -17,4 +30,5 @@
   padding: 7px 44px;
   color: $basic-white;
   text-transform: uppercase;
+  display: block;
 }
