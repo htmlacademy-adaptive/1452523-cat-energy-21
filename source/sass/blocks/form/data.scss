@@ -1,0 +1,44 @@
+.data {
+  border: none;
+  @include margin;
+  @include padding-wrapper;
+
+  border-bottom: 1px solid $grey-line;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 37px;
+  padding-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $dark-grey;
+}
+
+.field-text {
+  padding-bottom: 10px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.field-text__input {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $dark-grey;
+  @include oswald;
+  border: 1px solid $color-border-input;
+}
+
+.name {
+  padding: 13px 82px 14px 14px;
+}
+
+.weidth {
+  padding: 13px 60px 14px 14px;
+}
+
+.age {
+  padding: 13px 27px 14px 14px;
+}

@@ -1,0 +1,20 @@
+.program-change {
+  border: none;
+  @include margin;
+  @include padding-wrapper;
+
+  border-bottom: 1px solid $grey-line;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-checkbox__span {
+  padding-left: 15px;
+}

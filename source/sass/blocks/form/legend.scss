@@ -1,0 +1,16 @@
+.selection-program__legend {
+  font-size: 36px;
+  color: $basic-black;
+  @include margin;
+  @include padding-wrapper;
+  padding-top: 27px;
+}
+
+.selection-program__text {
+  @include margin;
+  @include padding-wrapper;
+  padding-top: 37px;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-right: 50px;
+}

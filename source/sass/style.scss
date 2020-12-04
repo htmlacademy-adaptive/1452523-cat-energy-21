@@ -4,9 +4,13 @@
 @import "global/page-body.scss";
 @import "global/visually-hidden.scss";
 @import "blocks/header.scss";
-@import "blocks/product.scss";
-@import "blocks/options.scss";
-@import "blocks/how-it-work.scss";
-@import "blocks/example.scss";
 @import "blocks/footer-address.scss";
 @import "blocks/social.scss";
+@import "blocks/index/product.scss";
+@import "blocks/index/options.scss";
+@import "blocks/index/how-it-work.scss";
+@import "blocks/index/example.scss";
+@import "blocks/form/selection-program-common.scss";
+@import "blocks/form/legend.scss";
+@import "blocks/form/data.scss";
+@import "blocks/form/program-change.scss";

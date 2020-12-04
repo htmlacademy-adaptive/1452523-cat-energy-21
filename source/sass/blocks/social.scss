@@ -2,7 +2,8 @@
   @include padding-wrapper;
   text-align: center;
   list-style-type: none;
-  color: $basic-grey;
+  color: $dark-grey;
+  background-color: $basic-grey;
 }
 
 .footer__svg {
