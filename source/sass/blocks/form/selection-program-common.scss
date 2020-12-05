@@ -1,2 +1,17 @@
 .form {
+  @include padding-wrapper;
+}
+
+.button {
+  color: $basic-white;
+  background-color: $basic-green;
+  border: none;
+  text-transform: uppercase;
+  padding: 7px 70px;
+}
+
+.form__span {
+  display: flex;
+  justify-content: center;
+  padding-top: 21px;
 }

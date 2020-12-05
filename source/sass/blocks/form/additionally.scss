@@ -1,0 +1,38 @@
+.program-additionally {
+  border: none;
+  @include margin;
+  padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  color: $special-dark-grey;
+  font-size: 16px;
+  padding-bottom: 34px;
+}
+
+.program-additionally__legend {
+  font-size: 24px;
+  @include oswald;
+  padding-bottom: 34px;
+  padding-top: 22px;
+}
+
+.program-additionally__span {
+  font-size: 16px;
+  @include oswald;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.additionally-checkbox__flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.additionally-checkbox {
+  padding-bottom: 19px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

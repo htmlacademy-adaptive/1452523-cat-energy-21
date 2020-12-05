@@ -136,7 +136,7 @@
     <main class="page-main form">
       <h1 class="visually-hidden">Форма для вашего котика</h1>
       <form
-        class="selection-program selection-program"
+        class="selection-program"
         method="Get"
         action="https://echo.htmlacademy.ru/"
       >
@@ -147,17 +147,17 @@
 
         <fieldset class="data">
           <label class="field-text"
-            >ИМЯ:* <input class="field-text__input name" value="Барсик"
+            >ИМЯ:* <input class="field-text__input field-text__input--name" value="Барсик"
           /></label>
 
           <label class="field-text"
             >Вес (кг):*
-            <input class="field-text__input weidth" value="7" />
+            <input class="field-text__input field-text__input--weidth" value="7" />
           </label>
 
-          <label class="field-text">
+          <label class="field-text ">
             Возраст (лет):
-            <input class="field-text__input age" value="7" />
+            <input class="field-text__input field-text__input--age" value="7" />
           </label>
         </fieldset>
 
@@ -183,15 +183,21 @@
             Контактные данные (владельца кота)
           </legend>
 
-          <label class="field-connect"> E-mail:* </label>
-          <div class="field-connect__input-image">
-            <input class="field-connect__input" value="kuklachev@gmail.com" />
-            <img />
-          </div>
+          <div class="email-phone">
+            <div class="email field-email-phone">
+              <label class="field-connect"> E-mail:* </label>
+              <div class="field-connect__input-image ">
+                <input class="field-connect__input field-connect__input--email" value="kuklachev@gmail.com" />
+                <img />
+              </div>
+            </div>
 
-          <label class="field-connect"> Телефон:* </label>
-          <div class="field-connect__input-image">
-            <input class="field-connect__input" value="8 (960) 900-60-90" />
+            <div class="phone field-email-phone">
+              <label class="field-connect"> Телефон:* </label>
+              <div class="field-connect__input-image">
+                <input class="field-connect__input field-connect__input--phone" value="8 (960) 900-60-90" />
+              </div>
+            </div>
           </div>
         </fieldset>
 
@@ -199,36 +205,40 @@
           <legend class="program-comments__legend">Комментарий</legend>
           <textarea
             class="program-comments__textarea"
-            rows="10"
-            cols="45"
-            placeholder="Расскажите обо всех повадках кота"
+            rows="12"
+            cols="37"
+            placeholder="Расскажите обо всех повАдках кота"
           ></textarea>
         </fieldset>
 
         <fieldset class="program-additionally">
-          <legend class="program-additionally__legend">Дополнительно</legend>
+          <legend class="program-additionally__legend">
+            Дополнительно</legend>
 
+          <div class="additionally-checkbox__flex">
           <label class="additionally-checkbox">
-            <input class="additionally-checkbox__input" type="checkbox" />
-            Сахарозаменитель</label
+            <input class="additionally-checkbox__input" type="checkbox" /><span class="program-additionally__span">
+            Сахарозаменитель</span></label
           >
 
           <label class="additionally-checkbox">
-            <input class="additionally-checkbox__input" type="checkbox" />
-            Питьевая вода
+            <input class="additionally-checkbox__input" type="checkbox" /><span class="program-additionally__span">
+            Питьевая вода</span>
           </label>
 
           <label class="additionally-checkbox">
-            <input class="additionally-checkbox__input" type="checkbox" />
-            Молоко
+            <input class="additionally-checkbox__input" type="checkbox" /><span class="program-additionally__span">
+            Молоко</span>
           </label>
 
           <label class="additionally-checkbox">
-            <input class="additionally-checkbox__input" type="checkbox" />
-            Витамины
+            <input class="additionally-checkbox__input" type="checkbox" /><span class="program-additionally__span">
+            Витамины</span>
           </label>
+          </div>
         </fieldset>
         <button class="button" type="button">Отправить заявку</button>
+
       </form>
 
       <span class="form__span">* — Обязательные поля</span>
