@@ -1,8 +1,8 @@
-.options-slim-pro {
+.options {
   padding: 20px 20px 34px 20px;
 }
 
-.options {
+.option {
   border: 1px solid $grey-line;
   background-color: $basic-grey;
   padding: 20px 22px 20px 20px;
@@ -25,7 +25,7 @@
   background-position: 11px 20px;
 }
 
-.options__tittle {
+.option__tittle {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -41,7 +41,7 @@
   }
 }
 
-.options-text {
+.option__text {
   font-size: 14px;
   line-height: 18px;
   @include arial;
@@ -52,7 +52,7 @@
   width: 100%;
 }
 
-.options-link {
+.option__link {
   text-decoration: none;
   color: $basic-black;
   text-transform: uppercase;

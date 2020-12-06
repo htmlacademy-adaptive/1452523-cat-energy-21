@@ -1,24 +1,25 @@
-.page-footer__social {
+.footer__social {
   @include padding-wrapper;
   text-align: center;
   list-style-type: none;
   color: $dark-grey;
   background-color: $basic-grey;
+  @include margin;
 }
 
-.footer__svg {
+.picture__svg {
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
-.social__list {
+.social-items__list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   padding: 20px 95px;
 }
 
-.page-footer__social-item {
+.social-item {
   border-bottom: 1px solid $grey-line;
 
   &:last-child {
@@ -28,22 +29,4 @@
 
 .social__link {
   text-decoration: none;
-}
-
-.htmlacademy {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 22px 20px 21px 0;
-  align-items: center;
-}
-
-.htmlacademy__text {
-  color: $dark-grey;
-  @include arial;
-  font-size: 16px;
-}
-
-.htmlacademy__logo {
-  fill: $dark-grey;
 }

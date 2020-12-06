@@ -23,45 +23,7 @@
   font-size: 36px;
   font-weight: 400;
   width: 100%;
-
   box-sizing: border-box;
-}
-
-.time-weight {
-  width: 100%;
-}
-
-.time-weight__flex {
-  display: flex;
-  text-align: center;
-  @include padding-wrapper;
-  justify-content: space-between;
-}
-
-.time-weight__tittle {
-  @include margin;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  border: 1px solid $special-grey;
-}
-
-.kilogram {
-  padding: 14px 42px 17px 42px;
-}
-
-.days {
-  padding: 13px 20px 18px 20px;
-}
-
-.time-weight__subtittle {
-  @include margin;
-  @include arial;
-  font-size: 12px;
-  padding-right: 30px;
-  padding-left: 30px;
-  text-transform: lowercase;
-  margin-top: -10px;
 }
 
 .example__expenses {

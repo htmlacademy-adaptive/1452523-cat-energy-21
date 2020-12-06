@@ -4,12 +4,17 @@
   padding-bottom: 22px;
 }
 
-.address-text {
+.address__text {
   display: grid;
   grid-template-columns: 140px 140px;
+  @include margin;
+  @include arial;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
 }
 
-.address-text__tittle {
+.address__tittle {
   @include oswald;
   @include margin;
   font-size: 16px;
@@ -19,16 +24,6 @@
   color: $light-black;
 }
 
-.address-text__text {
+.address__address {
   @include margin;
-  @include arial;
-  font-size: 14px;
-  line-height: 20px;
-  color: $dark-grey;
-}
-
-.iframe {
-  width: 100%;
-  border: 0;
-  background-color: $light-grey;
 }
