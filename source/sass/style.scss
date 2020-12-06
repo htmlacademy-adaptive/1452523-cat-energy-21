@@ -1,24 +1,40 @@
 @import "global/root-color.scss";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
-@import "global/page-body.scss";
 @import "global/visually-hidden.scss";
-@import "blocks/header/header.scss";
-@import "blocks/header/burger.scss";
-@import "blocks/header/menu.scss";
-@import "blocks/footer/address.scss";
-@import "blocks/footer/iframe.scss";
-@import "blocks/footer/social.scss";
-@import "blocks/footer/htmlacademy.scss";
-@import "blocks/index/product.scss";
-@import "blocks/index/options.scss";
-@import "blocks/index/how-it-work.scss";
-@import "blocks/index/example.scss";
-@import "blocks/index/time-weight.scss";
-@import "blocks/form/selection-program-common.scss";
-@import "blocks/form/legend.scss";
-@import "blocks/form/data.scss";
-@import "blocks/form/program-change.scss";
-@import "blocks/form/contacts-data.scss";
-@import "blocks/form/program-coments.scss";
-@import "blocks/form/additionally.scss";
+@import "global/color.scss";
+@import "global/page__body.scss";
+@import "blocks/button.scss";
+
+@import "blocks/main-nav.scss";
+@import "blocks/burger.scss";
+@import "blocks/site-list.scss";
+
+@import "blocks/product.scss";
+@import "blocks/options.scss";
+@import "blocks/how-it-work.scss";
+@import "blocks/example.scss";
+@import "blocks/time-weight.scss";
+@import "blocks/expenses.scss";
+@import "blocks/cats.scss";
+@import "blocks/range-controls.scss";
+
+@import "blocks/footer-social.scss";
+@import "blocks/address.scss";
+@import "blocks/iframe.scss";
+@import "blocks/picture-footer.scss";
+@import "blocks/social-items.scss";
+@import "blocks/htmlacademy.scss";
+
+@import "blocks/form-program.scss";
+@import "blocks/selection-program.scss";
+@import "blocks/data.scss";
+@import "blocks/field-text.scss";
+
+@import "blocks/program-change.scss";
+@import "blocks/field-checkbox.scss";
+@import "blocks/program-contacts.scss";
+@import "blocks/field-email-phone.scss";
+@import "blocks/program-coments.scss";
+@import "blocks/additionally.scss";
+@import "blocks/form-span.scss";

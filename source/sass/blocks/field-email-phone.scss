@@ -1,27 +1,17 @@
-.program-contacts {
-  @include margin;
-  padding: 0;
-  padding-bottom: 26px;
-
-  margin-left: 0;
-  margin-right: 0;
-  border: none;
-  border-bottom: 1px solid $grey-line;
-}
-
-.program-contacts__legend {
-  color: $basic-black;
-  font-size: 24px;
-  line-height: 26px;
-  padding-top: 36px;
-  padding-bottom: 36px;
-}
-
 .field-connect {
   font-size: 16px;
   text-transform: uppercase;
   color: $dark-grey;
-  @include oswald;
+  font-family: "Oswald", "Verdana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  &:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+
+.field-connect__label {
   padding-right: 10px;
 }
 
@@ -41,10 +31,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.field-email-phone:not(:last-child) {
-  padding-bottom: 10px;
 }
 
 .email {

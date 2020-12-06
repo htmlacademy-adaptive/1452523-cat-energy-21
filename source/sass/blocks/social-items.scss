@@ -1,0 +1,21 @@
+.social-items__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 95px;
+  margin: 0;
+  border-bottom: 1px solid $grey-line;
+}
+
+.social-item {
+  border-bottom: 1px solid $grey-line;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.social-items__link {
+  text-decoration: none;
+  color: $dark-grey;
+}

@@ -13,14 +13,13 @@
 }
 
 .advantages__list {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  @include ul-none;
 }
 
 .advantages__item {
-  @include arial;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 24px;
   padding-left: 80px;
   font-size: 14px;

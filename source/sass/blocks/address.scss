@@ -1,0 +1,36 @@
+.address {
+  padding: 28px 23px 22px 20px;
+
+  &--grey {
+    background-color: $basic-grey;
+  }
+}
+
+.address__text {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
+}
+
+.address__tittle {
+  font-family: "Oswald", "Verdana", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $light-black;
+}
+
+.address__address {
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -3,19 +3,22 @@
   background-repeat: no-repeat;
   color: $basic-white;
   text-align: center;
-  @include padding-wrapper;
+  padding-right: 23px;
+  padding-left: 20px;
 }
 
 .product__title {
   font-size: 36px;
   line-height: 36px;
-  @include margin;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   padding-top: 27px;
 }
 
 .product__subtitle {
-  @include margin;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 25px;
   font-size: 14px;
   text-transform: uppercase;

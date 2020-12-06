@@ -1,0 +1,30 @@
+.example {
+  background-color: $light-grey;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 33px 23px 25px 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-grey;
+}
+
+.example__tittle {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 23px;
+  padding-left: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+}

@@ -44,7 +44,9 @@
 .option__text {
   font-size: 14px;
   line-height: 18px;
-  @include arial;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   border-bottom: 1px solid $grey-line;
   padding-bottom: 22px;
   padding-right: 12px;
