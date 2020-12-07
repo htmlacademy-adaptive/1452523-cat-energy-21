@@ -6,6 +6,11 @@
   }
 }
 
+.field-text__span {
+  padding-right: 13px;
+  color: $dark-grey;
+}
+
 .field-text__input {
   font-size: 16px;
   text-transform: uppercase;
@@ -16,14 +21,14 @@
   border: 1px solid $color-border-input;
 
   &--name {
-    padding: 13px 82px 14px 14px;
+    padding: 13px 68px 14px 14px;
   }
 
   &--weidth {
-    padding: 13px 60px 14px 14px;
+    padding: 13px 46px 14px 14px;
   }
 
   &--age {
-    padding: 13px 27px 14px 14px;
+    padding: 13px 12px 14px 14px;
   }
 }

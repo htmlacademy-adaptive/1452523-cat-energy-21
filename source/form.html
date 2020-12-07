@@ -9,7 +9,7 @@
 
   <body class="page__body">
     <div class="color">
-      <header class="page__body--header">
+      <header class="page__body--header container">
         <nav class="main-nav">
           <div class="main-nav--wrapper">
             <a class="main-nav__logo link" href="index.html">
@@ -22,43 +22,49 @@
           </div>
 
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html" class="link">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html" class="link">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="form.html" class="link">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </header>
 
-    <main class="page-body--main form">
+    <main class="page__body--main form">
       <h1 class="visually-hidden">Форма для вашего котика</h1>
       <form
         class="selection-program"
         method="Get"
         action="https://echo.htmlacademy.ru/"
       >
-        <legend class="selection-program__legend">Подбор программы</legend>
-        <p class="selection-program__text">
+        <legend class="selection-program__legend container">Подбор программы</legend>
+        <p class="selection-program__text container">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
 
-        <fieldset class="data">
-          <label class="field-text"
-            >ИМЯ:* <input class="field-text__input field-text__input--name" value="Барсик"
-          /></label>
+        <fieldset class="data container">
+          <label class="field-text">
+            <span class="field-text__span">
+              ИМЯ:*
+            </span>
+            <input class="field-text__input field-text__input--name" value="Барсик"/>
+          </label>
 
-          <label class="field-text"
-            >Вес (кг):*
+          <label class="field-text">
+            <span class="field-text__span">
+              Вес (кг):*
+            </span>
             <input class="field-text__input field-text__input--weidth" value="7" />
           </label>
 
           <label class="field-text ">
-            Возраст (лет):
+            <span class="field-text__span">
+              Возраст (лет):</span>
             <input class="field-text__input field-text__input--age" value="7" />
           </label>
         </fieldset>
@@ -109,11 +115,11 @@
             class="program-comments__textarea"
             rows="12"
             cols="37"
-            placeholder="Расскажите обо всех повАдках кота"
+            placeholder="Расскажите обо всех повадках кота"
           ></textarea>
         </fieldset>
 
-        <fieldset class="program-additionally">
+        <fieldset class="program-additionally   container">
           <legend class="program-additionally__legend">
             Дополнительно</legend>
 
@@ -139,7 +145,7 @@
           </label>
           </div>
         </fieldset>
-        <button class="button" type="button">Отправить заявку</button>
+        <button class="button container" type="button">Отправить заявку</button>
 
       </form>
 
@@ -147,7 +153,7 @@
     </main>
 
       <footer class="page__body--footer">
-        <section class="address address--grey">
+        <section class="address address--grey container">
           <div class="address__text">
             <h2 class="address__tittle">
               Приглашаем к сотрудничеству дилеров!
@@ -170,7 +176,7 @@
           tabindex="0"
         ></iframe>
 
-        <div class="footer__social">
+        <div class="footer__social container">
           <div class="picture-footer">
             <img class="picture-footer--image" src="img/footer-logo.svg" />
           </div>

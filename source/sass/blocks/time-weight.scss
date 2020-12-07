@@ -1,12 +1,20 @@
 .time-weight {
   width: 100%;
+  border: 1px solid $special-grey;
+  text-align: center;
+  padding: 20px;
+}
+
+.time-weight__border {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .time-weight__flex {
   display: flex;
   text-align: center;
-  padding-right: 23px;
-  padding-left: 20px;
   justify-content: space-between;
 }
 
@@ -16,25 +24,22 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  border: 1px solid $special-grey;
-
-  &--kilogram {
-    padding: 14px 42px 17px 42px;
-  }
-
-  &--days {
-    padding: 13px 20px 18px 20px;
-  }
 }
 
 .time-weight__subtittle {
+  display: inline-block;
   margin-bottom: 0;
+  margin-top: 0;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   text-transform: lowercase;
-  margin-top: -10px;
+  background-color: $light-grey;
+  position: absolute;
+  left: 0;
+  right: 0;
 }

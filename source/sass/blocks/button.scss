@@ -3,5 +3,18 @@
   background-color: $basic-green;
   border: none;
   text-transform: uppercase;
-  padding: 7px 70px;
+  padding: 7px 71px;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+
+  &--catalog {
+    padding: 7px 110px;
+  }
+
+  &--white {
+    background-color: $basic-grey;
+    color: $dark-grey;
+    padding: 20px 94px;
+  }
 }
