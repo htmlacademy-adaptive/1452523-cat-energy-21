@@ -10,7 +10,7 @@
 
   <body class="page__body">
     <div class="color">
-      <header class="page__body--header">
+      <header class="page__body--header container">
         <nav class="main-nav">
           <div class="main-nav--wrapper">
             <a class="main-nav__logo link" href="index.html">
@@ -37,7 +37,7 @@
       </header>
 
       <main class="page__body--main index">
-        <section class="product">
+        <section class="product container">
           <h1 class="product__title">Функциональное питание для котов</h1>
           <p class="product__subtitle">Занялся собой? Займись котом!</p>
 
@@ -55,8 +55,8 @@
           </div>
         </section>
 
-        <div class="options">
-          <section class="option slim">
+        <div class="options container">
+          <section class="option slim container">
             <h2 class="option__tittle option__tittle--slim">Похудение</h2>
             <p class="option__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -66,7 +66,7 @@
             <a class="option__link" href="#">Каталог Slim</a>
           </section>
 
-          <section class="option pro">
+          <section class="option pro container">
             <h2 class="option__tittle option__tittle--pro">Набор массы</h2>
             <p class="option__text">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -76,7 +76,7 @@
           </section>
         </div>
 
-        <section class="advantages">
+        <section class="advantages container">
           <h2 class="advantages__tittle">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--leaf">
@@ -98,7 +98,7 @@
           </ul>
         </section>
 
-        <section class="example">
+        <section class="example container">
           <h2 class="example__tittle">Живой пример</h2>
           <p class="example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -112,13 +112,17 @@
               <h2 class="time-weight__tittle time-weight__tittle--kilogram">
                 5 кг
               </h2>
-              <p class="time-weight__subtittle">Снижение веса</p>
+              <div class="time-weight__border">
+                <p class="time-weight__subtittle">Снижение веса</p>
+              </div>
             </div>
             <div class="time-weight">
               <h2 class="time-weight__tittle time-weight__tittle--days">
                 60 дней
               </h2>
-              <p class="time-weight__subtittle">Затрачено времени</p>
+              <div class="time-weight__border">
+                <p class="time-weight__subtittle">Затрачено времени</p>
+              </div>
             </div>
           </div>
 
@@ -146,7 +150,7 @@
       </main>
 
       <footer class="page__body--footer">
-        <section class="address">
+        <section class="address container">
           <div class="address__text">
             <h2 class="address__tittle">
               Приглашаем к сотрудничеству дилеров!
@@ -169,7 +173,7 @@
           tabindex="0"
         ></iframe>
 
-        <div class="footer__social">
+        <div class="footer__social container">
           <div class="picture-footer">
             <img class="picture-footer--image" src="img/footer-logo.svg" />
           </div>
