@@ -1,0 +1,20 @@
+.gift__background {
+  padding: 40px 20px 35px 20px;
+}
+
+.gift {
+  background: url("../img/gift.svg") no-repeat, url("../img/gift-photo.png");
+  background-position: 50% 30%;
+}
+
+.gift__headline {
+  padding: 170px 60px 43px 60px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  color: $basic-white;
+  line-height: 20px;
+  font-weight: normal;
+}
