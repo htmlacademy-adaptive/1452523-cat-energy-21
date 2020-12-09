@@ -3,10 +3,16 @@
   background-color: $basic-green;
   border: none;
   text-transform: uppercase;
-  padding: 7px 71px;
+  padding: 10px 78px;
   text-decoration: none;
   display: block;
   margin: 0 auto;
+  font-size: 16px;
+  font-family: "Oswald", "Verdana", sans-serif;
+}
+
+.button__button {
+  text-align: center;
 
   &--catalog {
     padding: 7px 110px;
@@ -16,5 +22,11 @@
     background-color: $basic-grey;
     color: $dark-grey;
     padding: 20px 94px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 14px 26px;
   }
 }

@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -10,14 +12,10 @@
     <div class="color">
       <header class="page__body--header container">
         <nav class="main-nav">
-          <div class="main-nav--wrapper">
+          <div class="main-nav__nav">
             <a class="main-nav__logo link" href="index.html">
               <img class="main-nav__img" src="img/logo.svg" alt="Котик" />
             </a>
-
-            <button class="button-burger visually-hidden" type="button">
-              <span>Открыть меню</span>
-            </button>
           </div>
 
           <ul class="main-nav__list site-list">
@@ -31,30 +29,37 @@
               <a href="form.html" class="link">Подбор программы</a>
             </li>
           </ul>
+
+          <button class="button-burger visually-hidden" type="button">
+            <span>Открыть меню</span>
+          </button>
         </nav>
       </header>
 
       <main class="page__body--main index">
         <section class="product container">
-          <h1 class="product__title">Функциональное питание для котов</h1>
-          <p class="product__subtitle">Занялся собой? Займись котом!</p>
-
-          <div class="product__background">
-            <img
-              class="product__background--image"
-              alt="Продукт Cat Energy со вкусом курицы"
-              src="img/cat-energy-food.png"
-              width="280"
-              height="270"
-            />
-            <a class="product__background--toggle link" href="form.html"
-              >Подобрать программу</a
-            >
+          <div class="wrapper">
+            <div class="flex-text">
+              <h1 class="product__title">Функциональное питание для котов</h1>
+              <p class="product__subtitle">Занялся собой? Займись котом!</p>
+            </div>
+            <div class="product__background">
+              <img
+                class="product__background--image"
+                alt="Продукт Cat Energy со вкусом курицы"
+                src="img/cat-energy-food.png"
+                width="280"
+                height="270"
+              />
+            </div>
           </div>
+          <a class="product__background--toggle button link" href="form.html"
+            >Подобрать программу</a
+          >
         </section>
 
-        <div class="options container">
-          <section class="option slim container">
+        <div class="options">
+          <section class="option slim">
             <h2 class="option__tittle option__tittle--slim">Похудение</h2>
             <p class="option__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -64,7 +69,7 @@
             <a class="option__link" href="#">Каталог Slim</a>
           </section>
 
-          <section class="option pro container">
+          <section class="option pro">
             <h2 class="option__tittle option__tittle--pro">Набор массы</h2>
             <p class="option__text">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -126,12 +131,12 @@
 
           <p class="expenses">Затраты на питание: 15 000 РУБ.</p>
           <img
-            class="image--before"
+            class="images__image--before"
             src="img/cat-before.png"
             alt="Котик, требуюший заботы и утраты лишних килограмм"
           />
           <img
-            class="image--after"
+            class="images__image--after"
             src="img/cat-after.png"
             alt="Ваш похудевший котик"
           />
@@ -173,7 +178,7 @@
 
         <div class="footer__social container">
           <div class="picture-footer">
-            <img class="picture-footer--image" src="img/footer-logo.svg" />
+            <img class="picture-footer__image" src="img/footer-logo.svg" />
           </div>
 
           <ul class="social-items__list">

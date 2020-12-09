@@ -1,7 +1,22 @@
-.main-nav {
-  &--wrapper {
-    border-bottom: 1px solid $grey-line-2;
-    padding-bottom: 15px;
-    padding-top: 12px;
+.main-nav__nav {
+  border-bottom: 1px solid $grey-line-2;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav__nav {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .link {
+    font-size: 18px;
+    font-weight: normal;
   }
 }

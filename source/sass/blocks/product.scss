@@ -33,3 +33,42 @@
   text-transform: uppercase;
   display: block;
 }
+
+@media (min-width: 768px) {
+  .product {
+    padding-left: 85px;
+    color: $basic-black;
+    padding-top: 0;
+  }
+
+  .product__title {
+    line-height: 60px;
+    text-align: left;
+    font-size: 60px;
+    padding-right: 150px;
+    padding-top: 60px;
+  }
+
+  .product__subtitle {
+    text-align: left;
+  }
+
+  .product__background--toggle {
+    padding: 14px 26px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .product__title {
+    padding-right: 0;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 42px;
+  }
+
+  .wrapper {
+    padding-left: 76px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+}
