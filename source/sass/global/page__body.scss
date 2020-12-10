@@ -1,0 +1,31 @@
+.page__body {
+  font-family: "Oswald", "Verdana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 320px;
+  background-color: bisque;
+  margin: 0 auto;
+}
+
+.page__body--header {
+  background-color: $basic-white;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+  min-width: 320px;
+  min-height: 33px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .page__body {
+    min-width: 708px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page__body {
+    min-width: 1200px;
+  }
+}

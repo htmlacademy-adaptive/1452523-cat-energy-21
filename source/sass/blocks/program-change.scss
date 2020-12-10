@@ -1,0 +1,11 @@
+.program-change {
+  border: none;
+  margin: 0;
+  padding: 22px 20px 0 20px;
+  border-bottom: 1px solid $grey-line;
+  color: $special-dark-grey;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}

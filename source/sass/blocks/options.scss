@@ -1,0 +1,139 @@
+.options {
+  padding-top: 20px;
+  padding-bottom: 34px;
+}
+
+.option {
+  background-color: $basic-grey;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.slim {
+  background-image: url("../img/cat-slimming.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+.pro {
+  background-image: url("../img/cat-weight-gain.svg");
+  background-repeat: no-repeat;
+  background-position: 11px 20px;
+}
+
+.option__tittle {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 12px;
+
+  &--slim {
+    padding-left: 71px;
+  }
+
+  &--pro {
+    padding-left: 70px;
+  }
+}
+
+.option__subtitle {
+  font-family: "Arial", sans-serif;
+}
+
+.option__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: 1px solid $grey-line;
+  padding-bottom: 22px;
+  color: $dark-grey;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+
+.option__link {
+  text-decoration: none;
+  color: $basic-black;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .options {
+    padding-top: 0;
+  }
+
+  .slim {
+    background-size: 185px 211px;
+    background-position: 90% 61%;
+    padding: 57px 268px 53px 52px;
+  }
+
+  .pro {
+    background-size: 268px 200px;
+    background-position: 95% 61%;
+    padding: 57px 295px 53px 52px;
+  }
+
+  .option__tittle {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .option__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .option__text {
+    border: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .options {
+    display: flex;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
+  .option {
+    margin-bottom: 0;
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .slim {
+    background-size: 80px 86px;
+    background-position: 10% 11%;
+    padding: 57px 36px 53px 40px;
+  }
+
+  .pro {
+    background-size: 114px 80px;
+    background-position: 7% 15%;
+    padding: 57px 49px 53px 40px;
+  }
+
+  .option__tittle {
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+.htmlacademy__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include ul-none;
+  padding: 20px 20px 0 20px;
+}
+
+.htmlacademy__text {
+  color: $dark-grey;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.htmlacademy__logo {
+  fill: $dark-grey;
+}
