@@ -36,7 +36,6 @@
 
 @media (min-width: 768px) {
   .product {
-    padding-left: 85px;
     color: $basic-black;
     padding-top: 0;
   }
@@ -66,7 +65,7 @@
     line-height: 42px;
   }
 
-  .wrapper {
+  .product__wrapper {
     padding-left: 76px;
     display: grid;
     grid-template-columns: 40% 60%;

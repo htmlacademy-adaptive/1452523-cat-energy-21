@@ -1,9 +1,10 @@
 .main-nav__nav {
   border-bottom: 1px solid $grey-line-2;
   padding-bottom: 15px;
+  padding-top: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
     justify-content: space-between;
