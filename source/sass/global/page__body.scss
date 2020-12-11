@@ -16,3 +16,15 @@
   min-height: 33px;
   box-sizing: border-box;
 }
+
+@media (min-width: $desktop-width) {
+  .color {
+    background-image: url("../img/cat-d.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  .page__body--header {
+    background-color: transparent;
+  }
+}
