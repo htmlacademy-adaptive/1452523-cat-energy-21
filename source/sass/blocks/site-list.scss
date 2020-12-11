@@ -18,7 +18,7 @@
   color: $basic-black;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .site-list {
     display: flex;
     justify-content: space-between;
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .site-list__item--active {
     border-bottom: 2px solid $basic-white;
   }

@@ -3,7 +3,8 @@
   background-color: $basic-green;
   border: none;
   text-transform: uppercase;
-  padding: 10px 78px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-decoration: none;
   display: block;
   margin: 0 auto;
@@ -25,7 +26,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .button {
     padding: 14px 26px;
   }

@@ -27,3 +27,13 @@
   width: 100%;
   box-sizing: border-box;
 }
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 50px 30px 64px 30px;
+  }
+
+  .example__text {
+    padding-right: 46px;
+  }
+}

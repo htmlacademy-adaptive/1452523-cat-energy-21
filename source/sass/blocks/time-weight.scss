@@ -43,3 +43,23 @@
   left: 0;
   right: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .time-weight-expenses {
+    display: flex;
+  }
+
+  .time-weight {
+    width: 130px;
+    margin-right: 42px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .time-weight__flex {
+    display: flex;
+    justify-content: start;
+  }
+}

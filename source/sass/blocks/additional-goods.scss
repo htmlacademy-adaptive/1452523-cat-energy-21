@@ -10,9 +10,10 @@
 }
 
 .additional-goods {
-  @include ul-none;
   margin: 0;
   padding-left: 20px;
+
+  @include ul-none;
 }
 
 .additional-goods__item {
