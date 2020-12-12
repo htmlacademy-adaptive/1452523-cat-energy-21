@@ -1,7 +1,9 @@
 .advantages {
   color: $basic-black;
   padding-top: 0;
-  padding-bottom: 45px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .advantages__tittle {
@@ -11,12 +13,11 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 38px;
-  padding-left: 30px;
 }
 
 .advantages__list {
-  @include ul-none;
-  padding-left: 30px;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .advantages__item {
@@ -56,6 +57,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-bottom: 0;
+    padding-left: 0;
     padding-right: 0;
   }
 
@@ -76,11 +78,12 @@
   .advantages__item {
     width: 230px;
     padding: 140px 30px 60px 0;
-    margin-right: 110px;
     min-height: 280px;
     line-height: 24px;
     display: flex;
     justify-content: space-between;
+    margin-right: 80px;
+    margin-left: 30px;
 
     &--leaf {
       background-image: url("../img/1.png");
@@ -102,32 +105,13 @@
       background-repeat: no-repeat;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .advantages__item {
-    width: 280px;
-    padding: 140px 45px 60px 0;
-    margin-right: 0;
-
-    &--leaf {
-      background-image: url("../img/1.png");
-      background-repeat: no-repeat;
-    }
-
-    &--boiling {
-      background-image: url("../img/2.png");
-      background-repeat: no-repeat;
-    }
-
-    &--food {
-      background-image: url("../img/3.png");
-      background-repeat: no-repeat;
-    }
-
-    &--alarm {
-      background-image: url("../img/4.png");
-      background-repeat: no-repeat;
+  @media (min-width: $desktop-width) {
+    .advantages__item {
+      width: 280px;
+      padding: 140px 45px 60px 0;
+      margin-right: 110px;
+      margin-left: 110px;
     }
   }
 }

@@ -3,3 +3,9 @@
   border: 0;
   background-color: $light-grey;
 }
+
+@media (min-width: $desktop-width) {
+  .iframe {
+    position: absolute;
+  }
+}

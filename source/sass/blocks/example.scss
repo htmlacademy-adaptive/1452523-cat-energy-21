@@ -30,7 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 50px 30px 65px 30px;
+    padding: 50px 30px 0 30px;
     background-color: $basic-white;
   }
 
@@ -47,6 +47,8 @@
   .example {
     display: flex;
     justify-content: space-between;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 
   .example__tittle {
