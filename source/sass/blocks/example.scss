@@ -30,10 +30,37 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 50px 30px 64px 30px;
+    padding: 50px 30px 65px 30px;
+    background-color: $basic-white;
   }
 
   .example__text {
     padding-right: 46px;
+  }
+
+  .example__text--common {
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+    justify-content: space-between;
+  }
+  .example__tittle {
+    padding-bottom: 146px;
+  }
+
+  .image__range {
+    align-items: end;
+  }
+
+  .example__text {
+    width: 436px;
+  }
+
+  .example__text--common {
+    padding-bottom: 0;
   }
 }

@@ -5,3 +5,16 @@
 .images__image--after {
   background-color: $light-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .images__image--after {
+    background-color: $basic-white;
+  }
+
+  .images__image--before {
+    background-color: $basic-white;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}

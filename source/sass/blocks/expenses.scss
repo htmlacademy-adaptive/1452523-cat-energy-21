@@ -4,4 +4,34 @@
   padding-bottom: 42px;
   margin-top: 0;
   margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .expenses {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .expenses__d {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .expenses {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .expenses__d {
+    justify-content: start;
+    padding-right: 120px;
+  }
 }

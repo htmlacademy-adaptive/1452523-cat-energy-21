@@ -68,12 +68,30 @@
     line-height: 60px;
     text-align: left;
     font-size: 60px;
-    padding-right: 150px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 9px;
     padding-top: 60px;
+    width: 414px;
   }
 
   .product__subtitle {
+    padding-top: 40px;
+    padding-left: 9px;
     text-align: left;
+    padding-bottom: 40px;
+  }
+
+  .product__background--toggle {
+    margin-top: 0;
+    margin-bottom: 525px;
+    margin-left: 83px;
+
+    &::before {
+      content: url("../img/cat-energy-food-2.png");
+      top: -20px;
+      left: -60px;
+    }
   }
 }
 
@@ -92,5 +110,14 @@
 
   .flex-text {
     background: none;
+  }
+
+  .product__background--toggle {
+    margin-bottom: 290px;
+    &::before {
+      content: url("../img/cat-energy-food-3.png");
+      top: -180px;
+      left: 130%;
+    }
   }
 }

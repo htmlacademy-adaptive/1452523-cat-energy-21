@@ -11,23 +11,26 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 38px;
+  padding-left: 30px;
 }
 
 .advantages__list {
   @include ul-none;
+  padding-left: 30px;
 }
 
 .advantages__item {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-bottom: 24px;
+  margin-bottom: 20px;
   padding-left: 80px;
   font-size: 14px;
   line-height: 18px;
-  width: 100%;
   box-sizing: border-box;
   color: $dark-grey;
+  min-height: 60px;
+  min-width: 250px;
 
   &--leaf {
     background-image: url("../img/leaf.svg");
@@ -46,7 +49,6 @@
 
   &--alarm {
     background-image: url("../img/alarm-clock.svg");
-    height: 60px;
     background-repeat: no-repeat;
   }
 }
@@ -54,6 +56,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-bottom: 0;
+    padding-right: 0;
   }
 
   .advantages__tittle {
@@ -66,20 +69,65 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-width: 230px;
+    border-bottom: 1px solid $grey-line-2;
   }
 
   .advantages__item {
     width: 230px;
-    padding: 110px 30px 60px 0;
+    padding: 140px 30px 60px 0;
+    margin-right: 110px;
+    min-height: 280px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    &--leaf {
+      background-image: url("../img/1.png");
+      background-repeat: no-repeat;
+    }
+
+    &--boiling {
+      background-image: url("../img/2.png");
+      background-repeat: no-repeat;
+    }
+
+    &--food {
+      background-image: url("../img/3.png");
+      background-repeat: no-repeat;
+    }
+
+    &--alarm {
+      background-image: url("../img/4.png");
+      background-repeat: no-repeat;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__item {
-    margin-right: 20px;
+    width: 280px;
+    padding: 140px 45px 60px 0;
+    margin-right: 0;
 
-    &:last-child {
-      margin-right: 0;
+    &--leaf {
+      background-image: url("../img/1.png");
+      background-repeat: no-repeat;
+    }
+
+    &--boiling {
+      background-image: url("../img/2.png");
+      background-repeat: no-repeat;
+    }
+
+    &--food {
+      background-image: url("../img/3.png");
+      background-repeat: no-repeat;
+    }
+
+    &--alarm {
+      background-image: url("../img/4.png");
+      background-repeat: no-repeat;
     }
   }
 }

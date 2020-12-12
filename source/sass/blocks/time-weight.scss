@@ -3,6 +3,10 @@
   border: 1px solid $special-grey;
   text-align: center;
   padding: 20px;
+  margin-right: 32px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .time-weight__border {
@@ -47,6 +51,7 @@
 @media (min-width: $tablet-width) {
   .time-weight-expenses {
     display: flex;
+    justify-content: space-between;
   }
 
   .time-weight {
@@ -61,5 +66,22 @@
   .time-weight__flex {
     display: flex;
     justify-content: start;
+  }
+
+  .time-weight__subtittle {
+    background-color: $basic-white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .time-weight-expenses {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .time-weight__flex {
+    padding-bottom: 50px;
   }
 }

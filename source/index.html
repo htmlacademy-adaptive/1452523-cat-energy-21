@@ -70,7 +70,7 @@
           </section>
         </div>
 
-        <section class="advantages container">
+        <section class="advantages">
           <h2 class="advantages__tittle">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--leaf">
@@ -93,46 +93,53 @@
         </section>
 
         <section class="example container">
-          <h2 class="example__tittle">Живой пример</h2>
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-            этом он не менял своих привычек и по-прежнему спит по 16 часов в
-            день.
-          </p>
+          <div class="example__text--common">
+            <h2 class="example__tittle">Живой пример</h2>
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов
+              в день.
+            </p>
 
-          <div class="time-weight-expens">
-            <div class="time-weight__flex">
-              <div class="time-weight">
-                <h2 class="time-weight__tittle time-weight__tittle--kilogram">
-                  5 кг
-                </h2>
-                <div class="time-weight__border">
-                  <p class="time-weight__subtittle">Снижение веса</p>
+            <div class="time-weight-expenses">
+              <div class="time-weight__flex">
+                <div class="time-weight">
+                  <h2 class="time-weight__tittle time-weight__tittle--kilogram">
+                    5 кг
+                  </h2>
+                  <div class="time-weight__border">
+                    <p class="time-weight__subtittle">Снижение веса</p>
+                  </div>
+                </div>
+                <div class="time-weight">
+                  <h2 class="time-weight__tittle time-weight__tittle--days">
+                    60 дней
+                  </h2>
+                  <div class="time-weight__border">
+                    <p class="time-weight__subtittle">Затрачено времени</p>
+                  </div>
                 </div>
               </div>
-              <div class="time-weight">
-                <h2 class="time-weight__tittle time-weight__tittle--days">
-                  60 дней
-                </h2>
-                <div class="time-weight__border">
-                  <p class="time-weight__subtittle">Затрачено времени</p>
-                </div>
+
+              <div class="expenses">
+                <p class="expenses__d">Затраты на питание:</p>
+                <p class="expenses__d">15 000 РУБ.</p>
               </div>
             </div>
-
-            <p class="expenses">Затраты на питание: 15 000 РУБ.</p>
           </div>
+          <div class="image__range">
           <img
             class="images__image--before"
             src="img/cat-before.png"
             alt="Котик, требуюший заботы и утраты лишних килограмм"
           />
+          <!--
           <img
             class="images__image--after"
             src="img/cat-after.png"
             alt="Ваш похудевший котик"
-          />
+          />-->
 
           <div class="range-controls">
             <p class="range-controls__before">Было</p>
@@ -143,6 +150,7 @@
             <p class="range-controls__after">Стало</p>
           </div>
         </section>
+        </div>
       </main>
 
       <footer class="page__body--footer">

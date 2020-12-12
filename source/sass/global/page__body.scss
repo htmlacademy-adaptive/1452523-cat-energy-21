@@ -5,16 +5,20 @@
   width: 100%;
   background-color: bisque;
   margin: 0 auto;
-}
 
-.page__body--header {
-  background-color: $basic-white;
-  font-size: 20px;
-  line-height: 20px;
-  color: $basic-black;
-  text-transform: uppercase;
-  min-height: 33px;
-  box-sizing: border-box;
+  &--header {
+    background-color: $basic-white;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+    text-transform: uppercase;
+    min-height: 33px;
+    box-sizing: border-box;
+  }
+
+  &--footer {
+    background-color: $basic-white;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -24,7 +28,9 @@
     background-repeat: no-repeat;
   }
 
-  .page__body--header {
-    background-color: transparent;
+  .page__body {
+    &--header {
+      background-color: transparent;
+    }
   }
 }
