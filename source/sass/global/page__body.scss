@@ -24,8 +24,16 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page__body {
+    &--header {
+      padding-top: 24px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
-  .color {
+  .index {
     background-image: url("../img/cat-d.png");
     background-position: top right;
     background-repeat: no-repeat;
@@ -34,6 +42,7 @@
   .page__body {
     &--header {
       background-color: transparent;
+      padding-top: 54px;
     }
   }
 }

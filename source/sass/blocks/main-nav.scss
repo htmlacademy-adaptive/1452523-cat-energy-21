@@ -17,7 +17,20 @@
   }
 
   .link {
+    color: black;
     font-size: 18px;
     font-weight: normal;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .link {
+    &--index {
+      border-bottom: 2px solid $basic-white;
+    }
   }
 }

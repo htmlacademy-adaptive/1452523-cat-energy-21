@@ -25,18 +25,14 @@
   }
 
   .site-list__item {
-    padding-left: 33px;
+    padding-right: 33px;
     padding-top: 0;
     padding-bottom: 0;
     border: none;
 
-    &:first-child {
+    &:last-child {
       padding-bottom: 10px;
-      padding-left: 0;
-    }
-
-    &--active {
-      border-bottom: 2px solid $basic-green;
+      padding-right: 0;
     }
   }
 

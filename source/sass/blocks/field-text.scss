@@ -32,3 +32,21 @@
     padding: 13px 12px 14px 14px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .field-text {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    font-size: 20px;
+  }
+
+  .field-text__span {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .field-text__input {
+    font-size: 20px;
+  }
+}
