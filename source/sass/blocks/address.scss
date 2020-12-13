@@ -1,11 +1,13 @@
 .address {
-  padding-top: 28px;
-  padding-bottom: 22px;
+  background-color: $basic-grey;
 }
 
 .address__text {
-  display: grid;
-  grid-template-columns: 140px 140px;
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 22px;
+  justify-content: space-between;
+  flex-direction: row;
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Arial", sans-serif;
@@ -14,6 +16,8 @@
   font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .address__tittle {
@@ -25,9 +29,45 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $light-black;
+  width: 140px;
 }
 
 .address__address {
   margin-top: 0;
   margin-bottom: 0;
+  width: 140px;
+}
+
+.address__p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .address__text {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+
+  .address__p {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    width: 570px;
+    min-height: 200px;
+    padding: 0;
+  }
+
+  .address__text {
+    position: relative;
+    top: 350px;
+    z-index: 2;
+    left: 110px;
+    background-color: $basic-white;
+  }
 }

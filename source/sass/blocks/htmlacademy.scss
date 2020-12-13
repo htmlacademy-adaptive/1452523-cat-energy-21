@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include ul-none;
   padding: 20px 20px 0 20px;
+
+  @include ul-none;
 }
 
 .htmlacademy__text {

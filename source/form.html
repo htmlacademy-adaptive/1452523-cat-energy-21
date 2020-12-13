@@ -29,8 +29,8 @@
             <li class="site-list__item">
               <a href="catalog.html" class="link">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="form.html" class="link">Подбор программы</a>
+            <li class="site-list__item ">
+              <a href="form.html" class="link link--active">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -43,12 +43,13 @@
         method="Get"
         action="https://echo.htmlacademy.ru/"
       >
-        <legend class="selection-program__legend container">Подбор программы</legend>
-        <p class="selection-program__text container">
+        <legend class="selection-program__legend ">Подбор программы</legend>
+        <p class="selection-program__text ">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
 
-        <fieldset class="data container">
+        <div class="data-program-change">
+        <fieldset class="data">
           <label class="field-text">
             <span class="field-text__span">
               ИМЯ:*
@@ -85,7 +86,7 @@
             <input class="field-checkbox__input" type="radio" />
             <span class="field-checkbox__span"></span>Не знаю (нужен ваш совет)</span>
           </label>
-        </fieldset>
+        </fieldset></div>
 
         <fieldset class="program-contacts">
           <legend class="program-contacts__legend">
@@ -154,8 +155,8 @@
     </main>
 
       <footer class="page__body--footer">
-        <section class="address container">
-          <div class="address__text">
+        <section class="address container ">
+          <div class="address__text ">
             <h2 class="address__tittle">
               Приглашаем к сотрудничеству дилеров!
             </h2>

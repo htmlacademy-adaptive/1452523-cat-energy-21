@@ -6,27 +6,22 @@
 @import "blocks/container.scss";
 @import "global/page__body.scss";
 @import "blocks/button.scss";
-
 @import "blocks/main-nav.scss";
-@import "blocks/burger.scss";
 @import "blocks/site-list.scss";
-
 @import "blocks/footer.scss";
 @import "blocks/address.scss";
 @import "blocks/iframe.scss";
 @import "blocks/picture-footer.scss";
 @import "blocks/social-items.scss";
 @import "blocks/htmlacademy.scss";
-
 @import "blocks/product.scss";
-@import "blocks/options.scss";
+@import "blocks/option.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
 @import "blocks/time-weight.scss";
 @import "blocks/expenses.scss";
 @import "blocks/image.scss";
 @import "blocks/range-controls.scss";
-
 @import "blocks/selection-program.scss";
 @import "blocks/data.scss";
 @import "blocks/field-text.scss";
@@ -37,11 +32,7 @@
 @import "blocks/program-coments.scss";
 @import "blocks/program-additionally.scss";
 @import "blocks/form.scss";
-
 @import "blocks/catalog.scss";
 @import "blocks/additional-goods.scss";
 @import "blocks/gift.scss";
-
-$tablet-width: 768px;
-$desktop-width: 1440px;
-$mobile-width-only: 767px;
+@import "blocks/data-program-change.scss";

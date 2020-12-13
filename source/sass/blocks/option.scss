@@ -13,16 +13,18 @@
   }
 }
 
-.slim {
-  background-image: url("../img/cat-slimming.svg");
-  background-repeat: no-repeat;
-  background-position: 20px 20px;
-}
+.option__option {
+  &--slim {
+    background-image: url("../img/cat-slimming.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+  }
 
-.pro {
-  background-image: url("../img/cat-weight-gain.svg");
-  background-repeat: no-repeat;
-  background-position: 11px 20px;
+  &--pro {
+    background-image: url("../img/cat-weight-gain.svg");
+    background-repeat: no-repeat;
+    background-position: 11px 20px;
+  }
 }
 
 .option__tittle {
@@ -68,23 +70,30 @@
   color: $basic-black;
   text-transform: uppercase;
   font-weight: 400;
+  display: block;
+  padding-top: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .options {
     padding-top: 0;
   }
 
-  .slim {
-    background-size: 185px 211px;
-    background-position: 90% 61%;
-    padding: 57px 268px 53px 52px;
+  .option {
+    padding: 80px 260px 57px 42px;
   }
 
-  .pro {
-    background-size: 268px 200px;
-    background-position: 95% 61%;
-    padding: 57px 295px 53px 52px;
+  .option__option {
+    &--slim {
+      background-size: 185px 211px;
+      background-position: 90% 61%;
+    }
+
+    &--pro {
+      background-size: 268px 200px;
+      background-position: 95% 61%;
+      padding-right: 305px;
+    }
   }
 
   .option__tittle {
@@ -105,32 +114,35 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .options {
     display: flex;
-    padding-left: 85px;
-    padding-right: 85px;
+    padding-top: 80px;
   }
 
   .option {
+    padding: 50px 120px 50px 75px;
+    margin-right: 80px;
     margin-bottom: 0;
-    margin-right: 60px;
 
     &:last-child {
       margin-right: 0;
     }
   }
 
-  .slim {
-    background-size: 80px 86px;
-    background-position: 10% 11%;
-    padding: 57px 36px 53px 40px;
-  }
+  .option__option {
+    margin-bottom: 0;
 
-  .pro {
-    background-size: 114px 80px;
-    background-position: 7% 15%;
-    padding: 57px 49px 53px 40px;
+    &--slim {
+      background-size: 80px 86px;
+      background-position: 10% 11%;
+    }
+
+    &--pro {
+      background-size: 114px 80px;
+      background-position: 7% 15%;
+      padding-right: 75px;
+    }
   }
 
   .option__tittle {

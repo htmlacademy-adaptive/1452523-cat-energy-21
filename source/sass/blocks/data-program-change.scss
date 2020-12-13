@@ -1,0 +1,16 @@
+@media (min-width: $tablet-width) {
+  .data-program-change {
+    display: flex;
+    flex-direction: column;
+    padding: 66px 70px 66px 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .data-program-change {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+}

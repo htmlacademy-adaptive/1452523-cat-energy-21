@@ -18,25 +18,21 @@
   color: $basic-black;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .site-list {
     display: flex;
     justify-content: space-between;
   }
 
   .site-list__item {
-    padding-left: 33px;
+    padding-right: 33px;
     padding-top: 0;
     padding-bottom: 0;
     border: none;
 
-    &:first-child {
+    &:last-child {
       padding-bottom: 10px;
-      padding-left: 0;
-    }
-
-    &--active {
-      border-bottom: 2px solid $basic-green;
+      padding-right: 0;
     }
   }
 
@@ -45,7 +41,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .site-list__item--active {
     border-bottom: 2px solid $basic-white;
   }

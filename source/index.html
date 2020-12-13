@@ -9,7 +9,7 @@
   </head>
 
   <body class="page__body">
-    <div class="color">
+    <div class="color index">
       <header class="page__body--header container">
         <nav class="main-nav">
           <div class="main-nav__nav">
@@ -19,8 +19,8 @@
           </div>
 
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html" class="link">Главная</a>
+            <li class="site-list__item">
+              <a href="index.html" class=" link link--active link--index">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html" class="link">Каталог продукции</a>
@@ -38,19 +38,10 @@
 
       <main class="page__body--main index">
         <section class="product container">
-          <div class="wrapper">
+          <div class="product__wrapper">
             <div class="flex-text">
               <h1 class="product__title">Функциональное питание для котов</h1>
               <p class="product__subtitle">Занялся собой? Займись котом!</p>
-            </div>
-            <div class="product__background">
-              <img
-                class="product__background--image"
-                alt="Продукт Cat Energy со вкусом курицы"
-                src="img/cat-energy-food.png"
-                width="280"
-                height="270"
-              />
             </div>
           </div>
           <a class="product__background--toggle button link" href="form.html"
@@ -58,8 +49,8 @@
           >
         </section>
 
-        <div class="options">
-          <section class="option slim">
+        <div class="options container">
+          <section class="option__option--slim option">
             <h2 class="option__tittle option__tittle--slim">Похудение</h2>
             <p class="option__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -69,7 +60,7 @@
             <a class="option__link" href="#">Каталог Slim</a>
           </section>
 
-          <section class="option pro">
+          <section class="option__option--pro option">
             <h2 class="option__tittle option__tittle--pro">Набор массы</h2>
             <p class="option__text">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -79,8 +70,8 @@
           </section>
         </div>
 
-        <section class="advantages container">
-          <h2 class="advantages__tittle">Как это работает</h2>
+        <section class="advantages">
+          <h2 class="advantages__tittle container">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--leaf">
               Функциональное питание содержит только полезные питательные
@@ -102,44 +93,53 @@
         </section>
 
         <section class="example container">
-          <h2 class="example__tittle">Живой пример</h2>
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-            этом он не менял своих привычек и по-прежнему спит по 16 часов в
-            день.
-          </p>
+          <div class="example__text--common">
+            <h2 class="example__tittle">Живой пример</h2>
+            <p class="example__text">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов
+              в день.
+            </p>
 
-          <div class="time-weight__flex">
-            <div class="time-weight">
-              <h2 class="time-weight__tittle time-weight__tittle--kilogram">
-                5 кг
-              </h2>
-              <div class="time-weight__border">
-                <p class="time-weight__subtittle">Снижение веса</p>
+            <div class="time-weight-expenses">
+              <div class="time-weight__flex">
+                <div class="time-weight">
+                  <h2 class="time-weight__tittle time-weight__tittle--kilogram">
+                    5 кг
+                  </h2>
+                  <div class="time-weight__border">
+                    <p class="time-weight__subtittle">Снижение веса</p>
+                  </div>
+                </div>
+                <div class="time-weight">
+                  <h2 class="time-weight__tittle time-weight__tittle--days">
+                    60 дней
+                  </h2>
+                  <div class="time-weight__border">
+                    <p class="time-weight__subtittle">Затрачено времени</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="time-weight">
-              <h2 class="time-weight__tittle time-weight__tittle--days">
-                60 дней
-              </h2>
-              <div class="time-weight__border">
-                <p class="time-weight__subtittle">Затрачено времени</p>
+
+              <div class="expenses">
+                <p class="expenses__d">Затраты на питание:</p>
+                <p class="expenses__d">15 000 РУБ.</p>
               </div>
             </div>
           </div>
-
-          <p class="expenses">Затраты на питание: 15 000 РУБ.</p>
-          <img
-            class="images__image--before"
-            src="img/cat-before.png"
-            alt="Котик, требуюший заботы и утраты лишних килограмм"
-          />
+          <div class="image__range">
+            <img
+              class="images__image--before"
+              src="img/cat-before.png"
+              alt="Котик, требуюший заботы и утраты лишних килограмм"
+            />
+            <!--
           <img
             class="images__image--after"
             src="img/cat-after.png"
             alt="Ваш похудевший котик"
-          />
+          />-->
 
           <div class="range-controls">
             <p class="range-controls__before">Было</p>
@@ -149,32 +149,33 @@
             <div class="range-controls__toggle"></div>
             <p class="range-controls__after">Стало</p>
           </div>
-        </section>
+        </section> </div>
       </main>
 
       <footer class="page__body--footer">
-        <section class="address container">
+        <div class="address">
           <div class="address__text">
             <h2 class="address__tittle">
               Приглашаем к сотрудничеству дилеров!
             </h2>
-            <p class="address__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </p>
+            <div class="address__address">
+              <p class="address__p">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="address__p">Санкт-Петербург</p>
+            </div>
           </div>
-        </section>
 
-        <iframe
-          class="iframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2snl!4v1606562731250!5m2!1sru!2snl"
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
+          <iframe
+            class="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2snl!4v1606562731250!5m2!1sru!2snl"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
 
         <div class="footer__social container">
           <div class="picture-footer">

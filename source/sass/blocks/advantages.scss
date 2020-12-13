@@ -1,7 +1,9 @@
 .advantages {
   color: $basic-black;
   padding-top: 0;
-  padding-bottom: 42px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .advantages__tittle {
@@ -14,20 +16,22 @@
 }
 
 .advantages__list {
-  @include ul-none;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .advantages__item {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-bottom: 24px;
+  margin-bottom: 20px;
   padding-left: 80px;
   font-size: 14px;
   line-height: 18px;
-  width: 100%;
   box-sizing: border-box;
   color: $dark-grey;
+  min-height: 60px;
+  min-width: 250px;
 
   &--leaf {
     background-image: url("../img/leaf.svg");
@@ -46,11 +50,68 @@
 
   &--alarm {
     background-image: url("../img/alarm-clock.svg");
-    height: 60px;
     background-repeat: no-repeat;
   }
+}
 
-  &:last-child {
+@media (min-width: $tablet-width) {
+  .advantages {
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .advantages__tittle {
+    font-style: 60px;
+    padding-top: 32px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 230px;
+    border-bottom: 1px solid $grey-line-2;
+  }
+
+  .advantages__item {
+    width: 230px;
+    padding: 140px 30px 60px 0;
+    min-height: 280px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+    margin-left: 30px;
+
+    &--leaf {
+      background-image: url("../img/1.png");
+      background-repeat: no-repeat;
+    }
+
+    &--boiling {
+      background-image: url("../img/2.png");
+      background-repeat: no-repeat;
+    }
+
+    &--food {
+      background-image: url("../img/3.png");
+      background-repeat: no-repeat;
+    }
+
+    &--alarm {
+      background-image: url("../img/4.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .advantages__item {
+      width: 280px;
+      padding: 140px 45px 60px 0;
+      margin-right: 110px;
+      margin-left: 110px;
+    }
   }
 }
