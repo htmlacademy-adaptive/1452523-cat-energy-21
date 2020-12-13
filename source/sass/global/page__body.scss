@@ -1,5 +1,5 @@
 .page__body {
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-style: normal;
   width: 100%;
@@ -33,10 +33,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .index {
+  .color {
     background-image: url("../img/cat-d.png");
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: 50vw;
   }
 
   .page__body {

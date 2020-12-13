@@ -10,7 +10,7 @@
   flex-direction: row;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -21,7 +21,7 @@
 }
 
 .address__tittle {
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
@@ -58,16 +58,18 @@
 
 @media (min-width: $desktop-width) {
   .address {
-    width: 570px;
+    width: 100%;
     min-height: 200px;
     padding: 0;
+    position: relative;
   }
 
   .address__text {
-    position: relative;
-    top: 350px;
+    position: absolute;
+    top: 150px;
     z-index: 2;
-    left: 110px;
+    left: 150px;
+    padding: 20px 40px;
     background-color: $basic-white;
   }
 }

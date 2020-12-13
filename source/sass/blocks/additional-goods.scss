@@ -1,6 +1,6 @@
 .additional-goods__caption {
   font-size: 24px;
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
   font-weight: normal;
   padding-bottom: 36px;
   padding-top: 25px;
@@ -31,7 +31,7 @@
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
 }
 
 .additional-goods__details {
@@ -39,6 +39,6 @@
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   padding-bottom: 15px;
 }
