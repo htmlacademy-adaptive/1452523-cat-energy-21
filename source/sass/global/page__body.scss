@@ -28,18 +28,13 @@
   .page__body {
     &--header {
       padding-top: 24px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .color {
-    background-image: url("../img/cat-d.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 50vw;
-  }
-
   .page__body {
     &--header {
       background-color: transparent;

@@ -3,6 +3,14 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .product {
+    color: $basic-black;
+    padding-top: 0;
+    padding-left: 90px;
+  }
+}
+
 .flex-text {
   background: url("../img/background-cat.jpg");
   background-repeat: no-repeat;
@@ -11,6 +19,18 @@
   background-size: 302px;
   text-align: center;
   background-color: #62a53b;
+}
+
+@media (min-width: $tablet-width) {
+  .flex-text {
+    background: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .flex-text {
+    background: none;
+  }
 }
 
 .product__title {
@@ -22,6 +42,39 @@
   width: 280px;
 }
 
+@media (min-width: $tablet-width) {
+  .product__title {
+    line-height: 60px;
+    text-align: left;
+    font-size: 60px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 9px;
+    padding-top: 60px;
+    width: 414px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__title {
+    padding-right: 0;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 42px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__title {
+    padding-right: 0;
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 42px;
+    margin-left: 0;
+  }
+}
+
 .product__subtitle {
   margin-top: 0;
   margin-bottom: 0;
@@ -29,6 +82,15 @@
   font-size: 14px;
   text-transform: uppercase;
   padding-bottom: 140px;
+}
+
+@media (min-width: $tablet-width) {
+  .product__subtitle {
+    padding-top: 40px;
+    padding-left: 9px;
+    text-align: left;
+    padding-bottom: 50px;
+  }
 }
 
 .product__background {
@@ -55,38 +117,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .product {
-    color: $basic-black;
-    padding-top: 0;
-    padding-left: 90px;
-  }
-
-  .flex-text {
-    background: none;
-  }
-
-  .product__title {
-    line-height: 60px;
-    text-align: left;
-    font-size: 60px;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 9px;
-    padding-top: 60px;
-    width: 414px;
-  }
-
-  .product__subtitle {
-    padding-top: 40px;
-    padding-left: 9px;
-    text-align: left;
-    padding-bottom: 40px;
-  }
-
   .product__background--toggle {
     margin-top: 0;
     margin-bottom: 525px;
-    margin-left: 83px;
+    margin-left: 13px;
 
     &::before {
       content: url("../img/cat-energy-food-2.png");
@@ -97,29 +131,19 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product__title {
-    padding-right: 0;
-    font-size: 42px;
-    font-weight: normal;
-    line-height: 42px;
-    margin-left: 0;
-  }
-
-  .product__wrapper {
-    padding-left: 76px;
-  }
-
-  .flex-text {
-    background: none;
-  }
-
   .product__background--toggle {
-    margin-bottom: 290px;
+    margin-bottom: 270px;
 
     &::before {
       content: url("../img/cat-energy-food-3.png");
-      top: -180px;
+      top: -520%;
       left: 130%;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__wrapper {
+    padding-left: 76px;
   }
 }

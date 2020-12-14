@@ -2,12 +2,12 @@
   padding-bottom: 19px;
 }
 
-.field-checkbox__span {
-  padding-left: 15px;
-}
-
 @media (min-width: $tablet-width) {
   .field-checkbox {
     font-size: 20px;
   }
+}
+
+.field-checkbox__span {
+  padding-left: 15px;
 }

@@ -1,0 +1,12 @@
+.page__color {
+  background-color: $basic-white;
+}
+
+@media (min-width: $desktop-width) {
+  .page__color {
+    background-image: url("../img/cat-d.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 50vw;
+  }
+}

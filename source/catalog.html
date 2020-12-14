@@ -9,27 +9,26 @@
   </head>
 
   <body class="page__body">
-    <div class="color">
-      <header class="page__body--header container">
-        <nav class="main-nav catalog">
+    <div class="page__color index">
+      <header class="page__body--header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="button-burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__nav">
             <a class="main-nav__logo link" href="index.html">
               <img class="main-nav__img" src="img/logo.svg" alt="Котик" />
             </a>
-
-            <button class="button-burger visually-hidden" type="button">
-              <span>Открыть меню</span>
-            </button>
           </div>
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html" class="link">Главная</a>
+              <a href="index.html" class="link link--active link--index"
+                >Главная</a
+              >
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="link link--active"
-                >Каталог продукции</a
-              >
+              <a href="catalog.html" class="link">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a href="form.html" class="link">Подбор программы</a>
