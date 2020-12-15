@@ -2,10 +2,10 @@
   font-family: $oswald;
   font-weight: 400;
   font-style: normal;
-  width: 100%;
   background-color: bisque;
   margin: 0 auto;
   display: grid;
+  width: 100%;
   grid-template: max-content 1fr max-content;
 
   &--header {
@@ -26,6 +26,8 @@
 
 @media (min-width: $tablet-width) {
   .page__body {
+    width: 100%;
+
     &--header {
       padding-top: 24px;
       margin-right: auto;
@@ -36,6 +38,8 @@
 
 @media (min-width: $desktop-width) {
   .page__body {
+    width: 100%;
+
     &--header {
       background-color: transparent;
       padding-top: 54px;
