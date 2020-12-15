@@ -7,11 +7,28 @@
   border-bottom: 1px solid $grey-line;
 }
 
+@media (min-width: $tablet-width) {
+  .social-items__list {
+    border-bottom: none;
+    padding: 0;
+  }
+}
+
 .social-item {
   border-bottom: 1px solid $grey-line;
 
   &:last-child {
     border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-items__item {
+    padding-right: 28px;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 

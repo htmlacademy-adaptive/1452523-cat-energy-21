@@ -7,12 +7,25 @@
   @include ul-none;
 }
 
+@media (min-width: $tablet-width) {
+  .htmlacademy__list {
+    padding-top: 0;
+    padding-right: 0;
+  }
+}
+
 .htmlacademy__text {
   color: $dark-grey;
   font-family: $arial;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .htmlacademy__text {
+    padding-right: 22px;
+  }
 }
 
 .htmlacademy__logo {

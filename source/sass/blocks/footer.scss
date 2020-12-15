@@ -5,3 +5,13 @@
   padding-top: 40px;
   padding-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}

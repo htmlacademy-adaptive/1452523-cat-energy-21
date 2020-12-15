@@ -17,6 +17,7 @@
     justify-content: space-between;
     padding-right: 110px;
     padding-left: 110px;
+    padding-bottom: 75px;
   }
 }
 
@@ -37,11 +38,18 @@
 
 @media (min-width: $tablet-width) {
   .example__text__p {
-    padding-right: 46px;
+    padding-right: 95px;
+    padding-top: 75px;
 
     &--common {
       padding-bottom: 60px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__text__p {
+    padding-right: 59px;
   }
 }
 
@@ -56,7 +64,7 @@
 
 @media (min-width: $desktop-width) {
   .example__tittle {
-    padding-bottom: 146px;
+    padding-bottom: 75px;
   }
 
   .image__range {
@@ -65,6 +73,7 @@
 
   .example__text__p {
     width: 436px;
+    background-color: $basic-grey;
   }
 
   .example__text--common {

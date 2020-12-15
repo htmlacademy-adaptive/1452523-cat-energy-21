@@ -158,18 +158,26 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 20px;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .option__text {
     border: none;
     max-width: 325px;
+
+    br {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .option__text {
-    max-width: 424px;
+    max-width: 463px;
     font-size: 16px;
     line-height: 24px;
     color: $basic-black;

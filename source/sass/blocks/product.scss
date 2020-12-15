@@ -30,6 +30,7 @@
 @media (min-width: $desktop-width) {
   .flex-text {
     background: none;
+    padding-left: 0;
   }
 }
 
@@ -120,7 +121,7 @@
   .product__background--toggle {
     margin-top: 0;
     margin-bottom: 525px;
-    margin-left: 13px;
+    margin-left: 35px;
 
     &::before {
       content: url("../img/cat-energy-food-2.png");

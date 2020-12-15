@@ -9,8 +9,18 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-bottom: 0;
-    padding-left: 0;
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 110px;
   }
 }
 
@@ -88,6 +98,7 @@
     line-height: 24px;
     display: flex;
     justify-content: space-between;
+    margin-right: 105px;
 
     &--leaf {
       background-image: url("../img/1.png");
@@ -115,7 +126,7 @@
   .advantages__item {
     width: 280px;
     padding: 140px 45px 60px 0;
-    margin-right: 155px;
+    margin-right: 15px;
 
     &:nth-child(2n) {
       margin-right: 110px;
