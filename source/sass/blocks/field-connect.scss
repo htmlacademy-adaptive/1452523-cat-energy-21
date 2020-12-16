@@ -5,6 +5,8 @@
   font-family: $oswald;
   font-weight: 400;
   font-style: normal;
+  width: 100%;
+  white-space: nowrap;
 
   &:not(:last-child) {
     padding-bottom: 10px;
@@ -19,11 +21,11 @@
   text-transform: uppercase;
 
   &--email {
-    padding: 13px 30px 15px 15px;
+    padding: 13px 45px 15px 15px;
   }
 
   &--phone {
-    padding: 13px 13px 15px 16px;
+    padding: 13px 27px 15px 16px;
   }
 }
 
@@ -31,6 +33,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .field-connect__input {
+    padding: 15px 321px 15px 15px;
+
+    &--email {
+      padding-right: 336px;
+    }
+  }
 }
 
 .email {
@@ -41,4 +54,15 @@
 .phone {
   display: flex;
   align-items: center;
+}
+
+.field-connect__img {
+  position: absolute;
+  right: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-connect__img {
+    right: 20px;
+  }
 }

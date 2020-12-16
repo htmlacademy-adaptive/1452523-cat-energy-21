@@ -11,12 +11,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .site-list {
-    width: 50vw;
-  }
-}
-
 .site-list__item {
   list-style-type: none;
   border-bottom: 1px solid $grey-line-2;
@@ -40,6 +34,9 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item {
+    padding-left: 30px;
+    padding-right: 30px;
+
     &:first-child {
       padding-left: 132px;
     }
@@ -49,7 +46,7 @@
     }
 
     &:last-child {
-      padding-right: 110px;
+      padding-right: 0;
     }
   }
 }
@@ -62,5 +59,9 @@
 @media (min-width: $desktop-width) {
   .link {
     color: $basic-white;
+
+    &--form {
+      color: $light-black;
+    }
   }
 }

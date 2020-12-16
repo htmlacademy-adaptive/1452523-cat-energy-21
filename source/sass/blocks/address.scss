@@ -2,15 +2,6 @@
   background-color: $basic-white;
 }
 
-@media (min-width: $tablet-width) {
-  .address__text {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 70px;
-    padding-left: 70px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .address {
     width: 100%;
@@ -36,6 +27,20 @@
   color: $dark-grey;
   padding-left: 20px;
   padding-right: 20px;
+
+  &--grey {
+    background-color: $basic-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .address__text {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-left: 70px;
+    background-color: $basic-grey;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -61,6 +66,13 @@
   width: 140px;
 }
 
+@media (min-width: $tablet-width) {
+  .address__tittle {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
 .address__address {
   margin-top: 0;
   margin-bottom: 0;
@@ -70,4 +82,24 @@
 .address__p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .address__address {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .address__p {
+    padding-bottom: 25px;
+    font-size: 16px;
+    text-align: right;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }

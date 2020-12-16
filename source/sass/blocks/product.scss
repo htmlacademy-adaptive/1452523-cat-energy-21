@@ -134,6 +134,7 @@
 @media (min-width: $desktop-width) {
   .product__background--toggle {
     margin-bottom: 270px;
+    margin-left: 80px;
 
     &::before {
       content: url("../img/cat-energy-food-3.png");

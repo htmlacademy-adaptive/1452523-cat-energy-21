@@ -68,6 +68,7 @@
   color: $dark-grey;
   min-height: 60px;
   min-width: 250px;
+  padding-right: 20px;
 
   &--leaf {
     background-image: url("../img/leaf.svg");
@@ -87,6 +88,7 @@
   &--alarm {
     background-image: url("../img/alarm-clock.svg");
     background-repeat: no-repeat;
+    padding-right: 39px;
   }
 }
 

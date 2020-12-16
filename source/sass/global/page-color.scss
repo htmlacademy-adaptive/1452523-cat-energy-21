@@ -1,9 +1,10 @@
 .page__color {
   background-color: $basic-white;
+  width: 100%;
 }
 
 @media (min-width: $desktop-width) {
-  .page__color {
+  .page__color--index {
     background-image: url("../img/cat-d.png");
     background-position: top right;
     background-repeat: no-repeat;
