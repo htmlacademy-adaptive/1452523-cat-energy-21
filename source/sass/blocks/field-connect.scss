@@ -13,12 +13,19 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .field-connect {
+    width: 570px;
+  }
+}
+
 .field-connect__label {
   padding-right: 10px;
 }
 
 .field-connect__input {
   text-transform: uppercase;
+  border: 1px solid $special_grey;
 
   &--email {
     padding: 13px 45px 15px 15px;
@@ -29,13 +36,6 @@
   }
 }
 
-.field-connect__input-image {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-
 @media (min-width: $tablet-width) {
   .field-connect__input {
     padding: 15px 321px 15px 15px;
@@ -43,6 +43,19 @@
     &--email {
       padding-right: 336px;
     }
+  }
+}
+
+.field-connect__input-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .field-connect__input-image {
+    min-width: 506px;
   }
 }
 
@@ -64,5 +77,18 @@
 @media (min-width: $tablet-width) {
   .field-connect__img {
     right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .email-phone {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .email {
+    padding-right: 78px;
+    width: 50%;
   }
 }

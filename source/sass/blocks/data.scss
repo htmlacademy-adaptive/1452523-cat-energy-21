@@ -18,3 +18,10 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .data {
+    padding-right: 80px;
+    width: 564px;
+  }
+}

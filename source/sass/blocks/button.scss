@@ -12,6 +12,23 @@
   font-family: $oswald;
 }
 
+@media (min-width: $tablet-width) {
+  .button {
+    margin-left: 0;
+    margin-right: 60px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--form {
+      padding: 18px 207px;
+    }
+  }
+}
+
 .button__button {
   text-align: center;
 

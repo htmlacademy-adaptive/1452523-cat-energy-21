@@ -10,8 +10,7 @@
 @media (min-width: $tablet-width) {
   .field-text {
     padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: max-content 1fr;
+    display: flex;
     font-size: 20px;
   }
 }
@@ -53,5 +52,21 @@
 @media (min-width: $tablet-width) {
   .field-text__input {
     font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__input {
+    &--name {
+      padding-right: 317px;
+    }
+
+    &--weidth {
+      padding-right: 290px;
+    }
+
+    &--age {
+      padding-right: 250px;
+    }
   }
 }

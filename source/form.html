@@ -36,7 +36,7 @@
       </header>
 
     <main class="page__body--main form container">
-      <h1 class="visually-hidden">Форма для вашего котика</h1>
+      <h1 class="visually-hidden">Заполните, чтобы осчастливить вашего котика</h1>
       <form
         class="selection-program"
         method="Get"
@@ -72,17 +72,17 @@
 
         <fieldset class="program-change">
           <label class="field-checkbox">
-            <input class="field-checkbox__input" type="radio" />
+            <input class="field-checkbox__input visually-hidden" checked type="radio" name="variants" value="slimming"/>
             <span class="field-checkbox__span"> Похудение</span>
           </label>
 
           <label class="field-checkbox">
-            <input class="field-checkbox__input" type="radio" />
+            <input class="field-checkbox__input visually-hidden" type="radio" name="variants" value="pro"/>
             <span class="field-checkbox__span">Набор массы</span>
           </label>
 
           <label class="field-checkbox">
-            <input class="field-checkbox__input" type="radio" />
+            <input class="field-checkbox__input visually-hidden" type="radio" name="variants" value="advice"/>
             <span class="field-checkbox__span"></span>Не знаю (нужен ваш совет)</span>
           </label>
         </fieldset></div>
@@ -138,36 +138,40 @@
           ></textarea>
         </fieldset>
 
-        <fieldset class="program-additionally   container">
+        <fieldset class="program-additionally container">
           <legend class="program-additionally__legend">
             Дополнительно</legend>
 
           <div class="additionally-checkbox__flex">
-          <label class="additionally-checkbox">
-            <input class="additionally-checkbox__input" type="checkbox" /><span class="program-additionally__span">
-            Сахарозаменитель</span></label
-          >
+            <label class="additionally-checkbox">
+              <input class="additionally-checkbox__input visually-hidden" type="checkbox" name="sweet"  checked/>
+              <span class="program-additionally__span">
+              Сахарозаменитель</span>
+            </label>
 
-          <label class="additionally-checkbox">
-            <input class="additionally-checkbox__input" type="checkbox" /><span class="program-additionally__span">
-            Питьевая вода</span>
-          </label>
+            <label class="additionally-checkbox">
+              <input class="additionally-checkbox__input visually-hidden" type="checkbox" name="water" />
+              <span class="program-additionally__span">
+              Питьевая вода</span>
+            </label>
 
-          <label class="additionally-checkbox">
-            <input class="additionally-checkbox__input" type="checkbox" /><span class="program-additionally__span">
-            Молоко</span>
-          </label>
+            <label class="additionally-checkbox">
+              <input class="additionally-checkbox__input visually-hidden" type="checkbox" name="milk"/>
+              <span class="program-additionally__span">
+              Молоко</span>
+            </label>
 
-          <label class="additionally-checkbox">
-            <input class="additionally-checkbox__input" type="checkbox" /><span class="program-additionally__span">
-            Витамины</span>
-          </label>
+            <label class="additionally-checkbox">
+              <input class="additionally-checkbox__input visually-hidden" type="checkbox" name="vitamins"/>
+              <span class="program-additionally__span">
+              Витамины</span>
+            </label>
           </div>
         </fieldset>
         <div class="button-span">
-        <button class="button container" type="button">Отправить заявку</button>
-      <span class="form__span">* — Обязательные поля</span>
-</div>
+          <button class="button button--form container" type="submit">Отправить заявку</button>
+          <span class="form__span">* — Обязательные поля</span>
+        </div>
       </form>
 
     </main>

@@ -65,13 +65,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav {
-    padding-right: 110px;
-    padding-left: 110px;
-  }
-}
-
 .main-nav__nav {
   border-bottom: 1px solid $grey-line-2;
   padding-bottom: 15px;

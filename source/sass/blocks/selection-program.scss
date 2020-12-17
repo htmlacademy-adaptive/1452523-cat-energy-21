@@ -8,6 +8,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .selection-program {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .selection-program__legend {
   font-size: 36px;
   color: $basic-black;

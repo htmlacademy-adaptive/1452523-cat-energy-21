@@ -1,6 +1,6 @@
 .program-additionally {
   border: none;
-  padding: 0 0 34px 0;
+  padding: 0 0 20px 0;
   margin: 0;
   color: $special-dark-grey;
   font-size: 16px;
@@ -28,6 +28,7 @@
   font-style: normal;
   color: $basic-black;
   text-transform: uppercase;
+  padding-left: 45px;
 }
 
 .additionally-checkbox__flex {
@@ -42,12 +43,16 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .additionally-checkbox__flex {
+    flex-wrap: nowrap;
+  }
+}
+
 .additionally-checkbox {
   padding-bottom: 19px;
-
-  &:last-child {
-    padding-bottom: 0;
-  }
+  cursor: pointer;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,4 +67,40 @@
       padding-right: 0;
     }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally-checkbox {
+    padding-right: 110px;
+
+    &:nth-child(2n) {
+      padding-right: 110px;
+    }
+
+    &:last-child {
+      padding-right: 100px;
+    }
+  }
+}
+
+.additionally-checkbox__input + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid $special_grey;
+  left: 0;
+  bottom: 17px;
+}
+
+.additionally-checkbox__input:checked + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+  left: 0;
+  bottom: 17px;
 }
