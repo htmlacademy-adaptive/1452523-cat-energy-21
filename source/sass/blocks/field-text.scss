@@ -52,6 +52,18 @@
 @media (min-width: $tablet-width) {
   .field-text__input {
     font-size: 20px;
+
+    &--name {
+      padding: 13px 318px 14px 14px;
+    }
+
+    &--weidth {
+      padding: 13px 292px 14px 14px;
+    }
+
+    &--age {
+      padding: 13px 250px 14px 14px;
+    }
   }
 }
 
