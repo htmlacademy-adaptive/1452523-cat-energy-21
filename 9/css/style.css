@@ -252,6 +252,11 @@
     align-items: center;
     padding: 55px 70px; } }
 
+@media (min-width: 1440px) {
+  .footer__social {
+    padding-left: 110px;
+    padding-right: 110px; } }
+
 .address {
   background-color: #ffffff; }
 
@@ -1095,7 +1100,13 @@
 
 @media (min-width: 768px) {
   .field-text__input {
-    font-size: 20px; } }
+    font-size: 20px; }
+    .field-text__input--name {
+      padding: 13px 318px 14px 14px; }
+    .field-text__input--weidth {
+      padding: 13px 292px 14px 14px; }
+    .field-text__input--age {
+      padding: 13px 250px 14px 14px; } }
 
 @media (min-width: 1440px) {
   .field-text__input--name {
@@ -1120,7 +1131,8 @@
 @media (min-width: 768px) {
   .program-change {
     border: 1px solid #e7e7e7;
-    padding-bottom: 45px; } }
+    padding-bottom: 22px;
+    padding-left: 66px; } }
 
 @media (min-width: 1440px) {
   .program-change {
