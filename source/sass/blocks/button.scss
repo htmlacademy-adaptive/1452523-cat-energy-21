@@ -10,14 +10,20 @@
   margin: 0 auto;
   font-size: 16px;
   font-family: $oswald;
+
+  &--form {
+    min-width: 280px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .button {
     margin-left: 0;
     margin-right: 60px;
-    padding-right: 70px;
-    padding-left: 70px;
+  }
+
+  &--change-program {
+    padding: 10px 25px;
   }
 }
 
