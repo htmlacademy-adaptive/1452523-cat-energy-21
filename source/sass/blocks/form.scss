@@ -4,3 +4,24 @@
   padding-bottom: 30px;
   padding-top: 33px;
 }
+
+@media (min-width: $desktop-width) {
+  .form__span {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button-span {
+    display: flex;
+    padding-bottom: 44px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__span {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

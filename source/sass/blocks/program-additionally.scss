@@ -1,6 +1,6 @@
 .program-additionally {
   border: none;
-  padding: 0 20px 34px 20px;
+  padding: 0 0 20px 0;
   margin: 0;
   color: $special-dark-grey;
   font-size: 16px;
@@ -10,18 +10,25 @@
   font-size: 24px;
   padding-bottom: 34px;
   padding-top: 22px;
-  font-family: "Oswald", "Verdana", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .program-additionally__legend {
+    font-size: 36px;
+  }
 }
 
 .program-additionally__span {
   font-size: 16px;
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-style: normal;
   color: $basic-black;
   text-transform: uppercase;
+  padding-left: 45px;
 }
 
 .additionally-checkbox__flex {
@@ -30,10 +37,70 @@
   flex-direction: column;
 }
 
+@media (min-width: $tablet-width) {
+  .additionally-checkbox__flex {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally-checkbox__flex {
+    flex-wrap: nowrap;
+  }
+}
+
 .additionally-checkbox {
   padding-bottom: 19px;
+  cursor: pointer;
+  position: relative;
+}
 
-  &:last-child {
-    padding-bottom: 0;
+@media (min-width: $tablet-width) {
+  .additionally-checkbox {
+    padding-right: 123px;
+    display: flex;
+    text-align: left;
+    min-width: 200px;
+    justify-content: start;
+
+    &:nth-child(2n) {
+      padding-right: 0;
+    }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally-checkbox {
+    padding-right: 110px;
+
+    &:nth-child(2n) {
+      padding-right: 110px;
+    }
+
+    &:last-child {
+      padding-right: 100px;
+    }
+  }
+}
+
+.additionally-checkbox__input + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid $special_grey;
+  left: 0;
+  bottom: 17px;
+}
+
+.additionally-checkbox__input:checked + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 7px;
+  left: 0;
+  bottom: 17px;
 }

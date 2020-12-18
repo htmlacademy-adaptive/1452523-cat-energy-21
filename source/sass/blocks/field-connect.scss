@@ -2,12 +2,20 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $dark-grey;
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-style: normal;
+  width: 100%;
+  white-space: nowrap;
 
   &:not(:last-child) {
     padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-connect {
+    width: 570px;
   }
 }
 
@@ -17,13 +25,24 @@
 
 .field-connect__input {
   text-transform: uppercase;
+  border: 1px solid $special_grey;
 
   &--email {
-    padding: 13px 30px 15px 15px;
+    padding: 13px 45px 15px 15px;
   }
 
   &--phone {
-    padding: 13px 13px 15px 16px;
+    padding: 13px 27px 15px 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-connect__input {
+    padding: 15px 321px 15px 15px;
+
+    &--email {
+      padding-right: 336px;
+    }
   }
 }
 
@@ -31,6 +50,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .field-connect__input-image {
+    min-width: 506px;
+  }
 }
 
 .email {
@@ -41,4 +67,28 @@
 .phone {
   display: flex;
   align-items: center;
+}
+
+.field-connect__img {
+  position: absolute;
+  right: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-connect__img {
+    right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .email-phone {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .email {
+    padding-right: 78px;
+    width: 50%;
+  }
 }

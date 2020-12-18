@@ -6,6 +6,24 @@
   padding-right: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-bottom: 0;
+    padding-left: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 110px;
+  }
+}
+
 .advantages__tittle {
   font-size: 36px;
   line-height: 40px;
@@ -15,13 +33,31 @@
   padding-bottom: 38px;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages__tittle {
+    font-style: 60px;
+    padding-top: 32px;
+  }
+}
+
 .advantages__list {
   list-style-type: none;
   padding-left: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 230px;
+    border-bottom: 1px solid $grey-line-2;
+  }
+}
+
 .advantages__item {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-style: normal;
   margin-bottom: 20px;
@@ -32,6 +68,7 @@
   color: $dark-grey;
   min-height: 60px;
   min-width: 250px;
+  padding-right: 20px;
 
   &--leaf {
     background-image: url("../img/leaf.svg");
@@ -51,30 +88,11 @@
   &--alarm {
     background-image: url("../img/alarm-clock.svg");
     background-repeat: no-repeat;
+    padding-right: 39px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .advantages__tittle {
-    font-style: 60px;
-    padding-top: 32px;
-  }
-
-  .advantages__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-width: 230px;
-    border-bottom: 1px solid $grey-line-2;
-  }
-
   .advantages__item {
     width: 230px;
     padding: 140px 30px 60px 0;
@@ -82,8 +100,7 @@
     line-height: 24px;
     display: flex;
     justify-content: space-between;
-    margin-right: 80px;
-    margin-left: 30px;
+    margin-right: 105px;
 
     &--leaf {
       background-image: url("../img/1.png");
@@ -105,13 +122,16 @@
       background-repeat: no-repeat;
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .advantages__item {
-      width: 280px;
-      padding: 140px 45px 60px 0;
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    width: 280px;
+    padding: 140px 45px 60px 0;
+    margin-right: 15px;
+
+    &:nth-child(2n) {
       margin-right: 110px;
-      margin-left: 110px;
     }
   }
 }

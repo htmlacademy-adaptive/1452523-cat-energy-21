@@ -4,3 +4,10 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: $tablet-width) {
+  .picture-footer {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}

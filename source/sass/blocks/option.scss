@@ -3,6 +3,24 @@
   padding-bottom: 34px;
 }
 
+@media (min-width: $tablet-width) {
+  .options {
+    padding: 0;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options {
+    display: flex;
+    padding-top: 80px;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
 .option {
   background-color: $basic-grey;
   padding: 20px;
@@ -13,7 +31,28 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .option {
+    padding: 80px 260px 57px 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option {
+    width: 570px;
+    padding: 50px 75px;
+    margin-right: 80px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .option__option {
+  padding: 29px 48px 23px 20px;
+
   &--slim {
     background-image: url("../img/cat-slimming.svg");
     background-repeat: no-repeat;
@@ -27,12 +66,42 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .option__option {
+    &--slim {
+      background-size: 185px 211px;
+      background-position: 90% 61%;
+    }
+
+    &--pro {
+      background-size: 268px 200px;
+      background-position: 95% 61%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option__option {
+    margin-bottom: 0;
+    padding: 55px 60px;
+
+    &--slim {
+      background-size: 80px 86px;
+      background-position: 15% 11%;
+    }
+
+    &--pro {
+      background-size: 114px 80px;
+      background-position: 7% 15%;
+    }
+  }
+}
+
 .option__tittle {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   font-weight: 400;
-  padding-left: 60px;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 12px;
@@ -46,23 +115,77 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .option__tittle {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 377px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option__tittle {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 75px;
+  }
+}
+
 .option__subtitle {
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
+}
+
+@media (min-width: $tablet-width) {
+  .option__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .option__text {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial", sans-serif;
+  font-family: $arial;
   font-weight: 400;
   font-style: normal;
   border-bottom: 1px solid $grey-line;
   padding-bottom: 22px;
   color: $dark-grey;
-  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 20px;
+
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .option__text {
+    border: none;
+    max-width: 325px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .option__text {
+    max-width: 463px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .option__link {
@@ -72,80 +195,4 @@
   font-weight: 400;
   display: block;
   padding-top: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .options {
-    padding-top: 0;
-  }
-
-  .option {
-    padding: 80px 260px 57px 42px;
-  }
-
-  .option__option {
-    &--slim {
-      background-size: 185px 211px;
-      background-position: 90% 61%;
-    }
-
-    &--pro {
-      background-size: 268px 200px;
-      background-position: 95% 61%;
-      padding-right: 305px;
-    }
-  }
-
-  .option__tittle {
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  .option__subtitle {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .option__text {
-    border: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .options {
-    display: flex;
-    padding-top: 80px;
-  }
-
-  .option {
-    padding: 50px 120px 50px 75px;
-    margin-right: 80px;
-    margin-bottom: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .option__option {
-    margin-bottom: 0;
-
-    &--slim {
-      background-size: 80px 86px;
-      background-position: 10% 11%;
-    }
-
-    &--pro {
-      background-size: 114px 80px;
-      background-position: 7% 15%;
-      padding-right: 75px;
-    }
-  }
-
-  .option__tittle {
-    text-align: center;
-  }
 }

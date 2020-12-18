@@ -1,11 +1,11 @@
 .page__body {
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-style: normal;
-  width: 100%;
   background-color: bisque;
   margin: 0 auto;
   display: grid;
+  width: 100%;
   grid-template: max-content 1fr max-content;
 
   &--header {
@@ -28,17 +28,13 @@
   .page__body {
     &--header {
       padding-top: 24px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .index {
-    background-image: url("../img/cat-d.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-  }
-
   .page__body {
     &--header {
       background-color: transparent;

@@ -2,7 +2,7 @@
 @import "global/fonts.scss";
 @import "global/mixins.scss";
 @import "global/visually-hidden.scss";
-@import "global/color.scss";
+@import "global/page-color.scss";
 @import "blocks/container.scss";
 @import "global/page__body.scss";
 @import "blocks/button.scss";
@@ -36,3 +36,4 @@
 @import "blocks/additional-goods.scss";
 @import "blocks/gift.scss";
 @import "blocks/data-program-change.scss";
+@import "blocks/button-burger.scss";

@@ -4,8 +4,24 @@
   padding-bottom: 25px;
 }
 
-.example__text {
-  font-family: "Arial", sans-serif;
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 50px 30px 0 30px;
+    background-color: $basic-white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-bottom: 75px;
+  }
+}
+
+.example__text__p {
   font-weight: 400;
   font-style: normal;
   width: 100%;
@@ -17,6 +33,24 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
+  font-family: $arial;
+}
+
+@media (min-width: $tablet-width) {
+  .example__text__p {
+    padding-right: 95px;
+    padding-top: 75px;
+
+    &--common {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__text__p {
+    padding-right: 59px;
+  }
 }
 
 .example__tittle {
@@ -28,39 +62,18 @@
   box-sizing: border-box;
 }
 
-@media (min-width: $tablet-width) {
-  .example {
-    padding: 50px 30px 0 30px;
-    background-color: $basic-white;
-  }
-
-  .example__text {
-    padding-right: 46px;
-  }
-
-  .example__text--common {
-    padding-bottom: 60px;
-  }
-}
-
 @media (min-width: $desktop-width) {
-  .example {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 110px;
-    padding-left: 110px;
-  }
-
   .example__tittle {
-    padding-bottom: 146px;
+    padding-bottom: 75px;
   }
 
   .image__range {
     align-items: end;
   }
 
-  .example__text {
+  .example__text__p {
     width: 436px;
+    background-color: $basic-grey;
   }
 
   .example__text--common {

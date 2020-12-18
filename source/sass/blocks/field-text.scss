@@ -1,8 +1,17 @@
 .field-text {
   padding-bottom: 10px;
+  white-space: nowrap;
 
   &:last-child {
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-text {
+    padding-bottom: 20px;
+    display: flex;
+    font-size: 20px;
   }
 }
 
@@ -11,42 +20,65 @@
   color: $dark-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .field-text__span {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
 .field-text__input {
   font-size: 16px;
   text-transform: uppercase;
   color: $dark-grey;
-  font-family: "Oswald", "Verdana", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-style: normal;
   border: 1px solid $color-border-input;
 
   &--name {
-    padding: 13px 68px 14px 14px;
+    padding: 13px 66px 14px 14px;
   }
 
   &--weidth {
-    padding: 13px 46px 14px 14px;
+    padding: 13px 44px 14px 14px;
   }
 
   &--age {
-    padding: 13px 12px 14px 14px;
+    padding: 13px 10px 14px 14px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .field-text {
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    font-size: 20px;
-  }
-
-  .field-text__span {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
   .field-text__input {
     font-size: 20px;
+
+    &--name {
+      padding: 13px 318px 14px 14px;
+    }
+
+    &--weidth {
+      padding: 13px 292px 14px 14px;
+    }
+
+    &--age {
+      padding: 13px 250px 14px 14px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__input {
+    &--name {
+      padding-right: 317px;
+    }
+
+    &--weidth {
+      padding-right: 290px;
+    }
+
+    &--age {
+      padding-right: 250px;
+    }
   }
 }
