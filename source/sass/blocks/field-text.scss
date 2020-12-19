@@ -9,7 +9,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 500px) {
   .field-text {
     padding-bottom: 20px;
     font-size: 20px;
@@ -19,13 +19,8 @@
 .field-text__span {
   padding-right: 13px;
   color: $dark-grey;
-}
-
-@media (min-width: $tablet-width) {
-  .field-text__span {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .field-text__input {
@@ -50,36 +45,20 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 900px) {
   .field-text__input {
     font-size: 20px;
 
     &--name {
-      padding: 13px 318px 14px 14px;
+      padding: 13px 0 14px 14px;
     }
 
     &--weidth {
-      padding: 13px 292px 14px 14px;
+      padding: 13px 0 14px 14px;
     }
 
     &--age {
-      padding: 13px 250px 14px 14px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .field-text__input {
-    &--name {
-      padding-right: 317px;
-    }
-
-    &--weidth {
-      padding-right: 290px;
-    }
-
-    &--age {
-      padding-right: 250px;
+      padding: 13px 0 14px 14px;
     }
   }
 }
