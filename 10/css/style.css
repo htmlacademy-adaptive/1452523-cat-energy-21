@@ -1084,9 +1084,7 @@
 @media (min-width: 768px) {
   .field-text {
     padding-bottom: 20px;
-    display: flex;
-    font-size: 20px;
-    margin-right: 20px; } }
+    font-size: 20px; } }
 
 .field-text__span {
   padding-right: 13px;
@@ -1098,7 +1096,6 @@
     margin-bottom: auto; } }
 
 .field-text__input {
-  margin-right: 20px;
   font-size: 16px;
   text-transform: uppercase;
   color: #444444;
