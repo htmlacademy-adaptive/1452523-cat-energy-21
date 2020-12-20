@@ -19,6 +19,7 @@
 
 .catalog__list {
   @include ul-none;
+  padding-left: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,7 +70,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog__item {
-    margin-right: 60px;
+    margin-right: 90px;
     width: 164px;
     padding: 0 40px 45px 40px;
 

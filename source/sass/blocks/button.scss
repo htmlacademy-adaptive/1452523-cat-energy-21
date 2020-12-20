@@ -18,12 +18,9 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    margin-left: 0;
-    margin-right: 60px;
-  }
-
-  &--change-program {
-    padding: 10px 25px;
+    &--change-program {
+      padding: 10px 25px;
+    }
   }
 }
 

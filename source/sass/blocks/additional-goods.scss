@@ -27,7 +27,7 @@
 
 .additional-goods {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 0;
 
   @include ul-none;
 }
@@ -85,6 +85,16 @@
   }
 }
 
+.additional-goods__details {
+  @include ul-none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: $arial;
+  padding-bottom: 15px;
+  padding-left: 0;
+}
+
 @media (min-width: $desktop-width) {
   .additional-goods__details {
     width: 287px;
@@ -99,13 +109,4 @@
   font-weight: normal;
   text-transform: uppercase;
   font-family: $oswald;
-}
-
-.additional-goods__details {
-  @include ul-none;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  font-family: $arial;
-  padding-bottom: 15px;
 }

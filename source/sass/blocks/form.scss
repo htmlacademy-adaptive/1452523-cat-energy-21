@@ -5,10 +5,17 @@
   padding-top: 33px;
 }
 
+@media (min-width: $tablet-width) {
+  .form__span {
+    padding-left: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form__span {
     margin-top: auto;
     margin-bottom: auto;
+    padding-left: 80px;
   }
 }
 

@@ -7,8 +7,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-bottom: 0;
-    padding-left: 30px;
-    padding-right: 0;
+    border-bottom: 1px solid $grey-line-2;
   }
 }
 
@@ -48,7 +47,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 230px;
-    border-bottom: 1px solid $grey-line-2;
   }
 }
 
@@ -97,7 +95,6 @@
     line-height: 24px;
     display: flex;
     justify-content: space-between;
-    margin-right: 105px;
 
     &--leaf {
       background-image: url("../img/1.png");

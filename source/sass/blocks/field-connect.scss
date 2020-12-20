@@ -5,18 +5,12 @@
   font-family: $oswald;
   font-weight: 400;
   font-style: normal;
-  width: 100%;
   white-space: nowrap;
+  display: grid;
+  grid-template-columns: max-content 1fr;
 
   &:not(:last-child) {
     padding-bottom: 10px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .field-connect {
-    display: grid;
-    grid-template-columns: max-content 1fr;
   }
 }
 
@@ -27,6 +21,7 @@
 .field-connect__input {
   text-transform: uppercase;
   border: 1px solid $special_grey;
+  width: 100%;
 
   &--email {
     padding: 13px 45px 15px 15px;
@@ -37,19 +32,9 @@
   }
 }
 
-@media (min-width: 570px) {
-  .field-connect__input {
-    padding: 15px 321px 15px 15px;
-
-    &--email {
-      padding-right: 336px;
-    }
-  }
-}
-
 @media (min-width: $desktop-width) {
   .field-connect__input {
-    padding-right: 300px;
+    padding-right: 323px;
   }
 }
 
@@ -61,12 +46,10 @@
 }
 
 .email {
-  display: flex;
   align-items: center;
 }
 
 .phone {
-  display: flex;
   align-items: center;
 }
 
