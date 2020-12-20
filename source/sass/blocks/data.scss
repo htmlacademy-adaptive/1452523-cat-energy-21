@@ -10,7 +10,7 @@
   color: $dark-grey;
 }
 
-@media (min-width: 500px) {
+@media (min-width: $tablet-width) {
   .data {
     padding-top: 0;
     padding-bottom: 52px;
@@ -18,15 +18,9 @@
   }
 }
 
-@media (min-width: 900px) {
-  .data {
-    margin-right: 80px;
-    width: calc((100% - 60px) / 2);
-  }
-}
-
 @media (min-width: $desktop-width) {
   .data {
     width: 564px;
+    margin-right: 80px;
   }
 }

@@ -6,7 +6,6 @@
     background-color: bisque;
     margin: 0 auto;
     display: grid;
-    width: 100%;
     grid-template: max-content 1fr max-content;
   }
 
@@ -16,7 +15,6 @@
     line-height: 20px;
     color: $basic-black;
     text-transform: uppercase;
-    min-height: 33px;
     box-sizing: border-box;
   }
 
@@ -30,8 +28,6 @@
   .page__body {
     &--header {
       padding-top: 24px;
-      margin-right: auto;
-      margin-left: auto;
     }
   }
 }

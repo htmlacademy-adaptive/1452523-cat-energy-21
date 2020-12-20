@@ -20,12 +20,6 @@
   }
 }
 
-@media (min-width: 500px) {
-  .program-change {
-    width: calc((100% - 60px) / 2);
-  }
-}
-
 @media (min-width: $desktop-width) {
   .program-change {
     width: 482px;

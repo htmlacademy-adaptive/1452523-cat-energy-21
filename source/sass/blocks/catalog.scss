@@ -67,16 +67,6 @@
   }
 }
 
-@media (min-width: 1140px) {
-  .catalog__item {
-    margin-right: 40px;
-
-    &:nth-child(2n) {
-      margin-right: 40px;
-    }
-  }
-}
-
 @media (min-width: $desktop-width) {
   .catalog__item {
     margin-right: 60px;

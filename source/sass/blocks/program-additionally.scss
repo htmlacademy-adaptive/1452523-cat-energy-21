@@ -69,7 +69,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: $desktop-width) {
   .additionally-checkbox {
     padding-right: 110px;
 

@@ -1,16 +1,14 @@
 .main-nav {
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .main-nav--closed .button-burger::before {
   content: "";
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 25px;
+  left: 41px;
   width: 24px;
-  height: 1.5px;
+  height: 1px;
   background-color: $basic-black;
   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
 }
@@ -28,10 +26,10 @@
   &::after {
     content: "";
     position: absolute;
-    top: 30px;
-    left: 55px;
-    width: 25px;
-    height: 1.5px;
+    top: 25px;
+    left: 41px;
+    width: 24px;
+    height: 1px;
     background-color: $basic-black;
   }
 
@@ -68,7 +66,7 @@
 .main-nav__nav {
   border-bottom: 1px solid $grey-line-2;
   padding-bottom: 15px;
-  padding-top: 20px;
+  padding-top: 13px;
 }
 
 @media (min-width: $tablet-width) {
