@@ -1,14 +1,43 @@
 .gift {
-  padding: 40px 20px 35px 20px;
+  padding: 40px 0 35px 0;
+}
+
+@media (min-width: 960px) {
+  .gift {
+    width: 245px;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 290px;
+  }
 }
 
 .gift__background {
-  background: url("../img/gift.svg") no-repeat, url("../img/gift-photo.png");
+  background: url("../img/gift-photo.png") no-repeat;
   background-position: 50% 30%;
+  background-color: $basic-green;
+  padding: 32px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .gift__background {
+    padding: 65px 124px 70px 90px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 960px) {
+  .gift__background {
+    text-align: center;
+    padding: 55px 42px 42px 42px;
+    flex-direction: column;
+  }
 }
 
 .gift__headline {
-  padding: 170px 60px 43px 60px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -17,4 +46,12 @@
   color: $basic-white;
   line-height: 20px;
   font-weight: normal;
+  padding-top: 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift__headline {
+    text-align: center;
+    padding-top: 46px;
+  }
 }

@@ -16,8 +16,8 @@
   .options {
     display: flex;
     padding-top: 80px;
-    padding-right: 110px;
-    padding-left: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -175,9 +175,18 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 900px) {
   .option__text {
-    max-width: 463px;
+    max-width: 500px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .option__text {
     font-size: 16px;
     line-height: 24px;
     color: $basic-black;
@@ -185,6 +194,12 @@
     br {
       display: none;
     }
+  }
+}
+
+@media (min-width: 1070px) {
+  .option__text {
+    max-width: 700px;
   }
 }
 

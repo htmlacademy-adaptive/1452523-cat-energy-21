@@ -1,4 +1,4 @@
-@media (min-width: $tablet-width) {
+@media (min-width: 500px) {
   .data-program-change {
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 900px) {
   .data-program-change {
     display: flex;
     flex-direction: row;

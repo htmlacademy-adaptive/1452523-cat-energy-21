@@ -15,7 +15,8 @@
 
 @media (min-width: $desktop-width) {
   .field-connect {
-    width: 570px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
   }
 }
 
@@ -36,7 +37,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 570px) {
   .field-connect__input {
     padding: 15px 321px 15px 15px;
 
@@ -46,17 +47,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .field-connect__input {
+    padding-right: 300px;
+  }
+}
+
 .field-connect__input-image {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-}
-
-@media (min-width: $desktop-width) {
-  .field-connect__input-image {
-    min-width: 506px;
-  }
 }
 
 .email {
@@ -88,7 +89,6 @@
 
 @media (min-width: $desktop-width) {
   .email {
-    padding-right: 78px;
-    width: 50%;
+    margin-right: 78px;
   }
 }
