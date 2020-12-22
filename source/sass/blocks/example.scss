@@ -12,11 +12,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 110px;
+    padding-right: 110px;
+    width: 1220px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .example--container {
     display: flex;
     justify-content: space-between;
-    padding-right: 30px;
-    padding-left: 30px;
+
     padding-bottom: 75px;
   }
 }

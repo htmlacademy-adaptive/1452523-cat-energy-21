@@ -17,19 +17,23 @@
           </button>
           <div class="main-nav__nav">
             <a class="main-nav__logo link" href="index.html">
-              <img class="main-nav__img" width="191" src="img/logo.svg" alt="Котик" />
+              <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__img"  src="img/logo.svg" alt="Кэт Энерджи" />
             </a>
+          </picture>
           </div>
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html" class=" link link--active link--index">Главная</a>
+              <a href="index.html" class=" link link--active link--index-big">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="link">Каталог продукции</a>
+              <a href="catalog.html" class="link link--index-big">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html" class="link">Подбор программы</a>
+              <a href="form.html" class="link link--index-big">Подбор программы</a>
             </li>
           </ul>
 
@@ -38,7 +42,7 @@
       </header>
 
       <main class="page__body--main index">
-        <section class="product ">
+        <section class="product">
 
             <div class="flex-text">
               <h1 class="product__title container">Функциональное <br>питание
@@ -95,10 +99,10 @@
           </ul>
         </section>
 
-        <section class="example">
-          <div class="example--container container">
-          <div class="example__text example__text--common container">
-            <h2 class="example__tittle  container">Живой пример</h2>
+        <section class="example container">
+          <div class="example--container">
+          <div class="example__text example__text--common">
+            <h2 class="example__tittle">Живой пример</h2>
             <p class="example__text__p">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
               на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
@@ -133,12 +137,14 @@
             </div>
           </div>
           <div class="image__range">
+            <picture>
+            <source media="(min-width: 768px)" srcset="img/cat_tablet-before-after.png 1x,img/cat_tablet-before-after@2x.png 2x">
             <img
-            width="280"
               class="images__image--before"
               src="img/cat-before.png"
               alt="Котик, требуюший заботы и утраты лишних килограмм"
             />
+          </picture>
             <!--
           <img
             class="images__image--after"

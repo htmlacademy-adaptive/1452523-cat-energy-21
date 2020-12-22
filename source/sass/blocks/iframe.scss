@@ -3,10 +3,30 @@
   border: 0;
   background-color: $light-grey;
   height: 450px;
+  background-image: url("../img/map-mobile.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .iframe {
+    background-image: url("../img/map-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.png");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .iframe {
     display: block;
+    background-image: url("../img/map-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.png");
+    }
   }
 }

@@ -78,9 +78,12 @@
   }
 }
 
+.link {
+  color: black;
+}
+
 @media (min-width: $tablet-width) {
   .link {
-    color: black;
     font-size: 18px;
     font-weight: normal;
 
@@ -94,6 +97,10 @@
   .link {
     &--index {
       border-bottom: 2px solid $basic-white;
+    }
+
+    &--index-big {
+      color: $basic-white;
     }
   }
 }

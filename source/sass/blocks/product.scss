@@ -9,6 +9,12 @@
     bottom: 110px;
     left: 17px;
     box-sizing: border-box;
+
+    @media (min-resolution: 2dppx) {
+      content: url("../img/cat-energy-food2x.png");
+      width: 280px;
+      height: 270px;
+    }
   }
 }
 
@@ -22,7 +28,27 @@
 
     &::before {
       display: block;
-      content: url("../img/cat-energy-food.png");
+      content: url("../img/cat-energy-food-tablet.png");
+      position: absolute;
+      bottom: -240px;
+      left: 195px;
+      box-sizing: border-box;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 110px;
+    padding-right: 110px;
+    width: 1220px;
+
+    &::before {
+      display: block;
+      content: url("../img/cat-energy-food-desktop.png");
       position: absolute;
       bottom: -240px;
       left: 195px;
@@ -40,6 +66,10 @@
   box-sizing: border-box;
   text-align: center;
   background-color: #62a53b;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-cat@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
