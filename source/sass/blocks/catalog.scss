@@ -160,6 +160,10 @@
   }
 }
 
+.catalog__table {
+  border-collapse: collapse;
+}
+
 .catalog__tr {
   padding-bottom: 2px;
   font-family: $arial;
