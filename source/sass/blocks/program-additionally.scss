@@ -1,6 +1,6 @@
 .program-additionally {
   border: none;
-  padding: 0 0 20px 0;
+  padding-bottom: 20px;
   margin: 0;
   color: $special-dark-grey;
   font-size: 16px;
@@ -69,7 +69,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: $desktop-width) {
   .additionally-checkbox {
     padding-right: 110px;
 

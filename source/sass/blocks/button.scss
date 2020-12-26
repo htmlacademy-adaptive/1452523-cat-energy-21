@@ -3,11 +3,10 @@
   background-color: $basic-green;
   border: none;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-decoration: none;
   display: block;
-  margin: 0 auto;
   font-size: 16px;
   font-family: $oswald;
   text-align: center;
@@ -19,12 +18,9 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    margin-left: 0;
-    margin-right: 60px;
-  }
-
-  &--change-program {
-    padding: 10px 25px;
+    &--change-program {
+      padding: 10px 25px;
+    }
   }
 }
 
@@ -83,20 +79,7 @@
       padding: 10px 53px;
       text-align: center;
     }
-  }
-}
 
-@media (min-width: 920px) {
-  .button__button {
-    &--catalog-add {
-      width: 550px;
-      margin-right: 0;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .button__button {
     &--catalog-add {
       width: 244px;
     }

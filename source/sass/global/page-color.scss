@@ -1,5 +1,6 @@
 .page__color {
   background-color: $basic-white;
+  color: $basic-black;
 }
 
 @media (min-width: $desktop-width) {
@@ -8,13 +9,9 @@
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 50vw;
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .page__color {
-    width: 1220px;
-    margin-right: auto;
-    margin-left: auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-d@2x.png");
+    }
   }
 }

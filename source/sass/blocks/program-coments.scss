@@ -1,7 +1,6 @@
 .program-comments {
   border: none;
   margin: 0;
-  padding: 0;
 }
 
 .program-comments__legend {
@@ -12,7 +11,6 @@
 
 .program-comments__textarea {
   border: 1px solid $color-border-input;
-  padding: 0;
   min-width: 100%;
 
   &::placeholder {

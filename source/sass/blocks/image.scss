@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: $tablet-width) {

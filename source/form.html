@@ -9,7 +9,7 @@
   </head>
 
   <body class="page__body page__body--body">
-    <div class="page__color page__color--form">
+    <div class="page__color ">
       <header class="page__body page__body--header container">
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="button-burger" type="button">
@@ -17,38 +17,44 @@
           </button>
           <div class="main-nav__nav">
             <a class="main-nav__logo link" href="index.html">
-              <img class="main-nav__img" width="174" src="img/logo.svg" alt="Котик" />
+              <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__img"  src="img/logo.svg" alt="Кэт Энерджи" />
             </a>
+          </picture>
           </div>
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html" class="link link--form ">Главная</a>
+              <a href="index.html" class=" link link--active link--index">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="link link--form">Каталог продукции</a>
+              <a href="catalog.html" class="link">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html" class="link link--active link--form">Подбор программы</a>
+              <a href="form.html" class="link">Подбор программы</a>
             </li>
           </ul>
+
+
         </nav>
       </header>
 
-    <main class="page__body--main form container">
+    <main class="page__body--main form">
       <h1 class="visually-hidden">Заполните, чтобы осчастливить вашего котика</h1>
       <form
         class="selection-program"
         method="Get"
         action="https://echo.htmlacademy.ru/"
       >
-        <legend class="selection-program__legend ">Подбор программы</legend>
-        <p class="selection-program__text ">
+        <legend class="selection-program__legend  container">Подбор программы</legend>
+        <p class="selection-program__text  container">
           Заполните анкету, и мы подберем <br> программу питания для вашего кота
         </p>
 
         <div class="data-program-change">
-        <fieldset class="data">
+        <fieldset class="data  container">
           <label class="field-text">
             <span class="field-text__span">
               ИМЯ:*
@@ -70,7 +76,7 @@
           </label>
         </fieldset>
 
-        <fieldset class="program-change">
+        <fieldset class="program-change  container">
           <label class="field-checkbox">
             <input class="field-checkbox__input visually-hidden" checked type="radio" name="variants" value="slimming"/>
             <span class="field-checkbox__span"> Похудение</span>
@@ -87,7 +93,7 @@
           </label>
         </fieldset></div>
 
-        <fieldset class="program-contacts">
+        <fieldset class="program-contacts container">
           <legend class="program-contacts__legend">
             Контактные данные (владельца кота)
           </legend>
@@ -128,7 +134,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="program-comments">
+        <fieldset class="program-comments container">
           <legend class="program-comments__legend">Комментарий</legend>
           <textarea
             class="program-comments__textarea"
@@ -168,7 +174,7 @@
             </label>
           </div>
         </fieldset>
-        <div class="button-span">
+        <div class="button-span container">
           <button class="button button--form" type="submit">Отправить заявку</button>
           <span class="form__span">* — Обязательные поля</span>
         </div>
@@ -176,9 +182,9 @@
 
     </main>
 
-      <footer class="page__body--footer">
+      <footer class="page__body--footer page__body--footer-grey">
         <div class="address">
-          <div class="address__text address__text--grey">
+          <div class="address__text container">
             <h2 class="address__tittle">
               Приглашаем к сотрудничеству дилеров!
             </h2>
@@ -200,7 +206,8 @@
           ></iframe>
         </div>
 
-        <div class="footer__social container">
+        <div class="footer__social">
+          <div class="footer__social--wrapper container">
           <div class="picture-footer">
             <img class="picture-footer__image" src="img/footer-logo.svg" />
           </div>
@@ -253,6 +260,7 @@
               </svg>
             </li>
           </ul>
+        </div>
         </div>
       </footer>
     </div>

@@ -41,10 +41,6 @@
       padding-left: 132px;
     }
 
-    &--active {
-      border-bottom: 2px solid $basic-white;
-    }
-
     &:last-child {
       padding-right: 0;
     }
@@ -57,7 +53,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .link {
+  .link--index-big {
     color: $basic-white;
 
     &--form {

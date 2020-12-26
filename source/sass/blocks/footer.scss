@@ -7,17 +7,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer__social {
+  .footer__social--wrapper {
     display: flex;
+    padding-top: 55px;
+    padding-bottom: 60px;
     justify-content: space-between;
-    align-items: center;
-    padding: 55px 70px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .footer__social {
-    padding-left: 110px;
-    padding-right: 110px;
   }
 }

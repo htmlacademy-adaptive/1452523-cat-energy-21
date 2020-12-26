@@ -9,7 +9,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: $tablet-width) {
   .field-text {
     padding-bottom: 20px;
     font-size: 20px;
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: $desktop-width) {
   .field-text__input {
     font-size: 20px;
 
