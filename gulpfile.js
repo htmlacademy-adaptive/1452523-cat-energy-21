@@ -6,6 +6,16 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+//Task
+
+const pages = () => {
+  return gulp.src("source/*.html")
+    .pipe()
+    .pipe(gulp.dest("source/html"))
+}
+
+exports.pages = pages;
+
 // Styles
 
 const styles = () => {
