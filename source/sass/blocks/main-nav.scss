@@ -61,6 +61,7 @@
 @media (min-width: $tablet-width) {
   .main-nav .main-nav__list {
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -87,29 +88,15 @@
   }
 }
 
-.link {
-  color: black;
+.main-nav__logo {
+  opacity: 100%;
 }
 
-@media (min-width: $tablet-width) {
-  .link {
-    font-size: 18px;
-    font-weight: normal;
-
-    &--active {
-      border-bottom: 2px solid $basic-green;
-    }
-  }
+.main-nav__logo:hover {
+  opacity: 80%;
 }
 
-@media (min-width: $desktop-width) {
-  .link {
-    &--index {
-      border-bottom: 2px solid $basic-white;
-    }
-
-    &--index-big {
-      color: $basic-white;
-    }
-  }
+.main-nav__logo:active,
+.main-nav__logo:focus {
+  opacity: 60%;
 }

@@ -1,6 +1,4 @@
 .button {
-  color: $basic-white;
-  background-color: $basic-green;
   border: none;
   text-transform: uppercase;
   padding-top: 8px;
@@ -10,54 +8,44 @@
   font-size: 16px;
   font-family: $oswald;
   text-align: center;
+  width: 280px;
 
-  &--form {
-    min-width: 280px;
-  }
-}
+  &--green {
+    color: $basic-white;
+    background-color: $basic-green;
 
-@media (min-width: $tablet-width) {
-  .button {
-    &--change-program {
-      padding: 10px 25px;
+    &:hover {
+      background-color: #5eaa2f;
     }
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .button {
-    &--form {
-      padding: 18px 207px;
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
     }
-  }
-}
-
-.button__button {
-  text-align: center;
-
-  &--catalog {
-    padding: 7px 110px;
-    width: 60px;
   }
 
   &--white {
     background-color: $basic-grey;
     color: $dark-grey;
-    padding: 10px 94px;
-  }
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-  &--catalog-white {
-    margin-right: 0;
-    background-color: $basic-grey;
-    color: $dark-grey;
+    &:hover {
+      background-color: $special_grey-2;
+    }
+
+    &:active {
+      background-color: $special_grey-2;
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
-  .button__button {
+  .button {
     &--catalog {
       max-width: 248px;
-      padding: 10px 95px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       margin-right: 0;
       text-align: center;
     }
@@ -69,14 +57,18 @@
       margin-left: 0;
       justify-self: center;
     }
+
+    &--white {
+      max-width: 250px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .button__button {
+  .button {
     &--catalog {
       max-width: 168px;
-      padding: 10px 53px;
+
       text-align: center;
     }
 

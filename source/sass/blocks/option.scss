@@ -194,4 +194,28 @@
   font-weight: 400;
   display: block;
   padding-top: 20px;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .option__link {
+    &::after {
+      content: url("../img/arrow.png");
+      display: block;
+      left: 100px;
+      position: absolute;
+      bottom: 10px;
+      width: 24px;
+      height: 12px;
+
+      &:hover {
+        content: url("../img/arrowx-size.png");
+        width: 32px;
+      }
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
 }
