@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -26,7 +26,7 @@ const styles = () => {
       csso() //css 1/ghghfjhjkhkjghjkhfgfgh
     ]))
 
-    .pipe(rename("styles.min.css")) //минификация
+    .pipe(rename("style.min.css")) //минификация
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css")) //кладется в папку
     .pipe(sync.stream()); // обновление
