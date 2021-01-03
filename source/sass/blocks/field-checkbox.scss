@@ -11,6 +11,10 @@
 
 .field-checkbox__span {
   text-align: center;
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .field-checkbox__span::before {
@@ -25,7 +29,7 @@
   border-radius: 50%;
 
   &:hover {
-    border: 22px solid red;
+    border: 1px solid #bababa;
   }
 }
 
@@ -41,6 +45,6 @@
   background-color: $basic-green;
 
   &:hover {
-    border: 22px solid #bababa;
+    border: 1px solid #bababa;
   }
 }

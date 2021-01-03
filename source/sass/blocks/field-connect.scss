@@ -30,6 +30,10 @@
   &--phone {
     padding: 13px 27px 15px 16px;
   }
+
+  &::placeholder {
+    color: $basic-black;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -43,6 +47,18 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+
+  &:focus {
+    border: 1px solid $special_grey;
+  }
+
+  &:disabled {
+    border: 2px solid $dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .email {
@@ -56,6 +72,14 @@
 .field-connect__img {
   position: absolute;
   right: 14px;
+
+  &:disabled {
+    fill: $basic-green;
+  }
+
+  &:invalid {
+    fill: #ff8282;
+  }
 }
 
 @media (min-width: $tablet-width) {

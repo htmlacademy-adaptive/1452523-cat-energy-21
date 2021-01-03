@@ -3,6 +3,14 @@
   padding-bottom: 22px;
   display: flex;
   justify-content: center;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 @media (min-width: $tablet-width) {
