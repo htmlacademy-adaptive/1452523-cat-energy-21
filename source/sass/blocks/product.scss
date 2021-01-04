@@ -10,7 +10,7 @@
     height: 270px;
     position: absolute;
     bottom: 110px;
-    left: 17px;
+    left: 20px;
     box-sizing: border-box;
 
     @media (min-resolution: 2dppx) {
@@ -34,7 +34,7 @@
       content: "";
       background-image: url("../img/cat-energy-food-tablet.png");
       position: absolute;
-      bottom: -240px;
+      bottom: -300px;
       left: 195px;
       box-sizing: border-box;
       z-index: -1;
@@ -141,7 +141,7 @@
   padding-top: 21px;
   font-size: 14px;
   text-transform: uppercase;
-  padding-bottom: 140px;
+  padding-bottom: 160px;
 }
 
 @media (min-width: $tablet-width) {
@@ -160,7 +160,7 @@
 }
 
 .product__btn {
-  margin-top: 159px;
+  margin-top: 139px;
   background-color: $basic-green;
   font-size: 16px;
   color: $basic-white;

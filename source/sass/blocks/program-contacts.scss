@@ -10,6 +10,40 @@
   line-height: 26px;
   padding: 36px 0;
   width: 200px;
+  display: block;
+}
+
+.program-contacts__legend span {
+  position: relative;
+  z-index: 2;
+  background: $basic-white;
+}
+
+.program-contacts__legend span::after,
+.program-contacts__legend span::before {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .program-contacts__legend span::before {
+    left: -100vw;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-contacts__legend span {
+    margin-right: -40px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {

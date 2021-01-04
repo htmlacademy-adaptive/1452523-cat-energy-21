@@ -1,12 +1,45 @@
 .additional-goods__caption {
+  display: block;
   font-size: 24px;
   font-family: $oswald;
   font-weight: normal;
   padding-bottom: 36px;
-  padding-top: 25px;
   margin-top: 0;
   margin-bottom: 0;
   border-bottom: 1px solid $special_grey;
+}
+
+.additional-goods__caption span {
+  position: relative;
+  z-index: 2;
+  background-color: $basic-white;
+}
+
+.additional-goods__caption span::after,
+.additional-goods__caption span::before {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods__caption span::before {
+    left: -100vw;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods__caption span {
+    margin-left: -40px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {

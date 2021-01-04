@@ -7,6 +7,40 @@
   padding-top: 23px;
   font-size: 24px;
   padding-bottom: 37px;
+  display: block;
+}
+
+.program-comments__legend span {
+  position: relative;
+  z-index: 2;
+  background: $basic-white;
+}
+
+.program-comments__legend span::after,
+.program-comments__legend span::before {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .program-comments__legend span::before {
+    left: -100vw;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-comments__legend span {
+    margin-right: -40px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .program-comments__textarea {

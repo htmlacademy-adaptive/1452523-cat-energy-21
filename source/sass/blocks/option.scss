@@ -1,6 +1,6 @@
 .options {
   padding-top: 20px;
-  padding-bottom: 34px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,18 +51,19 @@
 }
 
 .option__option {
-  padding: 29px 48px 23px 20px;
+  padding: 21px 35px 18px 20px;
 
   &--slim {
     background-image: url("../img/cat-slimming.svg");
     background-repeat: no-repeat;
-    background-position: 20px 20px;
+    background-position: 22px 23px;
   }
 
   &--pro {
     background-image: url("../img/cat-weight-gain.svg");
     background-repeat: no-repeat;
-    background-position: 11px 20px;
+    background-position: 13px 23px;
+    padding-top: 18px;
   }
 }
 
@@ -157,7 +158,7 @@
   color: $dark-grey;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 20px;
+  padding-top: 30px;
 
   br {
     display: none;
@@ -193,29 +194,27 @@
   text-transform: uppercase;
   font-weight: 400;
   display: block;
-  padding-top: 20px;
+  padding-top: 16px;
   position: relative;
 }
 
-@media (min-width: $tablet-width) {
-  .option__link {
-    &::after {
-      content: url("../img/arrow.png");
-      display: block;
-      left: 100px;
-      position: absolute;
-      bottom: 10px;
-      width: 24px;
-      height: 12px;
+.option__link {
+  &::after {
+    content: url("../img/arrow.png");
+    display: block;
+    left: 100px;
+    position: absolute;
+    bottom: 14px;
+    width: 24px;
+    height: 12px;
 
-      &:hover {
-        content: url("../img/arrowx-size.png");
-        width: 32px;
-      }
+    &:hover {
+      content: url("../img/arrowx-size.png");
+      width: 32px;
     }
+  }
 
-    &:active {
-      opacity: 30%;
-    }
+  &:active {
+    opacity: 30%;
   }
 }

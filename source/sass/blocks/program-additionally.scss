@@ -13,6 +13,40 @@
   font-weight: 400;
   font-style: normal;
   color: $basic-black;
+  display: block;
+}
+
+.program-additionally__legend span {
+  position: relative;
+  z-index: 2;
+  background: $basic-white;
+}
+
+.program-additionally__legend span::after,
+.program-additionally__legend span::before {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .program-additionally__legend span::before {
+    left: -100vw;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-additionally__legend span {
+    margin-right: -40px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {

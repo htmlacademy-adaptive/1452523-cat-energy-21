@@ -1,8 +1,8 @@
 .iframe {
   width: 100%;
-  border: 0;
+  border: none;
   background-color: $light-grey;
-  height: 450px;
+  height: 362px;
   background-image: url("../img/map-mobile.png");
 
   @media (min-resolution: 2dppx) {
