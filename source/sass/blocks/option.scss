@@ -71,12 +71,12 @@
   .option__option {
     &--slim {
       background-size: 185px 211px;
-      background-position: 90% 61%;
+      background-position: 400px 23px;
     }
 
     &--pro {
       background-size: 268px 200px;
-      background-position: 95% 61%;
+      background-position: 400px 23px;
     }
   }
 }
@@ -196,9 +196,7 @@
   display: block;
   padding-top: 16px;
   position: relative;
-}
 
-.option__link {
   &::after {
     content: url("../img/arrow.png");
     display: block;

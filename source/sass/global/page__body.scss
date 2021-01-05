@@ -33,6 +33,8 @@
 
 @media (min-width: $tablet-width) {
   .page__body {
+    width: 708px;
+
     &--header {
       padding-top: 24px;
     }
