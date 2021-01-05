@@ -1,51 +1,59 @@
-.page__body {
-  &--body {
-    font-family: $oswald;
-    font-weight: 400;
-    font-style: normal;
-    background-color: bisque;
-    margin: 0 auto;
-    display: grid;
-    grid-template: max-content 1fr max-content;
-  }
+.page-body {
+  font-family: $oswald;
+  font-weight: 400;
+  font-style: normal;
+  background-color: bisque;
+  margin: 0 auto;
+  display: grid;
+  grid-template: max-content 1fr max-content;
+  width: 280px;
+}
 
-  &--header {
-    background-color: $basic-white;
-    font-size: 20px;
-    line-height: 20px;
-    color: $basic-black;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.page-body__header {
+  background-color: $basic-white;
+  font-size: 20px;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  &--footer {
-    background-color: $basic-white;
-    box-sizing: border-box;
-  }
+.page-body__footer {
+  background-color: $basic-white;
+  box-sizing: border-box;
+}
 
-  &--footer-grey {
-    background-color: $basic-grey;
+.page-body__footer-grey {
+  background-color: $basic-grey;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-body {
+    width: 708px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .page__body {
+  .page-body__header {
+    padding-top: 24px;
     width: 708px;
-
-    &--header {
-      padding-top: 24px;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page__body {
-    &--header {
-      background-color: transparent;
-      padding-top: 54px;
-    }
+  .page-body__header {
+    background-color: transparent;
+    padding-top: 54px;
+    width: 1220px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    width: 1220px;
   }
 }
