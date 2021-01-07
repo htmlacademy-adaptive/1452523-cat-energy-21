@@ -5,14 +5,8 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding-top: 50px 30px 0 30px;
-    background: linear-gradient(
-      to top,
-      $light-grey 0,
-      $light-grey 35%,
-      $basic-white 35%,
-      $basic-white 100%
-    );
+    padding: 50px 30px 0 30px;
+    background: linear-gradient(to top, $light-grey 0, $light-grey 35%, $basic-white 35%, $basic-white 100%);
   }
 }
 
@@ -23,13 +17,7 @@
     padding-left: 110px;
     padding-right: 110px;
     width: 1220px;
-    background: linear-gradient(
-      to top,
-      $light-grey 0,
-      $light-grey 65%,
-      $basic-white 65%,
-      $basic-white 100%
-    );
+    background: linear-gradient(to top, $light-grey 0, $light-grey 65%, $basic-white 65%, $basic-white 100%);
   }
 }
 
