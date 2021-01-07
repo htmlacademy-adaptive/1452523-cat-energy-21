@@ -126,14 +126,18 @@
   border: 1px solid $special_grey;
   left: 0;
   bottom: 17px;
+}
 
-  &:hover {
-    border: 1px solid #bababa;
-  }
+.additionally-checkbox__input::before .program-additionally__span {
+  border: 1px solid $special_grey;
+}
 
-  &:disabled {
-    opacity: 30%;
-  }
+.additionally-checkbox__input::before:hover .program-additionally__span {
+  border: 1px solid #bababa;
+}
+
+.additionally-checkbox__input::before:disabled .program-additionally__span {
+  opacity: 30%;
 }
 
 .additionally-checkbox__input:checked + span::before {
@@ -153,4 +157,12 @@
   &:disabled {
     opacity: 30%;
   }
+}
+
+.additionally-checkbox .program-additionally__span::before {
+  border: 1px solid $special_grey;
+}
+
+.additionally-checkbox:hover .program-additionally__span::before {
+  border: 1px solid #bababa;
 }

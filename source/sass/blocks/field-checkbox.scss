@@ -17,7 +17,7 @@
   }
 }
 
-.field-checkbox__span::before {
+.field-checkbox .field-checkbox__span::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -27,10 +27,10 @@
   display: block;
   border: 1px solid $special_grey;
   border-radius: 50%;
+}
 
-  &:hover {
-    border: 1px solid #bababa;
-  }
+.field-checkbox:hover .field-checkbox__span::before {
+  border: 1px solid #bababa;
 }
 
 .field-checkbox__input:checked + span::after {
@@ -43,8 +43,4 @@
   height: 13px;
   border-radius: 50%;
   background-color: $basic-green;
-
-  &:hover {
-    border: 1px solid #bababa;
-  }
 }
