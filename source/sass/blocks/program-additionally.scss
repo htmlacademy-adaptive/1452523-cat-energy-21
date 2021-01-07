@@ -1,19 +1,20 @@
 .program-additionally {
   border: none;
-  padding-bottom: 20px;
   margin: 0;
   color: $special-dark-grey;
   font-size: 16px;
+  padding: 0 0 20px 0;
 }
 
 .program-additionally__legend {
   font-size: 24px;
-  padding-bottom: 34px;
-  padding-top: 22px;
+  padding: 22px 0 34px 0;
   font-weight: 400;
   font-style: normal;
   color: $basic-black;
   display: block;
+  width: 100%;
+  overflow: hidden;
 }
 
 .program-additionally__legend span {
@@ -52,6 +53,7 @@
 @media (min-width: $tablet-width) {
   .program-additionally__legend {
     font-size: 36px;
+
   }
 }
 

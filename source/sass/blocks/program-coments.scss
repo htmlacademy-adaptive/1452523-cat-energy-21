@@ -1,13 +1,18 @@
 .program-comments {
   border: none;
   margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100px;
 }
 
 .program-comments__legend {
   padding-top: 23px;
   font-size: 24px;
-  padding-bottom: 37px;
+  padding: 0 0 37px 0;
   display: block;
+  overflow: hidden;
+  width: 100%;
 }
 
 .program-comments__legend span {
@@ -26,6 +31,7 @@
   top: 20px;
   left: 0;
   z-index: -1;
+
 }
 
 @media (min-width: $tablet-width) {
@@ -45,7 +51,9 @@
 
 .program-comments__textarea {
   border: 1px solid $color-border-input;
-  min-width: 100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 
   &::placeholder {
     color: $dark-grey;
