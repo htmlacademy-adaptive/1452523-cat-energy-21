@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 14px;
   padding-left: 0;
 
   &:active {
@@ -37,6 +37,8 @@
 
 .htmlacademy__svg {
   fill: $light-dark-grey;
+  padding-top: 4px;
+
 
   &:hover {
     fill: $basic-green;

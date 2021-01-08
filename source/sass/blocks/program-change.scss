@@ -1,7 +1,7 @@
 .program-change {
   border: none;
   margin: 0;
-  padding: 42px 0 20px 45px;
+  padding: 26px 0 2px 66px;
   border-bottom: 1px solid $grey-line;
   color: $special-dark-grey;
   font-size: 16px;
@@ -14,8 +14,9 @@
 @media (min-width: $tablet-width) {
   .program-change {
     border: 1px solid $color-border-input;
-    padding-bottom: 22px;
-    padding-left: 66px;
+    padding-bottom: 7px;
+    padding-left: 106px;
+    padding-top: 29px;
   }
 }
 

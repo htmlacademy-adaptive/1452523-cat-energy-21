@@ -1,8 +1,9 @@
 .field-text {
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   white-space: nowrap;
   display: grid;
   grid-template-columns: max-content 1fr;
+  padding-left: 20px;
 
   &:last-child {
     padding-bottom: 0;
@@ -17,7 +18,7 @@
 }
 
 .field-text__span {
-  padding-right: 13px;
+  padding-right: 15px;
   color: $dark-grey;
   margin-top: auto;
   margin-bottom: auto;
@@ -34,15 +35,15 @@
   width: 110px;
 
   &--name {
-    padding: 13px 66px 14px 14px;
+    padding: 8px 102px 11px 14px;
   }
 
   &--weidth {
-    padding: 13px 44px 14px 14px;
+    padding: 9px 78px 11px 17px;
   }
 
   &--age {
-    padding: 13px 10px 14px 14px;
+    padding: 10px 45px 9px 16px;
   }
 
   &:hover {

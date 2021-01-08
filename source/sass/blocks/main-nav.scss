@@ -1,5 +1,8 @@
 .main-nav {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .no-js .main-nav__list {
@@ -16,12 +19,13 @@
 }
 
 .main-nav .button-burger::before {
-  content: "";
+  display: block;
   position: absolute;
-  top: 25px;
-  left: -5px;
+  content: "";
+  top: 0;
+  left: -2px;
   width: 24px;
-  height: 1px;
+  height: 2px;
   background-color: $basic-black;
   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
 }
@@ -74,8 +78,7 @@
 }
 
 .main-nav__nav {
-  border-bottom: 1px solid $grey-line-2;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-top: 13px;
 }
 

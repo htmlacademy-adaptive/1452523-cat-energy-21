@@ -15,8 +15,9 @@
   list-style-type: none;
   border-bottom: 1px solid $grey-line-2;
   text-align: center;
-  padding: 22px 0 24px 0;
+  padding: 17px 0 24px 0;
   font-weight: 500;
+  font-size: 18px;
 
   &:hover {
     opacity: 60%;
@@ -31,7 +32,7 @@
   .site-list__item {
     font-weight: 500;
     border: none;
-    padding-right: 33px;
+    padding-right: 36px;
 
     &:last-child {
       padding-bottom: 10px;
@@ -66,11 +67,11 @@
 
 @media (min-width: $tablet-width) {
   .link {
-    font-size: 16px;
     font-weight: normal;
 
     &--active {
       border-bottom: 2px solid $basic-green;
+      padding-bottom: 3px;
     }
   }
 }

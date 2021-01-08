@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
-  padding-top: 33px;
+  padding-top: 20px;
+  font-family: $arial;
+  font-size: 14px;
 }
 
 @media (min-width: $tablet-width) {

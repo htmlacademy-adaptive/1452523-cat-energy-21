@@ -1,23 +1,45 @@
 .program-contacts {
   margin: 0;
   border: none;
-  padding: 0 0 26px 0;
+  padding: 0 0 20px 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-contacts {
+    padding-left: 0;
+  }
 }
 
 .program-contacts__legend {
+  position: relative;
   color: $basic-black;
   font-size: 24px;
   line-height: 26px;
-  padding: 36px 0;
+  padding: 26px 0 35px 0;
   display: block;
   overflow: hidden;
   width: 100%;
+  background: $basic-white;
+  z-index: 2;
+  margin: 0;
 }
 
 .program-contacts__legend span {
   position: relative;
-  z-index: 2;
-  background: $basic-white;
+}
+
+@media (min-width: $tablet-width) {
+  .program-contacts__legend span {
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 0;
+    padding-left: 38px;
+    margin-right: -40px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .program-contacts__legend span::after,
@@ -28,8 +50,8 @@
   background-color: $basic-green;
   position: absolute;
   top: 20px;
-  left: 0;
-  z-index: -1;
+  transform: translateY(-50%);
+  left: calc((768px - 100vw) / 2);
 }
 
 @media (min-width: $tablet-width) {
@@ -39,18 +61,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program-contacts__legend span {
-    margin-right: -40px;
-
-    padding-left: 40px;
-    padding-right: 40px;
+  .program-contacts__legend {
+    padding-bottom: 76px;
+    padding-top: 75px;
+    padding-left: 30px;
   }
 }
 
+.email-phone {
+  padding-right: 20px;
+}
+
 @media (min-width: $tablet-width) {
-  .program-contacts__legend {
-    width: 400px;
-    padding-bottom: 76px;
-    padding-top: 70px;
+  .email-phone {
+    padding-left: 70px;
+    padding-right: 65px;
   }
 }
