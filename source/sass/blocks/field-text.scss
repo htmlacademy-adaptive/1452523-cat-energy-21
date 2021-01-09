@@ -12,8 +12,9 @@
 
 @media (min-width: $tablet-width) {
   .field-text {
-    padding-bottom: 20px;
+    padding-bottom: 23px;
     font-size: 20px;
+    padding-left: 0;
   }
 }
 
@@ -22,6 +23,12 @@
   color: $dark-grey;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text__span {
+    padding-right: 18px;
+  }
 }
 
 .field-text__input {
@@ -52,6 +59,26 @@
 
   &:invalid {
     border: 2px solid #ff8282;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-text__input {
+    &::placeholder {
+      font-size: 20px;
+    }
+
+    &--name {
+      padding: 13px 437px 14px 16px;
+    }
+
+    &--weidth {
+      padding: 9px 406px 11px 19px;
+    }
+
+    &--age {
+      padding: 10px 367px 12px 16px;
+    }
   }
 }
 

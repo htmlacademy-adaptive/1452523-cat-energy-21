@@ -60,6 +60,15 @@
   fill: $light-dark-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .social-item__svg {
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
+  }
+}
+
 .link {
   text-decoration: none;
   color: $basic-black;

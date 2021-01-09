@@ -14,7 +14,7 @@
 @media (min-width: $tablet-width) {
   .iframe {
     background-image: url("../img/map-tablet.png");
-
+    height: 396px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map-tablet@2x.png");

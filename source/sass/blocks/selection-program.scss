@@ -30,3 +30,11 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .selection-program__legend {
+    font-size: 60px;
+    padding-left: 68px;
+    padding-top: 31px;
+  }
+}

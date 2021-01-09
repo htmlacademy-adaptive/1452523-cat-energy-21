@@ -14,9 +14,24 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .field-connect {
+    &:not(:last-child) {
+      padding-bottom: 22px;
+    }
+  }
+}
+
 .field-connect__label {
   padding-right: 11px;
   padding-bottom: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-connect__label {
+    font-size: 20px;
+    padding-right: 16px;
+  }
 }
 
 .field-connect__input {
@@ -36,6 +51,22 @@
     color: $basic-black;
     font-family: $oswald;
     font-size: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-connect__input {
+    &::placeholder {
+      font-size: 20px;
+    }
+
+    &--email {
+      padding: 19px 42px 14px 24px;
+    }
+
+    &--phone {
+      padding: 21px 27px 13px 15px;
+    }
   }
 }
 
@@ -74,7 +105,7 @@
 
 .field-connect__img {
   position: absolute;
-  right: 16px;
+  right: 14px;
   top: 15px;
 
   &:disabled {
