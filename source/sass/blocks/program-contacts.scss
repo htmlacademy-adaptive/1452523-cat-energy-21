@@ -66,6 +66,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .program-contacts__legend {
+    padding-top: 65px;
+  }
+}
+
 .email-phone {
   padding-right: 20px;
 }

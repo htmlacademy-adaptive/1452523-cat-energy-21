@@ -2,6 +2,12 @@
   padding-top: 4px;
 }
 
+@media (min-width: $desktop-width) {
+  .selection-program {
+    padding-left: 40px;
+  }
+}
+
 .selection-program__legend {
   font-size: 36px;
   color: $basic-black;
@@ -9,6 +15,20 @@
   margin-bottom: 0;
   margin-left: 0;
   padding-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .selection-program__legend {
+    font-size: 60px;
+    padding-left: 68px;
+    padding-top: 31px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection-program__legend {
+    padding-top: 42px;
+  }
 }
 
 .selection-program__text {
@@ -28,13 +48,5 @@
     padding-left: 70px;
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .selection-program__legend {
-    font-size: 60px;
-    padding-left: 68px;
-    padding-top: 31px;
   }
 }

@@ -17,8 +17,14 @@
 @media (min-width: $tablet-width) {
   .field-connect {
     &:not(:last-child) {
-      padding-bottom: 22px;
+      padding-bottom: 20px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-connect:not(:last-child) {
+    padding-bottom: 0;
   }
 }
 
@@ -31,6 +37,12 @@
   .field-connect__label {
     font-size: 20px;
     padding-right: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-connect__label {
+    padding-right: 22px;
   }
 }
 
@@ -72,7 +84,11 @@
 
 @media (min-width: $desktop-width) {
   .field-connect__input {
-    padding-right: 323px;
+    padding: 20px 303px 14px 19px;
+
+    &--phone {
+      padding-left: 11px;
+    }
   }
 }
 
@@ -131,6 +147,7 @@
 
 @media (min-width: $desktop-width) {
   .email {
-    margin-right: 78px;
+    margin-right: 83px;
+    padding-bottom: 0;
   }
 }

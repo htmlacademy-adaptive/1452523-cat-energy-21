@@ -3,7 +3,6 @@
   list-style-type: none;
   background-color: $basic-grey;
   padding-top: 35px;
-  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,5 +11,11 @@
     padding-top: 11px;
     padding-bottom: 49px;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__social--wrapper {
+    padding-top: 19px;
   }
 }
