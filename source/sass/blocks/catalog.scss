@@ -73,7 +73,7 @@
     flex-wrap: nowrap;
     margin-right: 64px;
     margin-bottom: -2px;
-    background-color: $basic-grey;
+    background: linear-gradient(to bottom, $basic-white 0%, $basic-white 25%, $basic-grey 25%, $basic-grey 100%);
     padding: 49px 35.6px 40px;
 
     &:nth-child(2n) {
@@ -81,7 +81,7 @@
     }
 
     &--show {
-      background-color: $basic-white;
+      background: $basic-white;
       border: 1px solid $basic-grey;
     }
   }
