@@ -10,8 +10,7 @@
 .main-nav__button {
   display: flex;
   justify-content: space-between;
-    border-bottom: 1px solid $grey-line-2;
-
+  border-bottom: 1px solid $grey-line-2;
 }
 
 @media (min-width: $tablet-width) {
@@ -112,13 +111,6 @@
 @media (min-width: $tablet-width) {
   .main-nav .button-burger {
     display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav .main-nav__list {
-    display: flex;
-    flex-direction: row;
   }
 }
 

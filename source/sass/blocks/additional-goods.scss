@@ -3,12 +3,13 @@
   font-size: 24px;
   font-family: $oswald;
   font-weight: normal;
-  margin: 0 20px;
   z-index: -1;
   border-bottom: 1px solid $special_grey;
   overflow: hidden;
   padding-top: 20px;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .additional-goods__caption span {

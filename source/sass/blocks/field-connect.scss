@@ -23,8 +23,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .field-connect:not(:last-child) {
-    padding-bottom: 0;
+  .field-connect {
+    width: 50%;
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -84,7 +88,7 @@
 
 @media (min-width: $desktop-width) {
   .field-connect__input {
-    padding: 20px 303px 14px 19px;
+    padding: 20px 40px 14px 19px;
 
     &--phone {
       padding-left: 11px;

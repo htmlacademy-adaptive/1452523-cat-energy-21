@@ -8,7 +8,7 @@
 
 .address__text {
   display: flex;
-  padding-top: 29px;
+  padding-top: 28px;
   padding-bottom: 26px;
   justify-content: space-between;
   flex-direction: row;
@@ -20,6 +20,8 @@
   font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &--grey {
     background-color: $basic-grey;
