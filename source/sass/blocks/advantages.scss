@@ -38,6 +38,7 @@
 
 .advantages__list {
   list-style-type: none;
+  padding-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,16 +56,17 @@
   font-family: $arial;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 18px;
   box-sizing: border-box;
   color: $dark-grey;
   min-height: 60px;
   min-width: 250px;
-
+  padding-left: 80px;
   max-width: 440px;
-  padding-top: 3px;
+  padding-top: 22px;
+  background-position: 0 115%;
 
   &--leaf {
     background-image: url("../img/leaf.svg");

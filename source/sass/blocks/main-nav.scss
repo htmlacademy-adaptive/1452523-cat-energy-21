@@ -9,9 +9,9 @@
 
 .main-nav__button {
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
   justify-content: space-between;
+    border-bottom: 1px solid $grey-line-2;
+
 }
 
 @media (min-width: $tablet-width) {

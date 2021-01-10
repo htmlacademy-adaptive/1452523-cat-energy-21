@@ -1,6 +1,7 @@
 .product {
   color: $basic-white;
   text-align: center;
+  position: relative;
 
   &::before {
     display: block;
@@ -9,7 +10,7 @@
     width: 280px;
     height: 270px;
     position: absolute;
-    bottom: 110px;
+    bottom: 41px;
     left: 20px;
     box-sizing: border-box;
 

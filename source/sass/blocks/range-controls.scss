@@ -7,7 +7,7 @@
   text-transform: uppercase;
   padding-bottom: 13px;
   padding-top: 6px;
-  gap: 17px;
+  gap: 18px;
 }
 
 .range-controls__after {
@@ -42,7 +42,7 @@
 .range-controls__scale {
   border: 1px solid grey;
   border-radius: 8px;
-  width: 82px;
+  width: 79px;
   height: 12px;
   background-color: white;
   align-self: center;
@@ -72,11 +72,12 @@
 }
 
 .range-controls__div {
-  width: 50%;
+  width: 45%;
   background-color: $basic-green;
   height: 6px;
   border-radius: 5px;
   margin-top: 3px;
+  margin-left: 5px;
 }
 
 @media (min-width: $tablet-width) {
