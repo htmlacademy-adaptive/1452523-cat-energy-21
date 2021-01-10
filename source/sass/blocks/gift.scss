@@ -51,7 +51,7 @@
 @media (min-width: $desktop-width) {
   .gift__background {
     text-align: center;
-    padding: 55px 42px 42px 42px;
+    padding: 55px 41px 42px 42px;
     flex-direction: column;
     background-image: url("../img/gift-photo-desktop.png");
 
@@ -78,5 +78,12 @@
   .gift__headline {
     text-align: start;
     padding-top: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift__headline {
+    text-align: center;
+    padding-top: 52px;
   }
 }

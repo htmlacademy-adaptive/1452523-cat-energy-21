@@ -19,6 +19,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .catalog__headline {
+    padding-left: 110px;
+    padding-top: 46px;
+  }
+}
+
 .catalog__list {
   list-style-type: none;
   padding-left: 0;
@@ -31,6 +38,12 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    padding-left: 109px;
   }
 }
 
@@ -76,16 +89,27 @@
 
 @media (min-width: $desktop-width) {
   .catalog__item {
-    margin-right: 90px;
-    width: 164px;
-    padding: 0 40px 45px 40px;
+    margin-right: 81px;
+    width: 204px;
+    padding: 0 40px 37px 0;
 
     &:nth-child(2n) {
-      margin-right: 60px;
+      margin-right: 83px;
     }
 
     &:nth-child(4n) {
       margin-right: 0;
+    }
+
+    &--show {
+      margin-top: 143px;
+      padding-right: 0;
+      text-align: center;
+      width: 245px;
+    }
+
+    &--down {
+      padding-bottom: 20px;
     }
   }
 }
@@ -93,6 +117,12 @@
 .catalog__img-table {
   padding-top: 19px;
   padding-bottom: 8px;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__img-table {
+    padding-top: 65px;
+  }
 }
 
 .catalog__table {
@@ -213,9 +243,38 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .catalog__caption {
+    padding-top: 38px;
+
+    &--show {
+      padding-top: 160px;
+    }
+
+    &--show::before {
+      content: "";
+      left: 30.5%;
+      top: 38%;
+    }
+
+    &--show::after {
+      content: "";
+      left: 31%;
+      top: 38%;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
-  .catalog__table tbody {
+  .catalog__table {
     width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__table {
+    width: 173px;
+    margin-left: 36px;
   }
 }
 
@@ -235,6 +294,12 @@
     width: 247px;
     padding-bottom: 0;
     border-bottom: 1px solid $special_grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__tr {
+    width: 173px;
   }
 }
 
@@ -283,5 +348,13 @@
     line-height: 18px;
     padding-top: 16px;
     padding-bottom: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__caption-span {
+    padding: 0;
+    padding-top: 17px;
+    padding-bottom: 83px;
   }
 }

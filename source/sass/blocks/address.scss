@@ -20,6 +20,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
+
+  &--grey {
+    background-color: $basic-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -37,12 +41,16 @@
 @media (min-width: $desktop-width) {
   .address__text {
     position: absolute;
-    width: 400px;
-    top: 150px;
+    width: 410px;
+    top: 95px;
     z-index: 2;
-    left: 150px;
-    padding: 66px 90px 50px 76px;
+    left: 111px;
+    padding: 64px 83px 56px 74px;
     background-color: $basic-white;
+
+    &--grey {
+      background-color: $basic-white;
+    }
   }
 }
 
@@ -71,17 +79,17 @@
   width: 140px;
 }
 
-.address__p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 @media (min-width: $tablet-width) {
   .address__address {
     display: flex;
     flex-direction: column;
     min-width: 160px;
   }
+}
+
+.address__p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -94,5 +102,11 @@
     &:last-child {
       padding-bottom: 0;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address__p {
+    text-align: left;
   }
 }

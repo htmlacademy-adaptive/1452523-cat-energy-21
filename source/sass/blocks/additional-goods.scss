@@ -53,10 +53,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .additional-goods__caption {
+    padding-top: 67px;
+    padding-left: 88px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .additional-goods__gift {
     display: grid;
     grid-template-columns: 1fr max-content;
-    padding-bottom: 76px;
+    padding-bottom: 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods__gift-list {
+    display: flex;
   }
 }
 
@@ -70,6 +83,7 @@
 @media (min-width: $desktop-width) {
   .additional-goods {
     padding-right: 80px;
+    width: 896px;
   }
 }
 
@@ -96,7 +110,7 @@
     border-right: none;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 13px;
+    padding-bottom: 0;
   }
 }
 
@@ -141,8 +155,11 @@
 
 @media (min-width: $desktop-width) {
   .additional-goods__details {
-    width: 287px;
     padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 287px;
+    padding-right: 40px;
   }
 }
 

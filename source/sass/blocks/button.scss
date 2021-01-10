@@ -79,14 +79,23 @@
     &--catalog {
       max-width: 168px;
       text-align: center;
+      margin-left: 37px;
     }
 
     &--catalog-add {
       width: 244px;
+      margin-top: -5px;
+      margin-bottom: 13px;
     }
 
     &--form {
       width: 568px;
+    }
+
+    &--white {
+      margin-right: auto;
+      margin-left: auto;
+      width: 170px;
     }
   }
 }

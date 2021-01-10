@@ -7,6 +7,12 @@
   border-collapse: collapse;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav {
+    border: none;
+  }
+}
+
 .main-nav__div {
   display: flex;
   justify-content: start;
