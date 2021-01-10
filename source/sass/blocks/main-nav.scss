@@ -7,6 +7,13 @@
   border-collapse: collapse;
 }
 
+.main-nav__button {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     border: none;
@@ -36,6 +43,11 @@
 .main-nav--opened .main-nav__list {
   display: flex;
   flex-direction: column;
+}
+
+.main-nav--opened .main-nav__button {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-nav--opened .main-nav__div {
@@ -68,16 +80,15 @@
 }
 
 .main-nav--opened .button-burger {
-  top: 10px;
-  right: 25px;
+  top: 0;
+  right: 0;
   left: auto;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
-    left: 90px;
+
     width: 24px;
     height: 1px;
     background-color: $basic-black;
@@ -86,9 +97,14 @@
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
+    right: 8px;
+    top: 4px;
   }
 
   &::after {
+    top: 4px;
+    right: 0;
+    left: 1px;
     transform: rotate(-45deg);
   }
 }
@@ -123,6 +139,7 @@
 .main-nav__nav {
   padding-bottom: 10px;
   padding-top: 13px;
+  padding-right: 60px;
 }
 
 @media (min-width: $tablet-width) {
