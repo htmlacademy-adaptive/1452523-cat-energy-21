@@ -47,7 +47,7 @@
 
 .program-comments__textarea {
   border: 1px solid $color-border-input;
-  min-height: 175px;
+  min-height: 150px;
   width: 100%;
 
   &::placeholder {
@@ -62,6 +62,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 6px;
+    min-height: 175px;
 
     &::placeholder {
       font-size: 20px;

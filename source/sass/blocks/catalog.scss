@@ -11,7 +11,7 @@
     border-bottom: none;
     padding-bottom: 9px;
     font-size: 60px;
-    padding-top: 12px;
+    padding-top: 35px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -30,8 +30,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 121px;
+
+    padding-top: 140px;
   }
 }
 
@@ -41,20 +41,24 @@
   display: flex;
   flex-direction: column;
 
+
   &--show {
     padding-bottom: 22px;
   }
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    width: 325px;
+    padding: 38px;
     min-height: 411px;
     margin-left: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-bottom: -2px;
+    margin-bottom: 143px;
     position: relative;
+    background-color: $basic-grey;
+    margin-right: 56px;
+
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -63,88 +67,71 @@
     &--show {
       background: $basic-white;
       border: 1px solid $basic-grey;
+      width: 325px;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      margin-bottom: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 81px;
-    width: 204px;
-    padding: 0 40px 37px 0;
-
-    &:nth-child(2n) {
-      margin-right: 83px;
-    }
+    width: 245px;
+    margin-right: 78px;
 
     &:nth-child(4n) {
       margin-right: 0;
     }
 
     &--show {
-      margin-top: 143px;
-      padding-right: 0;
       text-align: center;
-      width: 245px;
-    }
-
-    &--down {
-      padding-bottom: 20px;
     }
   }
 }
 
 .catalog__img-table {
-  width: 142px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    background-color: $basic-grey;
-    width: 325px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 34px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 65px;
+    display: block;
   }
 }
 
 .catalog__table {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -63px;
   border-collapse: collapse;
   padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    display: block;
     margin-top: 0;
     padding-bottom: 0;
     width: 250px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 173px;
-    margin-left: 36px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
 .catalog__img-p {
-  display: flex;
   padding-top: 19px;
   padding-bottom: 7px;
+  display: flex;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: column;
+    padding-bottom: 31px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .catalog__img {
-    position: absolute;
-    margin-right: auto;
-    margin-left: 30px;
+.catalog__img {
+  @media (min-width: $tablet-width) {
+
+    padding-left: 41px;
+    margin-top: -131px;
   }
 }
 
@@ -195,14 +182,15 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding-top: 160px;
+    padding-top: 26px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 25px;
     width: 159px;
     margin: 0 auto;
 
+
     &--show {
-      padding-top: 153px;
+      padding-top: 120px;
     }
 
     &--show::before {
@@ -210,15 +198,15 @@
       width: 59px;
       height: 3px;
       left: 31.5%;
-      top: 57%;
+      top: 24%;
     }
 
     &--show::after {
       content: "";
       width: 60px;
       height: 3px;
-      left: 32%;
-      top: 57%;
+      left: 33%;
+      top: 24%;
     }
   }
 
@@ -249,18 +237,14 @@
   color: $special-dark-grey;
   display: flex;
   justify-content: space-between;
-  width: 142px;
   padding-bottom: 2px;
+  width: 142px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    width: 247px;
-    padding-bottom: 0;
+    padding-bottom: 1px;
     border-bottom: 1px solid $special_grey;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 173px;
+    width: 252px;
   }
 }
 
@@ -297,7 +281,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    padding-top: 16px;
+    padding-top: 13px;
     padding-bottom: 85px;
   }
 

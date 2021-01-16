@@ -16,7 +16,7 @@
 
 .program-additionally__legend {
   font-size: 24px;
-  padding: 21px 0 30px;
+  padding: 14px 0 30px;
   font-weight: 400;
   font-style: normal;
   color: $basic-black;
@@ -26,7 +26,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    padding: 49px 0 29px;
+    padding: 73px 0 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
   }
 }
 
@@ -66,10 +70,11 @@
   font-style: normal;
   color: $basic-black;
   text-transform: uppercase;
-  padding-left: 61px;
+  padding-left: 46px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    padding-left: 62px;
 
     &--vitamin {
       padding-left: 55px;
@@ -132,11 +137,11 @@
   content: "";
   position: absolute;
   display: block;
-  width: 27px;
-  height: 27px;
+  width: 29px;
+  height: 31px;
   border: 1px solid $special_grey;
   left: 1px;
-  top: -2px;
+  top: 0;
 }
 
 .additionally-checkbox__input::before .program-additionally__span {
