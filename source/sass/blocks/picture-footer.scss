@@ -11,10 +11,8 @@
   &:active {
     opacity: 60%;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .picture-footer {
+  @media (min-width: $tablet-width) {
     border-bottom: none;
     padding-bottom: 0;
     padding-top: 14px;

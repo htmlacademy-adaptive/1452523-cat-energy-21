@@ -1,10 +1,8 @@
 .field-checkbox {
   padding-bottom: 19px;
   position: relative;
-}
 
-@media (min-width: $tablet-width) {
-  .field-checkbox {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-bottom: 23px;
   }

@@ -10,12 +10,31 @@
   padding-bottom: 28px;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    border-bottom: none;
+    padding-bottom: 72px;
+    padding-left: 47px;
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67px;
+    padding-left: 88px;
+  }
 }
 
 .additional-goods__caption span {
   position: relative;
   z-index: 2;
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .additional-goods__caption span::after,
@@ -32,31 +51,6 @@
 @media (min-width: $tablet-width) {
   .additional-goods__caption span::before {
     left: -100vw;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .additional-goods__caption span {
-    margin-left: -40px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .additional-goods__caption {
-    font-size: 36px;
-    border-bottom: none;
-    padding-bottom: 72px;
-    padding-left: 47px;
-    padding-top: 55px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .additional-goods__caption {
-    padding-top: 67px;
-    padding-left: 88px;
   }
 }
 
@@ -79,32 +73,26 @@
   padding-left: 0;
 
   @include ul-none;
-}
 
-@media (min-width: $desktop-width) {
-  .additional-goods {
+  @media (min-width: $desktop-width) {
     padding-right: 80px;
     width: 896px;
   }
 }
 
 .additional-goods__item {
-  padding-top: 10px;
+  padding-top: 12px;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 16px;
   border-bottom: 1px solid $special_grey;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-goods__item {
+  @media (min-width: $tablet-width) {
     border: 1px solid $special_grey;
     padding: 20px 38px 25px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additional-goods__item {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr max-content;
     border-left: none;
@@ -145,17 +133,13 @@
   font-family: $arial;
   padding-bottom: 11px;
   padding-left: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-goods__details {
+  @media (min-width: $tablet-width) {
     padding-top: 11px;
     font-size: 16px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .additional-goods__details {
+  @media (min-width: $desktop-width) {
     padding-bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -172,10 +156,8 @@
   font-weight: normal;
   text-transform: uppercase;
   font-family: $oswald;
-}
 
-@media (min-width: $tablet-width) {
-  .additional-goods__headline {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-bottom: 20px;
   }

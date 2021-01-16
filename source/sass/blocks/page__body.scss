@@ -10,6 +10,15 @@
   color: $basic-black;
   text-transform: uppercase;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    padding-top: 56px;
+  }
 }
 
 .page-body__footer {
@@ -19,17 +28,4 @@
 
 .page-body__footer-grey {
   background-color: $basic-grey;
-}
-
-@media (min-width: $tablet-width) {
-  .page-body__header {
-    padding-top: 24px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-body__header {
-    background-color: transparent;
-    padding-top: 56px;
-  }
 }

@@ -1,16 +1,12 @@
 .gift {
   padding: 40px 0 35px 0;
-}
 
-@media (min-width: $tablet-width) {
-  .gift {
+  @media (min-width: $tablet-width) {
     padding-top: 69px;
     padding-bottom: 75px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .gift {
+  @media (min-width: $desktop-width) {
     width: 245px;
     padding-top: 0;
     padding-bottom: 0;
@@ -32,10 +28,8 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-photo@2x.png");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .gift__background {
+  @media (min-width: $tablet-width) {
     padding: 58px 124px 64px 79px;
     flex-direction: row;
     justify-content: space-between;

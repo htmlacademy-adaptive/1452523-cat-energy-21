@@ -1,33 +1,44 @@
 .main-nav {
   position: relative;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid #e6e6e6;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-nav__button {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid $grey-line-2;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    border: none;
-  }
 }
 
 .main-nav__div {
   display: flex;
   justify-content: start;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__div {
-    width: 174px;
+.main-nav__nav {
+  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-right: 61px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 10px;
+
+    border: none;
   }
 }
 
@@ -35,8 +46,12 @@
   display: flex;
 }
 
-.main-nav--closed .main-nav__list {
+.main-nav--closed .site-list {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav--opened .main-nav__list {
@@ -87,7 +102,6 @@
   &::after {
     content: "";
     position: absolute;
-
     width: 24px;
     height: 1px;
     background-color: $basic-black;
@@ -120,38 +134,15 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.main-nav__nav {
-  padding-bottom: 10px;
-  padding-top: 13px;
-  padding-right: 60px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__nav {
-    padding: 0;
-    padding-bottom: 10px;
-
-    border: none;
-  }
-}
-
 .main-nav__logo {
   opacity: 100%;
-}
 
-.main-nav__logo:hover {
-  opacity: 80%;
-}
+  &:hover {
+    opacity: 80%;
+  }
 
-.main-nav__logo:active,
-.main-nav__logo:focus {
-  opacity: 60%;
+  &:active,
+  &:focus {
+    opacity: 60%;
+  }
 }

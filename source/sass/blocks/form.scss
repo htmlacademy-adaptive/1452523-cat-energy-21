@@ -5,35 +5,30 @@
   padding-top: 20px;
   font-family: $arial;
   font-size: 14px;
-}
 
-@media (min-width: $tablet-width) {
-  .form__span {
-    padding-left: 64px;
+  @media (min-width: $tablet-width) {
+    padding-left: 66px;
     font-size: 16px;
     padding-top: 13px;
     padding-bottom: 13px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form__span {
+  @media (min-width: $desktop-width) {
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 80px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .button-span {
+.button-span {
+  @media (min-width: $tablet-width) {
     display: flex;
     padding-bottom: 72px;
-    padding-left: 27px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .button-span {
-    padding-bottom: 84px;
+  @media (min-width: $desktop-width) {
+    .button-span {
+      padding-bottom: 84px;
+    }
   }
 }

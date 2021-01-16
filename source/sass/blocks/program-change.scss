@@ -1,29 +1,24 @@
 .program-change {
   border: none;
   margin: 0;
-  padding: 26px 0 2px 66px;
+  padding: 26px 0 2px 45px;
   border-bottom: 1px solid $grey-line;
   color: $special-dark-grey;
   font-size: 16px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
 
-@media (min-width: $tablet-width) {
-  .program-change {
+  @media (min-width: $tablet-width) {
     border: 1px solid $color-border-input;
     padding-bottom: 7px;
     padding-left: 86px;
     padding-top: 32px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program-change {
-    width: 482px;
-    padding-left: 85px;
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    padding-left: 91px;
     padding-bottom: 6px;
     padding-top: 31px;
   }

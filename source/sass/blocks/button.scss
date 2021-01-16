@@ -1,8 +1,8 @@
 .button {
   border: none;
   text-transform: uppercase;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   text-decoration: none;
   display: block;
   font-size: 16px;
@@ -39,10 +39,8 @@
       color: rgba(68, 68, 68, 0.3);
     }
   }
-}
 
-@media (min-width: $tablet-width) {
-  .button {
+  @media (min-width: $tablet-width) {
     &--catalog {
       max-width: 248px;
       padding-top: 8px;
@@ -66,7 +64,6 @@
     }
 
     &--form {
-      margin-left: 43px;
       font-size: 20px;
       padding-top: 10px;
       padding-bottom: 11px;

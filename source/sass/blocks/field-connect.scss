@@ -12,18 +12,14 @@
   &:not(:last-child) {
     padding-bottom: 14px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .field-connect {
+  @media (min-width: $tablet-width) {
     &:not(:last-child) {
       padding-bottom: 20px;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .field-connect {
+  @media (min-width: $desktop-width) {
     width: 50%;
 
     &:not(:last-child) {
@@ -35,17 +31,14 @@
 .field-connect__label {
   padding-right: 11px;
   padding-bottom: 8px;
-}
 
-@media (min-width: $tablet-width) {
-  .field-connect__label {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-right: 16px;
+    padding-bottom: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .field-connect__label {
+  @media (min-width: $desktop-width) {
     padding-right: 22px;
   }
 }
@@ -68,10 +61,8 @@
     font-family: $oswald;
     font-size: 16px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .field-connect__input {
+  @media (min-width: $tablet-width) {
     &::placeholder {
       font-size: 20px;
     }
@@ -84,10 +75,8 @@
       padding: 21px 27px 13px 15px;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .field-connect__input {
+  @media (min-width: $desktop-width) {
     padding: 20px 40px 14px 19px;
 
     &--phone {
@@ -139,7 +128,8 @@
 
 @media (min-width: $tablet-width) {
   .field-connect__img {
-    right: 20px;
+    right: 16px;
+    top: 17px;
   }
 }
 

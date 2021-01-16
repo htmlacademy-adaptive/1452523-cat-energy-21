@@ -40,13 +40,13 @@
 }
 
 .range-controls__scale {
-  border: 1px solid grey;
   border-radius: 8px;
-  width: 79px;
-  height: 12px;
-  background-color: white;
   align-self: center;
-  padding-left: 2px;
+  width: 428px;
+  border: none;
+  height: 6px;
+  background-color: #dcdcdc;
+  padding-left: 0;
 }
 
 .range-controls__bar {
@@ -67,10 +67,6 @@
   }
 }
 
-.range-controls__input {
-  display: none;
-}
-
 .range-controls__div {
   width: 45%;
   background-color: $basic-green;
@@ -78,36 +74,23 @@
   border-radius: 5px;
   margin-top: 3px;
   margin-left: 5px;
-}
 
-@media (min-width: $tablet-width) {
-  .range-controls__div {
+  @media (min-width: $tablet-width) {
     display: none;
   }
+}
 
-  .range-controls__scale {
-    width: 428px;
-    border-radius: 8px;
-    border: none;
-    height: 6px;
-    background-color: #dcdcdc;
-    align-self: center;
-    padding-left: 0;
-  }
+.range-controls__input {
+  background: transparent;
+  width: 100%;
+  display: block;
+  appearance: none;
 
-  .range-controls__input {
-    background: transparent;
-    width: 100%;
-    display: block;
-    appearance: none;
-  }
-
-
-  .range-controls__input:focus {
+  &:focus {
     outline: none;
   }
 
-  .range-controls__input::-webkit-slider-thumb {
+  &::-webkit-slider-thumb {
     appearance: none;
     box-shadow: 0 0 0 1px #cdcdcd;
     height: 30px;

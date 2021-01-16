@@ -8,7 +8,7 @@
 
 .address__text {
   display: flex;
-  padding-top: 28px;
+  padding: 28px 20px 26px;
   padding-bottom: 26px;
   justify-content: space-between;
   flex-direction: row;
@@ -20,16 +20,12 @@
   font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
-  padding-left: 20px;
-  padding-right: 20px;
 
   &--grey {
     background-color: $basic-grey;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .address__text {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding-right: 70px;
@@ -38,16 +34,14 @@
     padding-top: 64px;
     padding-bottom: 59px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .address__text {
+  @media (min-width: $desktop-width) {
     position: absolute;
-    width: 410px;
+    width: 570px;
     top: 95px;
     z-index: 2;
     left: 111px;
-    padding: 64px 84px 56px 74px;
+    padding: 77px 84px 56px 74px;
     background-color: $basic-white;
 
     &--grey {
@@ -66,10 +60,8 @@
   text-transform: uppercase;
   color: $light-black;
   width: 140px;
-}
 
-@media (min-width: $tablet-width) {
-  .address__tittle {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
   }
@@ -79,10 +71,8 @@
   margin-top: 0;
   margin-bottom: 0;
   width: 140px;
-}
 
-@media (min-width: $tablet-width) {
-  .address__address {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     min-width: 160px;
@@ -92,10 +82,8 @@
 .address__p {
   margin-top: 0;
   margin-bottom: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .address__p {
+  @media (min-width: $tablet-width) {
     padding-bottom: 19px;
     font-size: 16px;
     line-height: 20px;
@@ -105,10 +93,8 @@
       padding-bottom: 0;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .address__p {
+  @media (min-width: $desktop-width) {
     text-align: left;
   }
 }

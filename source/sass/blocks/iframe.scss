@@ -9,10 +9,8 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/map-mobile@2x.png");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .iframe {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/map-tablet.png");
     height: 396px;
 
@@ -20,10 +18,8 @@
       background-image: url("../img/map-tablet@2x.png");
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .iframe {
+  @media (min-width: $desktop-width) {
     display: block;
     background-image: url("../img/map-desktop.png");
 

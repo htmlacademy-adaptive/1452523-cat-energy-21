@@ -10,8 +10,9 @@
   <body class="page-body">
     <div class="page__color">
       <header class="page-body__header">
-        <nav class="main-nav main-nav--closed">
-          <div class="main-nav__div container">
+        <nav class="main-nav main-nav--closed container">
+
+          <div class="main-nav__div">
 
           <div class="main-nav__nav">
             <a class="main-nav__logo link" href="index.html">
@@ -42,20 +43,20 @@
             <li class="site-list__item">
               <a href="form.html" class="link link--active">Подбор программы</a>
             </li>
-          </ul>
+          </ul></div>
         </nav>
 
       </header>
 
-      <main class="page-body__main form">
+      <main class="page-body__main">
         <h1 class="visually-hidden">Заполните, чтобы осчастливить вашего котика</h1>
         <form
-          class="selection-program"
+          class="selection-program container container--main-form"
           method="Get"
           action="https://echo.htmlacademy.ru/"
         >
-          <legend class="selection-program__legend container">Подбор программы</legend>
-          <p class="selection-program__text container">
+          <legend class="selection-program__legend">Подбор программы</legend>
+          <p class="selection-program__text">
             Заполните анкету, и мы подберем <br> программу питания для вашего кота
           </p>
 
@@ -177,12 +178,12 @@
 
             <label class="additionally-checkbox">
               <input class="additionally-checkbox__input visually-hidden" type="checkbox" name="vitamins"/>
-              <span class="program-additionally__span">
+              <span class="program-additionally__span program-additionally__span--vitamin">
               Витамины</span>
             </label>
           </div>
         </fieldset>
-        <div class="button-span container">
+        <div class="button-span">
           <button class="button button--form button--green" type="submit">Отправить заявку</button>
           <span class="form__span">* — Обязательные поля</span>
         </div>
@@ -192,7 +193,7 @@
 
       <footer class="page-body__footer">
         <div class="address">
-          <div class="address__text container">
+          <div class="address__text address__text--grey">
             <h2 class="address__tittle">
               Приглашаем <br> к&nbsp;сотрудничеству дилеров!
             </h2>

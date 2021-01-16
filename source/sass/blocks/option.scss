@@ -29,16 +29,12 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .option {
+  @media (min-width: $tablet-width) {
     padding: 80px 260px 57px 42px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .option {
+  @media (min-width: $desktop-width) {
     width: 570px;
     padding: 50px 75px;
     margin-right: 80px;
@@ -65,10 +61,8 @@
     background-position: 13px 23px;
     padding-top: 18px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .option__option {
+  @media (min-width: $tablet-width) {
     &--slim {
       background-size: 185px 211px;
       background-position: 400px 23px;
@@ -79,10 +73,8 @@
       background-position: 400px 23px;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .option__option {
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding: 55px 60px;
 
@@ -114,10 +106,8 @@
   &--pro {
     padding-left: 70px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .option__tittle {
+  @media (min-width: $tablet-width) {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -125,10 +115,8 @@
     line-height: 36px;
     max-width: 377px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .option__tittle {
+  @media (min-width: $desktop-width) {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -138,10 +126,8 @@
 
 .option__subtitle {
   font-family: $arial;
-}
 
-@media (min-width: $tablet-width) {
-  .option__subtitle {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }
@@ -160,31 +146,15 @@
   margin-bottom: 0;
   padding-top: 30px;
 
-  br {
-    display: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .option__text {
+  @media (min-width: $tablet-width) {
     border: none;
     max-width: 325px;
-
-    br {
-      display: block;
-    }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .option__text {
+  @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
     color: $basic-black;
-
-    br {
-      display: none;
-    }
   }
 }
 
