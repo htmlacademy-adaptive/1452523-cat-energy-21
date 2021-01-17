@@ -11,7 +11,8 @@
   @media (min-width: $desktop-width) {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 30px;
+    padding-top: 27px;
+    border: none;
   }
 }
 
@@ -22,17 +23,18 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 21px;
-  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
-    font-style: 60px;
-    padding-top: 32px;
+    font-size: 60px;
+    padding-top: 35px;
+    padding-bottom: 0;
   }
 }
 
 .advantages__list {
   list-style-type: none;
   padding-bottom: 18px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -41,6 +43,12 @@
     justify-content: space-between;
     min-width: 230px;
     padding-left: 0;
+    padding-top: 42px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -48,7 +56,8 @@
   font-family: $arial;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+  padding-bottom: 2px;
   font-size: 14px;
   line-height: 18px;
   box-sizing: border-box;
@@ -59,6 +68,10 @@
   max-width: 440px;
   padding-top: 22px;
   background-position: 0 115%;
+
+  br {
+    display: none;
+  }
 
   &--leaf {
     background-image: url("../img/leaf.svg");
@@ -83,11 +96,18 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    padding: 140px 30px 60px 0;
+    padding: 150px 0 60px;
     min-height: 280px;
     line-height: 24px;
     display: flex;
     justify-content: space-between;
+    margin-right: 75px;
+    font-size: 16px;
+    margin-bottom: 35px;
+
+    br {
+      display: block;
+    }
 
     &--leaf {
       background-image: url("../img/1.png");
@@ -111,8 +131,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 280px;
-    padding: 140px 45px 60px 0;
-    margin-right: 1px;
+    width: 284px;
+    padding: 151px 45px 0 0;
+    margin-right: -36px;
+    background-position: 0 -1px;
+    margin-bottom: 0;
+
+    &--alarm {
+      padding-right: 0;
+    }
   }
 }

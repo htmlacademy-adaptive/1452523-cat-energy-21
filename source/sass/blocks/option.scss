@@ -7,8 +7,6 @@
   .options {
     padding: 0;
     padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
@@ -16,8 +14,6 @@
   .options {
     display: flex;
     padding-top: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
@@ -32,6 +28,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 80px 260px 57px 42px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +44,7 @@
 }
 
 .option__option {
-  padding: 21px 35px 18px 20px;
+  padding: 21px 20px 18px 20px;
 
   &--slim {
     background-image: url("../img/cat-slimming.svg");
@@ -63,29 +60,31 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 66px 51px 57px;
+
     &--slim {
-      background-size: 185px 211px;
-      background-position: 400px 23px;
+      background-size: 201px 211px;
+      background-position: 445px 81px;
     }
 
     &--pro {
-      background-size: 268px 200px;
-      background-position: 400px 23px;
+      background-size: 269px 206px;
+      background-position: 409px 87px;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding: 55px 60px;
+    padding: 65px 0 59px 52px;
 
     &--slim {
-      background-size: 80px 86px;
-      background-position: 15% 11%;
+      background-size: 102px 105px;
+      background-position: 11% 15%;
     }
 
     &--pro {
-      background-size: 114px 80px;
-      background-position: 7% 15%;
+      background-size: 138px 101px;
+      background-position: 7% 17%;
     }
   }
 }
@@ -117,10 +116,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 40px;
     text-align: center;
-    padding-bottom: 75px;
+    padding-bottom: 47px;
+
+    &--slim {
+      padding-left: 110px;
+    }
+
+    &--pro {
+      padding-left: 151px;
+    }
   }
 }
 
@@ -140,21 +146,39 @@
   font-weight: 400;
   font-style: normal;
   border-bottom: 1px solid $grey-line;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
   color: $dark-grey;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 30px;
+  padding-right: 13px;
+
+  br {
+    display: none;
+  }
+
 
   @media (min-width: $tablet-width) {
     border: none;
-    max-width: 325px;
+    max-width: 386px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 27px;
+
+    br {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 24px;
     color: $basic-black;
+    padding-right: 0;
+    max-width: 470px;
+    padding-bottom: 0;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -184,5 +208,15 @@
 
   &:active {
     opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-top: 26px;
+
+    &::after {
+      left: 134px;
+      top: 23px;
+    }
   }
 }

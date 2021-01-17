@@ -6,8 +6,22 @@
   color: $basic-black;
   text-transform: uppercase;
   padding-bottom: 13px;
-  padding-top: 6px;
-  gap: 18px;
+  padding-top: 13px;
+  gap: 14px;
+  width: 197px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 570px;
+    padding-top: 0;
+    gap: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+    padding-top: 33px;
+  }
 }
 
 .range-controls__after {
@@ -36,17 +50,34 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted $basic-black;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
 .range-controls__scale {
   border-radius: 8px;
   align-self: center;
-  width: 428px;
-  border: none;
-  height: 6px;
-  background-color: #dcdcdc;
+  width: 88px;
+  height: 14px;
+  background-color: $basic-white;
   padding-left: 0;
+  border: 1px solid $special_grey;
+  margin-left: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #cdcdcd;
+    margin-left: 0;
+  }
 }
 
 .range-controls__bar {
@@ -68,12 +99,12 @@
 }
 
 .range-controls__div {
-  width: 45%;
+  width: 43%;
   background-color: $basic-green;
   height: 6px;
   border-radius: 5px;
   margin-top: 3px;
-  margin-left: 5px;
+  margin-left: 6px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -83,30 +114,35 @@
 .range-controls__input {
   background: transparent;
   width: 100%;
-  display: block;
   appearance: none;
+  margin: 0;
+  display: none;
 
-  &:focus {
-    outline: none;
-  }
+  @media (min-width: $tablet-width) {
+    display: block;
 
-  &::-webkit-slider-thumb {
-    appearance: none;
-    box-shadow: 0 0 0 1px #cdcdcd;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background: $basic-green;
-    cursor: pointer;
-    margin-top: -14px;
-    border: 11px solid #ffffff;
-
-    &:hover {
-      box-shadow: 0 0 0 1px #cdcdcd, 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+    &:focus {
+      outline: none;
     }
 
-    &:active {
-      box-shadow: 0 0 0 1px $basic-green, 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    &::-webkit-slider-thumb {
+      appearance: none;
+      box-shadow: 0 0 0 1px #cdcdcd;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: $basic-green;
+      cursor: pointer;
+      margin-top: -12px;
+      border: 11px solid #ffffff;
+
+      &:hover {
+        box-shadow: 0 0 0 1px #cdcdcd, 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      &:active {
+        box-shadow: 0 0 0 1px $basic-green, 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }
