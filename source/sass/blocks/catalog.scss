@@ -30,7 +30,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-
     padding-top: 140px;
   }
 }
@@ -59,7 +58,6 @@
     background-color: $basic-grey;
     margin-right: 56px;
 
-
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -70,7 +68,7 @@
       width: 325px;
     }
 
-    &:last-child,
+    &:nth-last-child(1),
     &:nth-last-child(2) {
       margin-bottom: 0;
     }
@@ -78,7 +76,13 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-right: 78px;
+    margin-right: 80px;
+    padding: 34px 38px 40px;
+    margin-bottom: 138px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
 
     &:nth-child(4n) {
       margin-right: 0;
@@ -86,6 +90,12 @@
 
     &--show {
       text-align: center;
+      padding-top: 0;
+    }
+
+    &--down {
+      margin-bottom: 0;
+      padding-bottom: 38px;
     }
   }
 }
@@ -129,9 +139,12 @@
 
 .catalog__img {
   @media (min-width: $tablet-width) {
-
     padding-left: 41px;
     margin-top: -131px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -246,6 +259,10 @@
     border-bottom: 1px solid $special_grey;
     width: 252px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
 
 .catalog__th {
@@ -287,7 +304,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-top: 17px;
+    padding-top: 13px;
     padding-bottom: 83px;
   }
 }
