@@ -1,10 +1,11 @@
 @import "global/root-color.scss";
 @import "global/fonts.scss";
 @import "global/mixins.scss";
-@import "global/visually-hidden.scss";
-@import "global/page-color.scss";
+@import "global/global.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page-color.scss";
 @import "blocks/container.scss";
-@import "global/page__body.scss";
+@import "blocks/page__body.scss";
 @import "blocks/button.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";

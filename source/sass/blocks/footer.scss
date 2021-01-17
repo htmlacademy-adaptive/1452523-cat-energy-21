@@ -2,15 +2,24 @@
   text-align: center;
   list-style-type: none;
   background-color: $basic-grey;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 35px;
+  padding-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .footer__social--wrapper {
+
+.footer__social--wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 55px;
-    padding-bottom: 60px;
+    padding-top: 11px;
+    padding-bottom: 49px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
   }
 }

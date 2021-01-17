@@ -9,18 +9,16 @@
   justify-content: center;
   color: $basic-black;
   font-family: $oswald;
-}
+  font-size: 14px;
+  line-height: 20px;
 
-@media (min-width: $tablet-width) {
-  .expenses {
+  @media (min-width: $tablet-width) {
     padding: 0;
     flex-direction: column;
     text-align: right;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .expenses {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -35,16 +33,12 @@
   &:last-child {
     padding-right: 0;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .expenses__d {
+  @media (min-width: $tablet-width) {
     padding: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .expenses__d {
+  @media (min-width: $desktop-width) {
     justify-content: start;
     padding-right: 120px;
     margin-top: 0;

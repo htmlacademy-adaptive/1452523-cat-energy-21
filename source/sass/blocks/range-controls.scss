@@ -5,6 +5,9 @@
   font-size: 16px;
   color: $basic-black;
   text-transform: uppercase;
+  padding-bottom: 13px;
+  padding-top: 6px;
+  gap: 18px;
 }
 
 .range-controls__after {
@@ -15,4 +18,95 @@
 .range-controls__before {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.range-controls__text {
+  font-size: 16px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $basic-black;
+  }
+}
+
+.range-controls__scale {
+  border-radius: 8px;
+  align-self: center;
+  width: 428px;
+  border: none;
+  height: 6px;
+  background-color: #dcdcdc;
+  padding-left: 0;
+}
+
+.range-controls__bar {
+  border-radius: 5px;
+  width: 84px;
+  height: 4px;
+  background-color: green;
+  align-self: center;
+  margin: 3px 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 45%;
+  }
+}
+
+.range-controls__div {
+  width: 45%;
+  background-color: $basic-green;
+  height: 6px;
+  border-radius: 5px;
+  margin-top: 3px;
+  margin-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.range-controls__input {
+  background: transparent;
+  width: 100%;
+  display: block;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    box-shadow: 0 0 0 1px #cdcdcd;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: $basic-green;
+    cursor: pointer;
+    margin-top: -14px;
+    border: 11px solid #ffffff;
+
+    &:hover {
+      box-shadow: 0 0 0 1px #cdcdcd, 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $basic-green, 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
 }

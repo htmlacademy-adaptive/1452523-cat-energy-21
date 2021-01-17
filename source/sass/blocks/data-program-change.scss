@@ -1,13 +1,11 @@
-@media (min-width: $tablet-width) {
-  .data-program-change {
+.data-program-change {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 66px 0 0 0;
+    padding-top: 66px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .data-program-change {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     padding-bottom: 0;

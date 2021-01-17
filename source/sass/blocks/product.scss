@@ -1,6 +1,7 @@
 .product {
   color: $basic-white;
   text-align: center;
+  position: relative;
 
   &::before {
     display: block;
@@ -9,8 +10,8 @@
     width: 280px;
     height: 270px;
     position: absolute;
-    bottom: 110px;
-    left: 17px;
+    bottom: 41px;
+    left: 20px;
     box-sizing: border-box;
 
     @media (min-resolution: 2dppx) {
@@ -19,10 +20,8 @@
       background-size: 280px 270px;
     }
   }
-}
 
-@media (min-width: $tablet-width) {
-  .product {
+  @media (min-width: $tablet-width) {
     color: $basic-black;
     padding-top: 0;
     padding-left: 120px;
@@ -34,8 +33,8 @@
       content: "";
       background-image: url("../img/cat-energy-food-tablet.png");
       position: absolute;
-      bottom: -240px;
-      left: 195px;
+      top: 248px;
+      left: 30px;
       box-sizing: border-box;
       z-index: -1;
       width: 709px;
@@ -49,10 +48,8 @@
       }
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .product {
+  @media (min-width: $desktop-width) {
     margin-right: auto;
     margin-left: auto;
     padding-left: 110px;
@@ -92,16 +89,12 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background-cat@2x.png");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .flex-text {
+  @media (min-width: $tablet-width) {
     background: none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .flex-text {
+  @media (min-width: $desktop-width) {
     background: none;
     padding-left: 0;
   }
@@ -113,10 +106,8 @@
   margin: 0 auto;
   font-weight: 400;
   padding-top: 27px;
-}
 
-@media (min-width: $tablet-width) {
-  .product__title {
+  @media (min-width: $tablet-width) {
     line-height: 60px;
     text-align: left;
     font-size: 60px;
@@ -124,10 +115,8 @@
     padding-top: 60px;
     margin-right: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .product__title {
+  @media (min-width: $desktop-width) {
     padding-right: 0;
     font-size: 42px;
     font-weight: normal;
@@ -141,11 +130,9 @@
   padding-top: 21px;
   font-size: 14px;
   text-transform: uppercase;
-  padding-bottom: 140px;
-}
+  padding-bottom: 160px;
 
-@media (min-width: $tablet-width) {
-  .product__subtitle {
+  @media (min-width: $tablet-width) {
     padding-top: 40px;
     padding-left: 9px;
     text-align: left;
@@ -160,7 +147,7 @@
 }
 
 .product__btn {
-  margin-top: 159px;
+  margin-top: 139px;
   background-color: $basic-green;
   font-size: 16px;
   color: $basic-white;
@@ -174,18 +161,14 @@
   &--index {
     font-size: 14px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .product__btn {
+  @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-bottom: 525px;
     margin-left: 0;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .product__btn {
+  @media (min-width: $desktop-width) {
     margin-bottom: 270px;
     margin-left: 80px;
   }

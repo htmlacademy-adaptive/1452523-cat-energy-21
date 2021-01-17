@@ -2,12 +2,16 @@
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-}
+  width: 100%;
 
-@media (min-width: $tablet-width) {
-  .site-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding-left: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -15,27 +19,34 @@
   list-style-type: none;
   border-bottom: 1px solid $grey-line-2;
   text-align: center;
-  padding: 22px 0 24px 0;
+  padding: 17px 0 24px 0;
   font-weight: 500;
-}
+  font-size: 18px;
 
-@media (min-width: $tablet-width) {
-  .site-list__item {
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
     font-weight: 500;
     border: none;
-    padding-right: 33px;
+    padding-right: 31px;
 
     &:last-child {
       padding-bottom: 10px;
       padding-right: 0;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .site-list__item {
+  @media (min-width: $desktop-width) {
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 5px;
+    padding-top: 15px;
+    font-size: 20px;
 
     &:first-child {
       padding-left: 132px;
@@ -47,25 +58,37 @@
   }
 }
 
-.link {
-  text-decoration: none;
-  color: $basic-black;
-}
+.social-item__svg {
+  fill: $light-dark-grey;
 
-@media (min-width: $desktop-width) {
-  .link--index-big {
-    color: $basic-white;
-
-    &--form {
-      color: $light-black;
-    }
-
-    &--catalog {
-      color: $light-black;
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 22px;
     }
   }
 }
 
-.social-item__svg {
-  fill: $light-dark-grey;
+.link {
+  text-decoration: none;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+      padding-bottom: 3px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--white {
+      color: $basic-white;
+    }
+
+    &--active-white {
+      border-bottom: 2px solid $basic-white;
+    }
+  }
 }

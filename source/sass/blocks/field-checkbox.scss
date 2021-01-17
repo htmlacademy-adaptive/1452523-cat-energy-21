@@ -1,38 +1,68 @@
 .field-checkbox {
   padding-bottom: 19px;
   position: relative;
-}
 
-@media (min-width: $tablet-width) {
-  .field-checkbox {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
+    padding-bottom: 23px;
   }
 }
 
 .field-checkbox__span {
   text-align: center;
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
-.field-checkbox__input + span::before {
+.field-checkbox .field-checkbox__span::before {
   content: "";
-  width: 30px;
+  width: 27px;
   height: 30px;
   position: absolute;
   left: -45px;
-  bottom: 18px;
+  bottom: 15px;
   display: block;
   border: 1px solid $special_grey;
   border-radius: 50%;
 }
 
+@media (min-width: $tablet-width) {
+  .field-checkbox .field-checkbox__span::before {
+    left: -58px;
+    bottom: 19px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.field-checkbox:hover .field-checkbox__span::before {
+  border: 1px solid #bababa;
+}
+
 .field-checkbox__input:checked + span::after {
   content: "";
   position: absolute;
-  left: -36px;
-  bottom: 27px;
+  left: -37px;
+  bottom: 25px;
   display: block;
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background-color: $basic-green;
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox__input:checked + span::after {
+    content: "";
+    position: absolute;
+    left: -48px;
+    bottom: 29px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $basic-green;
+  }
 }

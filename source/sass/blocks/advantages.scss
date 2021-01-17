@@ -1,18 +1,14 @@
 .advantages {
   color: $basic-black;
   padding-top: 0;
-  padding-bottom: 25px;
-}
+  padding-bottom: 22px;
 
-@media (min-width: $tablet-width) {
-  .advantages {
+  @media (min-width: $tablet-width) {
     padding-bottom: 0;
     border-bottom: 1px solid $grey-line-2;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .advantages {
+  @media (min-width: $desktop-width) {
     margin-right: auto;
     margin-left: auto;
     padding-left: 30px;
@@ -25,11 +21,10 @@
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 38px;
-}
+  padding-bottom: 21px;
+  padding-top: 3px;
 
-@media (min-width: $tablet-width) {
-  .advantages__tittle {
+  @media (min-width: $tablet-width) {
     font-style: 60px;
     padding-top: 32px;
   }
@@ -37,15 +32,15 @@
 
 .advantages__list {
   list-style-type: none;
-}
+  padding-bottom: 18px;
 
-@media (min-width: $tablet-width) {
-  .advantages__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 230px;
+    padding-left: 0;
   }
 }
 
@@ -53,16 +48,17 @@
   font-family: $arial;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 20px;
-  padding-left: 80px;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 18px;
   box-sizing: border-box;
   color: $dark-grey;
   min-height: 60px;
   min-width: 250px;
-  padding-right: 20px;
+  padding-left: 80px;
   max-width: 440px;
+  padding-top: 22px;
+  background-position: 0 115%;
 
   &--leaf {
     background-image: url("../img/leaf.svg");
@@ -84,10 +80,8 @@
     background-repeat: no-repeat;
     padding-right: 39px;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .advantages__item {
+  @media (min-width: $tablet-width) {
     width: 230px;
     padding: 140px 30px 60px 0;
     min-height: 280px;
@@ -115,10 +109,8 @@
       background-repeat: no-repeat;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .advantages__item {
+  @media (min-width: $desktop-width) {
     width: 280px;
     padding: 140px 45px 60px 0;
     margin-right: 1px;

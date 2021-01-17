@@ -1,5 +1,4 @@
 .images__image--before {
-  background-color: $light-grey;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -9,7 +8,6 @@
 
 @media (min-width: $tablet-width) {
   .image__range {
-    background-color: $basic-white;
     padding-top: 95px;
   }
 }

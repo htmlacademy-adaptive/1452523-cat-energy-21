@@ -1,27 +1,25 @@
 .iframe {
   width: 100%;
-  border: 0;
+  padding: 0;
+  border: none;
   background-color: $light-grey;
-  height: 450px;
+  height: 362px;
   background-image: url("../img/map-mobile.png");
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/map-mobile@2x.png");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .iframe {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/map-tablet.png");
+    height: 396px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map-tablet@2x.png");
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .iframe {
+  @media (min-width: $desktop-width) {
     display: block;
     background-image: url("../img/map-desktop.png");
 

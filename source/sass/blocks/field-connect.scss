@@ -10,12 +10,37 @@
   grid-template-columns: max-content 1fr;
 
   &:not(:last-child) {
-    padding-bottom: 10px;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
   }
 }
 
 .field-connect__label {
-  padding-right: 10px;
+  padding-right: 11px;
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-right: 16px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 17px;
+  }
 }
 
 .field-connect__input {
@@ -24,17 +49,39 @@
   width: 100%;
 
   &--email {
-    padding: 13px 45px 15px 15px;
+    padding: 16px 42px 11px 15px;
   }
 
   &--phone {
-    padding: 13px 27px 15px 16px;
+    padding: 16px 27px 11px 14px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .field-connect__input {
-    padding-right: 323px;
+  &::placeholder {
+    color: $basic-black;
+    font-family: $oswald;
+    font-size: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::placeholder {
+      font-size: 20px;
+    }
+
+    &--email {
+      padding: 19px 42px 14px 24px;
+    }
+
+    &--phone {
+      padding: 21px 27px 13px 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 40px 14px 19px;
+
+    &--phone {
+      padding-left: 11px;
+    }
   }
 }
 
@@ -43,6 +90,18 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+
+  &:focus {
+    border: 1px solid $special_grey;
+  }
+
+  &:disabled {
+    border: 2px solid $dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .email {
@@ -56,11 +115,21 @@
 .field-connect__img {
   position: absolute;
   right: 14px;
+  top: 15px;
+
+  &:disabled {
+    fill: $basic-green;
+  }
+
+  &:invalid {
+    fill: #ff8282;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .field-connect__img {
-    right: 20px;
+    right: 16px;
+    top: 17px;
   }
 }
 
@@ -72,6 +141,7 @@
 
 @media (min-width: $desktop-width) {
   .email {
-    margin-right: 78px;
+    margin-right: 83px;
+    padding-bottom: 0;
   }
 }
