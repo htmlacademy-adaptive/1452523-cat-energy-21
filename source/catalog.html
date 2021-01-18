@@ -13,38 +13,35 @@
   <div class="page__color">
     <header class="page-body__header">
       <div class="container">
-      <nav class="main-nav main-nav--closed">
-
-        <div class="main-nav__div">
-          <div class="main-nav__nav">
-            <a class="main-nav__logo link" href="index.html">
-              <picture>
-                <source class="main-nav__img" media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-                <source class="main-nav__img" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img class="main-nav__img" src="img/logo.svg" alt="Кэт Энерджи" />
-              </picture>
-            </a>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__div">
+            <div class="main-nav__nav">
+              <a class="main-nav__logo link" href="index.html">
+                <picture>
+                  <source class="main-nav__img" media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                  <source class="main-nav__img" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="main-nav__img" src="img/logo.svg" alt="Кэт Энерджи" />
+                </picture>
+              </a>
+            </div>
+            <button class="button-burger" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
           </div>
-          <button class="button-burger" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
 
-        </div>
-
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html" class="link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html" class="link link--active">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html" class="link">Подбор программы</a>
-          </li>
-        </ul>
-
-      </nav></div>
-    </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html" class="link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html" class="link link--active">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html" class="link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-body__main catalog container">
@@ -53,50 +50,58 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <div class="catalog__img-p">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="
-                    img/catalog-1-desktop.webp    1x,
-                    img/catalog-1-desktop@2x.webp 2x
-                  " />
-                <source media="(min-width: 1440px)" srcset="
-                    img/catalog-1-desktop.png    1x,
-                    img/catalog-1-desktop@2x.png 2x
-                  " />
-                <source type="image/webp" media="(min-width: 768px)" srcset="
-                    img/catalog-1-tablet.webp    1x,
-                    img/catalog-1-tablet@2x.webp 2x
-                  " />
-                <source media="(min-width: 768px)" srcset="
-                    img/catalog-1-tablet.png    1x,
-                    img/catalog-1-tablet@2x.png 2x
-                  " />
-                <source type="image/webp" srcset="img/catalog-1.webp 1x, img/catalog-1@2x.webp 2x" />
-                <img class="catalog__img" src="img/catalog-1.png" srcset="img/catalog-1@2x.png 2x"
-                  alt="Корм со вкусом курицы, 500 грамм" />
-              </picture>
+            <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="img/catalog-1-desktop.webp    1x,
+                  img/catalog-1-desktop@2x.webp 2x" />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/catalog-1-desktop.png    1x,
+                  img/catalog-1-desktop@2x.png 2x" />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/catalog-1-tablet.webp    1x,
+                  img/catalog-1-tablet@2x.webp 2x" />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/catalog-1-tablet.png    1x,
+                  img/catalog-1-tablet@2x.png 2x" />
+              <source
+                type="image/webp"
+                srcset="img/catalog-1.webp 1x,
+                  img/catalog-1@2x.webp 2x" />
+              <img
+                class="catalog__img"
+                src="img/catalog-1.png"
+                srcset="img/catalog-1@2x.png 2x"
+                alt="Корм со вкусом курицы, 500 грамм"
+              />
+            </picture>
 
-
-          <div class="catalog__img-table">
-            <p class="catalog__caption">
+            <div class="catalog__img-table">
+              <p class="catalog__caption">
                 Cat Energy PRO 500 г
               </p>
-            <table class="catalog__table">
+              <table class="catalog__table">
 
-              <tbody>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Масса</td>
-                  <td class="catalog__td">500 г.</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Вкус</td>
-                  <td class="catalog__td">Курица</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Цена</td>
-                  <td class="catalog__td">700 Р.</td>
-                </tr>
-              </tbody>
-            </table>
+                <tbody>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Масса</td>
+                    <td class="catalog__td">500 г.</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Вкус</td>
+                    <td class="catalog__td">Курица</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Цена</td>
+                    <td class="catalog__td">700 Р.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <a class="button button--green button--catalog" href="#">Заказать</a>
@@ -105,25 +110,39 @@
         <li class="catalog__item">
           <div class="catalog__img-p">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="
-                    img/catalog-2-desktop.webp    1x,
-                    img/catalog-2-desktop@2x.webp 2x
-                  " />
-                <source type="image/webp" media="(min-width: 768px)" srcset="
-                    img/catalog-2-tablet.webp    1x,
-                    img/catalog-2-tablet@2x.webp 2x
-                  " />
-                <source type="image/webp" srcset="img/catalog-2.webp 1x, img/catalog-2@2x.webp 2x" />
-                <source media="(min-width: 1440px)" srcset="
-                    img/catalog-2-desktop.png    1x,
-                    img/catalog-2-desktop@2x.png 2x
-                  " />
-                <source media="(min-width: 768px)" srcset="
-                    img/catalog-2-tablet.png    1x,
-                    img/catalog-2-tablet@2x.png 2x
-                  " />
-                <img class="catalog__img" src="img/catalog-2.png" srcset="img/catalog-2@2x.png 2x"
-                  alt="Корм со вкусом курицы. 1000 грамм" />
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="img/catalog-2-desktop.webp    1x,
+                  img/catalog-2-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/catalog-2-tablet.webp    1x,
+                  img/catalog-2-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/catalog-2.webp 1x,
+                  img/catalog-2@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/catalog-2-desktop.png    1x,
+                  img/catalog-2-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/catalog-2-tablet.png    1x,
+                  img/catalog-2-tablet@2x.png 2x"
+              />
+              <img
+                class="catalog__img"
+                src="img/catalog-2.png"
+                srcset="img/catalog-2@2x.png 2x"
+                alt="Корм со вкусом курицы. 1000 грамм"
+              />
             </picture>
             <div class="catalog__img-table">
               <p class="catalog__caption catalog__caption--chicken">
@@ -131,20 +150,20 @@
               </p>
 
               <table class="catalog__table">
-              <tbody>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Масса</td>
-                  <td class="catalog__td">1000 г.</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Вкус</td>
-                  <td class="catalog__td">Курица</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Цена</td>
-                  <td class="catalog__td">1000 Р.</td>
-                </tr>
-              </tbody>
+                <tbody>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Масса</td>
+                    <td class="catalog__td">1000 г.</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Вкус</td>
+                    <td class="catalog__td">Курица</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Цена</td>
+                    <td class="catalog__td">1000 Р.</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -155,25 +174,39 @@
         <li class="catalog__item">
           <div class="catalog__img-p">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="
-                    img/catalog-3-desktop.webp    1x,
-                    img/catalog-3-desktop@2x.webp 2x
-                  " />
-                <source type="image/webp" media="(min-width: 768px)" srcset="
-                    img/catalog-3-tablet.webp    1x,
-                    img/catalog-3-tablet@2x.webp 2x
-                  " />
-                <source type="image/webp" srcset="img/catalog-3.webp 1x, img/catalog-3@2x.webp 2x" />
-                <source media="(min-width: 1440px)" srcset="
-                    img/catalog-3-desktop.png    1x,
-                    img/catalog-3-desktop@2x.png 2x
-                  " />
-                <source media="(min-width: 768px)" srcset="
-                    img/catalog-3-tablet.png    1x,
-                    img/catalog-3-tablet@2x.png 2x
-                  " />
-                <img class="catalog__img" src="img/catalog-3.png" srcset="img/catalog-3@2x.png 2x"
-                  alt="Корм со вкусом рыбы. 500 грамм" />
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="img/catalog-3-desktop.webp    1x,
+                  img/catalog-3-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/catalog-3-tablet.webp    1x,
+                  img/catalog-3-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/catalog-3.webp 1x,
+                  img/catalog-3@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/catalog-3-desktop.png    1x,
+                  img/catalog-3-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/catalog-3-tablet.png    1x,
+                  img/catalog-3-tablet@2x.png 2x"
+              />
+              <img
+                class="catalog__img"
+                src="img/catalog-3.png"
+                srcset="img/catalog-3@2x.png 2x"
+                alt="Корм со вкусом рыбы. 500 грамм"
+              />
             </picture>
             <div class="catalog__img-table">
               <p class="catalog__caption catalog__caption--chicken">
@@ -181,20 +214,20 @@
               </p>
 
               <table class="catalog__table">
-              <tbody>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Масса</td>
-                  <td class="catalog__td">500 г.</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Вкус</td>
-                  <td class="catalog__td">Рыба</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Цена</td>
-                  <td class="catalog__td">700 Р.</td>
-                </tr>
-              </tbody>
+                <tbody>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Масса</td>
+                    <td class="catalog__td">500 г.</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Вкус</td>
+                    <td class="catalog__td">Рыба</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Цена</td>
+                    <td class="catalog__td">700 Р.</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -202,28 +235,42 @@
           <a class="button button--green button--catalog" href="#">Заказать</a>
         </li>
 
-                <li class="catalog__item">
+        <li class="catalog__item">
           <div class="catalog__img-p">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="
-                    img/catalog-4-desktop.webp    1x,
-                    img/catalog-4-desktop@2x.webp 2x
-                  " />
-                <source type="image/webp" media="(min-width: 768px)" srcset="
-                    img/catalog-4-tablet.webp    1x,
-                    img/catalog-4-tablet@2x.webp 2x
-                  " />
-                <source type="image/webp" srcset="img/catalog-4.webp 1x, img/catalog-4@2x.webp 2x" />
-                <source media="(min-width: 1440px)" srcset="
-                    img/catalog-4-desktop.png    1x,
-                    img/catalog-4-desktop@2x.png 2x
-                  " />
-                <source media="(min-width: 768px)" srcset="
-                    img/catalog-4-tablet.png    1x,
-                    img/catalog-4-tablet@2x.png 2x
-                  " />
-                <img class="catalog__img" src="img/catalog-2.png" srcset="img/catalog-4@2x.png 2x"
-                  alt="Корм со вкусом рыбы. 1000 грамм" />
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="img/catalog-4-desktop.webp    1x,
+                  img/catalog-4-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/catalog-4-tablet.webp    1x,
+                  img/catalog-4-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/catalog-4.webp 1x,
+                  img/catalog-4@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/catalog-4-desktop.png    1x,
+                  img/catalog-4-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/catalog-4-tablet.png    1x,
+                  img/catalog-4-tablet@2x.png 2x"
+              />
+              <img
+                class="catalog__img"
+                src="img/catalog-2.png"
+                srcset="img/catalog-4@2x.png 2x"
+                alt="Корм со вкусом рыбы. 1000 грамм"
+              />
             </picture>
             <div class="catalog__img-table">
               <p class="catalog__caption catalog__caption--chicken">
@@ -231,20 +278,20 @@
               </p>
 
               <table class="catalog__table">
-              <tbody>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Масса</td>
-                  <td class="catalog__td">1000 г.</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Вкус</td>
-                  <td class="catalog__td">Рыба</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Цена</td>
-                  <td class="catalog__td">1000 Р.</td>
-                </tr>
-              </tbody>
+                <tbody>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Масса</td>
+                    <td class="catalog__td">1000 г.</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Вкус</td>
+                    <td class="catalog__td">Рыба</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Цена</td>
+                    <td class="catalog__td">1000 Р.</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -255,25 +302,39 @@
         <li class="catalog__item catalog__item--down">
           <div class="catalog__img-p">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="
-                    img/catalog-5-desktop.webp    1x,
-                    img/catalog-5-desktop@2x.webp 2x
-                  " />
-                <source type="image/webp" media="(min-width: 768px)" srcset="
-                    img/catalog-5-tablet.webp    1x,
-                    img/catalog-5-tablet@2x.webp 2x
-                  " />
-                <source type="image/webp" srcset="img/catalog-5.webp 1x, img/catalog-5@2x.webp 2x" />
-                <source media="(min-width: 1440px)" srcset="
-                    img/catalog-5-desktop.png    1x,
-                    img/catalog-5-desktop@2x.png 2x
-                  " />
-                <source media="(min-width: 768px)" srcset="
-                    img/catalog-5-tablet.png    1x,
-                    img/catalog-5-tablet@2x.png 2x
-                  " />
-                <img class="catalog__img" src="img/catalog-5.png" srcset="img/catalog-5@2x.png 2x"
-                  alt="Корм со вкусом гречки. 500 грамм" />
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="img/catalog-5-desktop.webp    1x,
+                  img/catalog-5-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/catalog-5-tablet.webp    1x,
+                  img/catalog-5-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/catalog-5.webp 1x,
+                  img/catalog-5@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/catalog-5-desktop.png    1x,
+                  img/catalog-5-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/catalog-5-tablet.png    1x,
+                  img/catalog-5-tablet@2x.png 2x"
+              />
+              <img
+                class="catalog__img"
+                src="img/catalog-5.png"
+                srcset="img/catalog-5@2x.png 2x"
+                alt="Корм со вкусом гречки. 500 грамм"
+              />
             </picture>
             <div class="catalog__img-table">
               <p class="catalog__caption catalog__caption--chicken">
@@ -281,20 +342,20 @@
               </p>
 
               <table class="catalog__table">
-              <tbody>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Масса</td>
-                  <td class="catalog__td">500 г.</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Вкус</td>
-                  <td class="catalog__td">Гречка</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Цена</td>
-                  <td class="catalog__td">400 Р.</td>
-                </tr>
-              </tbody>
+                <tbody>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Масса</td>
+                    <td class="catalog__td">500 г.</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Вкус</td>
+                    <td class="catalog__td">Гречка</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Цена</td>
+                    <td class="catalog__td">400 Р.</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -302,28 +363,42 @@
           <a class="button button--green button--catalog" href="#">Заказать</a>
         </li>
 
-                <li class="catalog__item catalog__item--down">
+        <li class="catalog__item catalog__item--down">
           <div class="catalog__img-p">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="
-                    img/catalog-6-desktop.webp    1x,
-                    img/catalog-6-desktop@2x.webp 2x
-                  " />
-                <source type="image/webp" media="(min-width: 768px)" srcset="
-                    img/catalog-6-tablet.webp    1x,
-                    img/catalog-6-tablet@2x.webp 2x
-                  " />
-                <source type="image/webp" srcset="img/catalog-6.webp 1x, img/catalog-6@2x.webp 2x" />
-                <source media="(min-width: 1440px)" srcset="
-                    img/catalog-6-desktop.png    1x,
-                    img/catalog-6-desktop@2x.png 2x
-                  " />
-                <source media="(min-width: 768px)" srcset="
-                    img/catalog-6-tablet.png    1x,
-                    img/catalog-6-tablet@2x.png 2x
-                  " />
-                <img class="catalog__img" src="img/catalog-6.png" srcset="img/catalog-6@2x.png 2x"
-                  alt="Корм со вкусом риса. 500 грамм" />
+              <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="img/catalog-6-desktop.webp    1x,
+                  img/catalog-6-desktop@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="img/catalog-6-tablet.webp    1x,
+                  img/catalog-6-tablet@2x.webp 2x"
+              />
+              <source
+                type="image/webp"
+                srcset="img/catalog-6.webp 1x,
+                  img/catalog-6@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="img/catalog-6-desktop.png    1x,
+                  img/catalog-6-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/catalog-6-tablet.png    1x,
+                  img/catalog-6-tablet@2x.png 2x"
+              />
+              <img
+                class="catalog__img"
+                src="img/catalog-6.png"
+                srcset="img/catalog-6@2x.png 2x"
+                alt="Корм со вкусом риса. 500 грамм"
+              />
             </picture>
             <div class="catalog__img-table">
               <p class="catalog__caption catalog__caption--chicken">
@@ -331,20 +406,20 @@
               </p>
 
               <table class="catalog__table">
-              <tbody>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Масса</td>
-                  <td class="catalog__td">1000 г.</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Вкус</td>
-                  <td class="catalog__td">Гречка</td>
-                </tr>
-                <tr class="catalog__tr">
-                  <td class="catalog__th">Цена</td>
-                  <td class="catalog__td">700 Р.</td>
-                </tr>
-              </tbody>
+                <tbody>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Масса</td>
+                    <td class="catalog__td">1000 г.</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Вкус</td>
+                    <td class="catalog__td">Гречка</td>
+                  </tr>
+                  <tr class="catalog__tr">
+                    <td class="catalog__th">Цена</td>
+                    <td class="catalog__td">700 Р.</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -352,7 +427,7 @@
           <a class="button button--green button--catalog" href="#">Заказать</a>
         </li>
 
-                <li class="catalog__item catalog__item--down">
+        <li class="catalog__item catalog__item--down">
           <div class="catalog__img-p">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="
@@ -568,26 +643,33 @@
           </li>
         </ul>
 
-
-        <ul class="htmlacademy__list">
-          <li class="htmlacademy__text">HTML Academy</li>
-          <li class="htmlacademy__logo">
-            <svg class="htmlacademy__svg" xmlns="http://www.w3.org/2000/svg" width="41" height="42">
+          <ul class="htmlacademy__list">
+            <li class="htmlacademy__text">
+              <a class="htmlacademy__a" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива профессиональный HTML и CSS, уровень 2">
+                HTML Academy
+              </a>
+            </li>
+            <li class="htmlacademy__logo">
+              <a class="htmlacademy__a" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива профессиональный HTML и CSS, уровень 2">
+              <svg
+                class="htmlacademy__svg"
+                xmlns="http://www.w3.org/2000/svg"
+                width="41"
+                height="42"
+              >
               <symbol viewBox="0 0 42 60" id="html">
-                <path
-                  d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+                <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
               </symbol>
 
               <use xlink:href="#html"></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
+              </svg></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </footer>
     </div>
-  </footer>
-  </div>
   <script src="js/menu.min.js"></script>
 
-</body>
-
+  </body>
 </html>
