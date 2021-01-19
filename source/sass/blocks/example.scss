@@ -1,16 +1,17 @@
 .example {
   background: $light-grey;
   padding: 20px 0 5px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 29px 0 43px;
-    background: linear-gradient(to top, $light-grey 0, $light-grey 35%, $basic-white 35%, $basic-white 100%);
+    background: linear-gradient(to top, $light-grey 0, $light-grey 42%, $basic-white 42%, $basic-white 100%);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 59px;
-    background: linear-gradient(to top, $basic-grey 0, $basic-grey 65%, $basic-white 65%, $basic-white 100%);
+    padding-top: 8px;
+    padding-bottom: 0;
+    background: linear-gradient(to top, $basic-grey 0, $basic-grey 69%, $basic-white 69%, $basic-white 100%);
   }
 }
 
@@ -18,14 +19,21 @@
   .example--container {
     display: flex;
     justify-content: space-between;
+    padding-top: 0;
+    width: 1220px;
     padding-bottom: 0;
-    background: linear-gradient(to top, $basic-grey 0, $basic-grey 66.5%, $basic-white 66.5%, $basic-white 100%);
+    margin: 0 auto;
   }
 }
 
 .example__text {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 82px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    margin-right: 80px;
+    padding-bottom: 70px;
   }
 }
 
@@ -46,7 +54,7 @@
     font-size: 16px;
     padding-right: 10px;
     line-height: 24px;
-    padding-bottom: 50px;
+    padding-bottom: 54px;
     padding-top: 48px;
 
     &--common {
@@ -76,7 +84,7 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
-    padding-top: 54px;
+    padding-top: 47px;
   }
 
   .image__range {

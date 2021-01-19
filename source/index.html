@@ -165,88 +165,61 @@
                 </div>
               </div>
             </div>
-            <div class="image__range">
-              <div class="image__image-cat">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 1440px)"
-                  srcset="img/cat_tablet-before.webp 1x, img/cat-before@2x.webp 2x"
+            <div class="image-range">
+              <div class="image-range__image-cat">
+                <picture>
 
-                />
                 <source
                   type="image/webp"
                   media="(min-width: 768px)"
-                  srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x"
+                  srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x"
 
                 />
                 <source
                   type="image/webp"
-                  srcset="img/cat-before.webp 1x, img/cat-before@2x.webp 2x"
-                  width="280"
+                  srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x"
+                />
 
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/cat_desktop-before-after.png    1x,
-                    img/cat_desktop-before-after@2x.png 2x
-                  "
-                />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/cat_tablet-before-after.png    1x,
-                    img/cat_tablet-before-after@2x.png 2x
-                  "
-                />
+                    img/cat-fat-tablet.png    1x,
+                    img/cat-fat-tablet@2x.png 2x
+                  ">
                 <img
-                  class="images__image--before"
-                  src="img/cat-before.png"
+                  class="image-range__image--before"
+                  src="img/cat-fat.png"
+                  srcset="img/cat-fat@2x.png"
                   alt="Котик, требуюший заботы и утраты лишних килограмм"
-                  width="320"
-                  height="232px"
+
                 />
               </picture>
 
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 1440px)"
-                  srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x"
 
                 />
                 <source
                   type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x"
+                  srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x"
+                />
 
-                />
-                <source
-                  type="image/webp"
-                  srcset="img/cat-after.webp 1x, img/cat-after@2x.webp 2x"
-
-                />
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/cat-after.png    1x,
-                    img/cat-after@2x.png 2x
-                  "
-                />
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/cat-after.png    1x,
-                    img/cat-after@2x.png 2x
+                    img/cat-skinny-tablet.png    1x,
+                    img/cat-skinny-tablet@2x.png 2x
                   "
                 />
                 <img
-                  class="images__image--after"
-                  src="img/cat-after.png"
+                  class="image-range__image--after"
+                  src="img/cat-skinny.png"
+                  srcset="img/cat-skinny@2x.png"
                   alt="Котик в хорошей форме"
-                  width="320"
-                  height="232px"
+
                 />
                 </picture>
                 </div>
@@ -266,13 +239,15 @@
 
       <footer class="page-body__footer">
         <div class="address">
-          <div class="address__text address__text--grey">
+          <div class="address__text">
+            <div class="address__text-container container">
             <h2 class="address__tittle">
               Приглашаем <br> к&nbsp;сотрудничеству дилеров!
             </h2>
             <div class="address__address">
               <p class="address__p">ул. Большая Конюшенная, д. 19/8</p>
               <p class="address__p">Санкт-Петербург</p>
+            </div>
             </div>
           </div>
 

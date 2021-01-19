@@ -43,12 +43,13 @@
     justify-content: space-between;
     min-width: 230px;
     padding-left: 0;
-    padding-top: 42px;
-    padding-bottom: 10px;
+    padding-top: 23px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    padding-top: 42px;
   }
 }
 
@@ -96,14 +97,14 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    padding: 150px 0 60px;
+    padding: 172px 0 60px;
     min-height: 280px;
     line-height: 24px;
     display: flex;
     justify-content: space-between;
     margin-right: 75px;
     font-size: 16px;
-    margin-bottom: 35px;
+    margin-bottom: 12px;
 
     br {
       display: block;

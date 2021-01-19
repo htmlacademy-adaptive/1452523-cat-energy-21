@@ -5,21 +5,26 @@
   padding-top: 35px;
   padding-bottom: 18px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 47px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 34px;
+    padding-bottom: 41px;
   }
 }
-
 
 .footer__social--wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 11px;
-    padding-bottom: 49px;
+    padding-top: 22px;
+    padding-bottom: 7px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 19px;
+    padding-top: 24px;
   }
 }

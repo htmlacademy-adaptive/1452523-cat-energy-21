@@ -1,71 +1,67 @@
 .image__range {
   @media (min-width: $tablet-width) {
-    padding-top: 81px;
     background: linear-gradient(to top, $light-grey 0, $light-grey 63.5%, $basic-white 63.5%, $basic-white 100%);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
     padding-right: 91px;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to top, $basic-grey 0, $basic-grey 66.5%, $basic-white 66.5%, $basic-white 100%);
   }
 }
 
-.image__image-cat {
+.image-range__image-cat {
   display: flex;
+  position: relative;
+  width: 320px;
+  height: 230px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-  }
-}
-
-.images__image--before {
-  height: 232px;
-  width: 320px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    margin-left: 0;
-    margin-right: 0;
-    height: 520px;
     width: 670px;
-    padding-top: 29px;
+    height: 520px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 533px;
-    padding-top: 32px;
+    width: 755px;
+    height: 526px;
   }
 }
 
-.images__image--after {
-  background-color: $light-grey;
-  height: 232px;
-  left: 400px;
-  width: 320px;
-  display: none;
+.image-range__image {
+  &--before {
 
-  @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $light-grey 0, $light-grey 67.5%, $basic-white 67.5%, $basic-white 100%);
-    position: absolute;
-    left: 14%;
-    display: block;
-    clip: rect(auto auto auto 277px);
-    height: 520px;
-    width: 600px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+      margin-right: 0;
+      left: 0;
+      top: 0;
+      position: absolute;
+      clip: rect(auto 360px auto auto);
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    left: 53%;
-    height: 533px;
-    padding-top: 9px;
-    clip: rect(auto auto auto 284px);
-    width: 563px;
-    background: linear-gradient(to top, $light-grey 0, $light-grey 62%, $basic-white 62%, $basic-white 100%);
+  &--after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      left: 88px;
+      top: 0;
+      display: block;
+      clip: rect(auto auto auto 270px);
+      position: absolute;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 90px;
+      padding-top: 9px;
+    }
   }
 }

@@ -89,7 +89,8 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $special_grey;
-    padding: 20px 38px 27px;
+    padding: 21px 38px 27px;
+    margin-bottom: -1px;
   }
 
   @media (min-width: $desktop-width) {
