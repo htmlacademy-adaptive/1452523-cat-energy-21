@@ -138,6 +138,9 @@
 }
 
 .catalog__img {
+  width: auto;
+  height: auto;
+
   @media (min-width: $tablet-width) {
     padding-left: 41px;
     margin-top: -131px;

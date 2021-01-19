@@ -7,6 +7,7 @@
 
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   </head>
 
   <body class="page-body">
@@ -31,7 +32,9 @@
                 <img
                   class="main-nav__img"
                   src="img/logo.svg"
-                  alt="Кэт Энерджи"
+                  width="190"
+                  height="38"
+                  alt="Логотип компании Cat energy"
                 />
               </picture>
             </a>
@@ -81,6 +84,7 @@
         </section>
 
         <div class="options container">
+
           <section class="option__option option__option--slim option">
             <h2 class="option__tittle option__tittle--slim">Похудение</h2>
             <p class="option__text">
@@ -201,7 +205,7 @@
                   src="img/cat-before.png"
                   alt="Котик, требуюший заботы и утраты лишних килограмм"
                   width="320"
-
+                  height="232px"
                 />
               </picture>
 
@@ -241,18 +245,18 @@
                   class="images__image--after"
                   src="img/cat-after.png"
                   alt="Котик в хорошей форме"
-
-
+                  width="320"
+                  height="232px"
                 />
                 </picture>
                 </div>
                 <div class="range-controls">
-                  <p class="range-controls__text">Было</p>
+                  <p class="range-controls__text" tabindex="0" aria-label="Таким котик был">Было</p>
                   <div class="range-controls__scale">
                     <input type="range" class="range-controls__input">
-                    <div class="range-controls__div"></div>
+                    <div class="range-controls__div" tabindex="0"></div>
                   </div>
-                  <p class="range-controls__text">Стало</p>
+                  <p class="range-controls__text" tabindex="0" aria-label="А таким вот стал">Стало</p>
                 </div>
             </div>
           </div>
@@ -262,9 +266,9 @@
 
       <footer class="page-body__footer">
         <div class="address">
-          <div class="address__text">
+          <div class="address__text address__text--grey">
             <h2 class="address__tittle">
-              Приглашаем </br> к сотрудничеству дилеров!
+              Приглашаем <br> к&nbsp;сотрудничеству дилеров!
             </h2>
             <div class="address__address">
               <p class="address__p">ул. Большая Конюшенная, д. 19/8</p>
@@ -272,34 +276,38 @@
             </div>
           </div>
 
-          <iframe
-            class="iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2snl!4v1606562731250!5m2!1sru!2snl"
-            height="362"
-
-
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
+          <iframe class="iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610034197743!5m2!1sru!2sru"
+          height="360"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0">
+          </iframe>
         </div>
 
         <div class="footer__social">
           <div class="footer__social--wrapper container">
             <div class="picture-footer">
-              <img class="picture-footer__image" src="img/footer-logo.svg" width="128" height="24"/>
+              <a class="picture-footer__logo" href="index.html" aria-label="Ссылка на главную страницу Cat Energy">
+                <img class="picture-footer__image" src="img/footer-logo.svg" width="128" height="24"/>
+              </a>
             </div>
             <ul class="social-items__list">
               <li class="social-items__item">
                 <a
                   class="social-items__link social__link--vkontakte"
                   href="https://vk.com/htmlacademy"
+                  href="blank.html"
+                  aria-label="страница Cat Energy в vk"
                 >
                   <svg
                     class="social-item__svg social-item__svg--vk"
                     width="23"
                     height="13"
                     xmlns="http://www.w3.org/2000/svg"
+                    role="img"
                   >
                     <symbol viewBox="0 0 23 13" id="vk">
                       <path
@@ -316,12 +324,15 @@
                 <a
                   class="social-items__link social__link--instagram"
                   href="https://www.instagram.com/htmlacademy"
+                  href="blank.html"
+                  aria-label="страница Cat Energy в instagram"
                 >
                   <svg
                     class="social-item__svg social-item__svg--ig"
                     width="16"
                     height="16"
                     xmlns="http://www.w3.org/2000/svg"
+                    role="img"
                   >
                     <symbol viewBox="0 0 16 16" id="ig">
                       <path
@@ -333,10 +344,13 @@
                   </svg>
                 </a>
               </li>
+
               <li class="social-items__item">
                 <a
                   class="social-items__link social__link--facebook"
                   href="https://www.facebook.com/htmlacademy"
+                  href="blank.html"
+                  aria-label="страница Cat Energy в facebook"
                 >
                   <svg
                     class="social-item__svg social-item__svg--fb"
@@ -344,6 +358,7 @@
                     height="20"
                     viewBox="0 0 14 28"
                     xmlns="http://www.w3.org/2000/svg"
+                    role="img"
                   >
                     <symbol vievBox="0 0 13 20" id="fb">
                       <path

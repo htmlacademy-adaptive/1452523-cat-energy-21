@@ -24,6 +24,7 @@
   color: $dark-grey;
   margin-top: auto;
   margin-bottom: auto;
+  white-space: wrap;
 
   @media (min-width: $tablet-width) {
     padding-right: 18px;
