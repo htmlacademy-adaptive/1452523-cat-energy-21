@@ -9,10 +9,11 @@
   </head>
 
   <body class="page-body">
-    <div class="page__color">
+    <div class="page-body__color">
       <header class="page-body__header">
-        <nav class="main-nav main-nav--closed container">
-          <div class="main-nav__div">
+        <nav class="main-nav main-nav--closed main-nav--no-border">
+          <div class="main-nav__button main-nav--no-border">
+          <div class="main-nav__div container">
             <div class="main-nav__nav">
               <a class="main-nav__logo link" href="index.html">
                 <picture>
@@ -31,6 +32,7 @@
             <button class="button-burger" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
+          </div>
           </div>
 
           <ul class="main-nav__list site-list">
@@ -56,24 +58,24 @@
           </p>
 
           <div class="data-program-change">
-            <fieldset class="data">
+            <fieldset class="field-text">
               <h2 class="visually-hidden">Информация о питомце</h2>
 
-              <label class="field-text">
+              <label class="field-text__label">
                 <span class="field-text__span">
                   ИМЯ:*
                 </span>
                 <input class="field-text__input field-text__input--name" placeholder="Барсик" aria-label="Заполнить графу об имени питомца" required/>
               </label>
 
-              <label class="field-text">
+              <label class="field-text__label">
                 <span class="field-text__span">
                   Вес (кг):*
                 </span>
                 <input class="field-text__input field-text__input--weidth" placeholder="7" aria-label="Заполнить графу о весе питомца" required/>
               </label>
 
-              <label class="field-text">
+              <label class="field-text__label">
                 <span class="field-text__span">
                   Возраст (лет):
                 </span>
@@ -81,24 +83,24 @@
               </label>
             </fieldset>
 
-            <fieldset class="program-change">
+            <fieldset class="field-checkbox">
               <h2 class="visually-hidden">Цель программы</h2>
 
-              <label class="field-checkbox">
+              <label class="field-checkbox__label">
                 <input class="field-checkbox__input visually-hidden" checked type="radio" name="variants" value="slimming" required/>
                 <span class="field-checkbox__span" tabindex="0" aria-label="Выбрать похудение">
                   Похудение
                 </span>
               </label>
 
-              <label class="field-checkbox">
+              <label class="field-checkbox__label">
                 <input class="field-checkbox__input visually-hidden" type="radio" name="variants" value="pro" required/>
                 <span class="field-checkbox__span " tabindex="0" aria-label="Выбрать набор массы">
                   Набор массы
                 </span>
               </label>
 
-              <label class="field-checkbox">
+              <label class="field-checkbox__label">
                 <input class="field-checkbox__input visually-hidden" type="radio" name="variants" value="advice" required/>
                 <span class="field-checkbox__span" tabindex="0" aria-label="Вариант, если не можете выбрать">
                   Не знаю (нужен ваш совет)
@@ -107,20 +109,20 @@
             </fieldset>
           </div>
 
-          <fieldset class="program-contacts">
-            <legend class="program-contacts__legend">
-              <span>
-                Контактные данные&nbsp;<br>
+          <fieldset class="field-connect">
+            <legend class="field-connect__legend">
+              <span class="field-connect__span">
+                Контактные данные
                 (владельца кота)
               </span>
             </legend>
 
-            <div class="email-phone">
-              <div class="field-connect email">
+            <div class="field-connect__contacts">
+              <div class="field-connect__contacts-details field-connect__contact-details--email">
                 <label class="field-connect__label">
                   E-mail:*
                 </label>
-                <div class="field-connect__input-image ">
+                <div class="field-connect__input-image">
                   <input
                     class="field-connect__input field-connect__input--email"
                     type="email"
@@ -147,7 +149,7 @@
                 </div>
               </div>
 
-              <div class="field-connect phone">
+              <div class="field-connect__contacts-details field-connect__contact-details--phone">
                 <label class="field-connect__label">
                   Телефон:*
                 </label>
@@ -209,10 +211,10 @@
               </span>
             </legend>
 
-            <div class="additionally-checkbox__flex">
-              <label class="additionally-checkbox">
+            <div class="program-additionally__flex">
+              <label class="program-additionally__label">
                 <input
-                  class="additionally-checkbox__input visually-hidden"
+                  class="program-additionally__input visually-hidden"
                   type="checkbox"
                   name="sweet"
                   aria-label="Добавить сахарозаменитель"
@@ -222,9 +224,9 @@
                   </span>
               </label>
 
-              <label class="additionally-checkbox">
+              <label class="program-additionally__label">
                 <input
-                  class="additionally-checkbox__input visually-hidden"
+                  class="program-additionally__input visually-hidden"
                   type="checkbox"
                   name="water"
                   aria-label="Добавить питьевую воду"
@@ -234,9 +236,9 @@
                 </span>
               </label>
 
-              <label class="additionally-checkbox">
+              <label class="program-additionally__label">
                 <input
-                  class="additionally-checkbox__input visually-hidden"
+                  class="program-additionally__input visually-hidden"
                   type="checkbox"
                   name="milk"
                   aria-label="Добавить молоко"
@@ -246,9 +248,9 @@
                   </span>
               </label>
 
-              <label class="additionally-checkbox">
+              <label class="program-additionally__label">
                 <input
-                  class="additionally-checkbox__input visually-hidden"
+                  class="program-additionally__input visually-hidden"
                   type="checkbox"
                   name="vitamins"
                   aria-label="Добавить витамины"
@@ -270,9 +272,9 @@
         </form>
       </main>
 
-      <footer class="page-body__footer">
+        <footer class="page-body__footer">
         <div class="address">
-          <div class="address__text address__text--grey">
+          <div class="address__text">
             <div class="address__text-container container">
             <h2 class="address__tittle">
               Приглашаем <br> к&nbsp;сотрудничеству дилеров!
@@ -296,22 +298,24 @@
         </div>
 
         <div class="footer__social">
-          <div class="footer__social--wrapper container">
+          <div class="footer__social-wrapper">
+
             <div class="picture-footer">
               <a class="picture-footer__logo" href="index.html" aria-label="Ссылка на главную страницу Cat Energy">
                 <img class="picture-footer__image" src="img/footer-logo.svg" width="128" height="24"/>
               </a>
             </div>
+
             <ul class="social-items__list">
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--vkontakte"
+                  class="social-items__link"
                   href="https://vk.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в vk"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--vk"
+                    class="social-items__svg social-items__svg--vk"
                     width="23"
                     height="13"
                     xmlns="http://www.w3.org/2000/svg"
@@ -330,13 +334,13 @@
 
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--instagram"
+                  class="social-items__link"
                   href="https://www.instagram.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в instagram"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--ig"
+                    class="social-items__svg social-items__svg--ig"
                     width="16"
                     height="16"
                     xmlns="http://www.w3.org/2000/svg"
@@ -355,13 +359,13 @@
 
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--facebook"
+                  class="social-items__link"
                   href="https://www.facebook.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в facebook"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--fb"
+                    class="social-items__svg social-items__svg--fb"
                     width="13"
                     height="20"
                     viewBox="0 0 14 28"
@@ -383,7 +387,7 @@
               </li>
             </ul>
 
-            <ul class="htmlacademy__list">
+            <ul class="htmlacademy__list container">
               <li class="htmlacademy__text">
                 <a class="htmlacademy__a" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива профессиональный HTML и CSS, уровень 2">
                   HTML Academy

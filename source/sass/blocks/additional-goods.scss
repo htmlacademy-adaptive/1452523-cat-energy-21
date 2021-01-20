@@ -1,11 +1,9 @@
-.additional-goods__caption {
+.additional-goods {
   display: block;
   font-size: 24px;
   font-family: $oswald;
   font-weight: normal;
-  z-index: -1;
   border-bottom: 1px solid $special_grey;
-  overflow: hidden;
   padding-top: 20px;
   padding-bottom: 28px;
   margin-top: 0;
@@ -25,10 +23,10 @@
   }
 }
 
-.additional-goods__caption span {
+.additional-goods span {
   position: relative;
-  z-index: 2;
   background-color: $basic-white;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin-left: -40px;
@@ -37,19 +35,20 @@
   }
 }
 
-.additional-goods__caption span::after,
-.additional-goods__caption span::before {
+.additional-goods span::after,
+.additional-goods span::before {
   content: "";
   width: 100vw;
   height: 2px;
   background-color: $basic-green;
   position: absolute;
   top: 20px;
+  z-index: -1;
   left: 0;
 }
 
 @media (min-width: $tablet-width) {
-  .additional-goods__caption span::before {
+  .additional-goods span::before {
     left: -100vw;
   }
 }
@@ -68,7 +67,7 @@
   }
 }
 
-.additional-goods {
+.additional-goods__list {
   margin: 0;
   padding-left: 0;
 

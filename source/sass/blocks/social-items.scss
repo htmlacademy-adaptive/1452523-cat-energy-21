@@ -9,19 +9,15 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 13px 0 0 28px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 130px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 11px;
-  }
-}
-
-.social-item {
-  border-bottom: 1px solid $grey-line;
-
-  &:last-child {
-    border: none;
+    padding-top: 0;
+    padding-right: 383px;
   }
 }
 
@@ -46,7 +42,7 @@
   color: $dark-grey;
 }
 
-.social-item__svg {
+.social-items__svg {
   &:hover {
     fill: $basic-green;
   }

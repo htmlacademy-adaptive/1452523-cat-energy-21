@@ -2,7 +2,7 @@
   text-align: center;
   list-style-type: none;
   background-color: $basic-grey;
-  padding-top: 35px;
+  padding-top: 40px;
   padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
@@ -16,15 +16,35 @@
   }
 }
 
-.footer__social--wrapper {
+.footer__social-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 22px;
+    padding-top: 27px;
     padding-bottom: 7px;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 708px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 24px;
+    width: 1220px;
   }
+}
+
+
+.footer__social-list {
+
+  @media (min-width: $tablet-width) {
+  padding-right: 156px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 415px;
+  }
+}
 }

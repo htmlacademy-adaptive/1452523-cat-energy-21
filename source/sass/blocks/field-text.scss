@@ -1,4 +1,28 @@
 .field-text {
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid $grey-line;
+  padding: 40px 0 23px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 72px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 564px;
+    margin-right: 81px;
+    padding-bottom: 0;
+  }
+}
+
+.field-text__label {
   padding-bottom: 13px;
   white-space: nowrap;
   display: grid;

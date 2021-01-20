@@ -22,7 +22,7 @@
   color: $basic-black;
   display: block;
   width: 100%;
-  overflow: hidden;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -63,27 +63,7 @@
   }
 }
 
-.program-additionally__span {
-  font-size: 16px;
-  font-family: $oswald;
-  font-weight: 400;
-  font-style: normal;
-  color: $basic-black;
-  text-transform: uppercase;
-  padding-left: 46px;
-  line-height: 30px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    padding-left: 62px;
-
-    &--vitamin {
-      padding-left: 55px;
-    }
-  }
-}
-
-.additionally-checkbox__flex {
+.program-additionally__flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -99,7 +79,7 @@
   }
 }
 
-.additionally-checkbox {
+.program-additionally__label {
   padding-bottom: 12px;
   cursor: pointer;
   position: relative;
@@ -134,7 +114,30 @@
   }
 }
 
-.additionally-checkbox__input + span::before {
+.program-additionally__span {
+  font-size: 16px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-black;
+  text-transform: uppercase;
+  padding-left: 46px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 62px;
+
+    &--vitamin {
+      padding-left: 55px;
+    }
+  }
+}
+
+
+
+
+.program-additionally__input + span::before {
   content: "";
   position: absolute;
   display: block;
@@ -145,19 +148,19 @@
   top: 0;
 }
 
-.additionally-checkbox__input::before .program-additionally__span {
+.program-additionally__input::before .program-additionally__span {
   border: 1px solid $special_grey;
 }
 
-.additionally-checkbox__input::before:hover .program-additionally__span {
+.program-additionally__input::before:hover .program-additionally__span {
   border: 1px solid #bababa;
 }
 
-.additionally-checkbox__input::before:disabled .program-additionally__span {
+.program-additionally__input::before:disabled .program-additionally__span {
   opacity: 30%;
 }
 
-.additionally-checkbox__input:checked + span::before {
+.program-additionally__input:checked + span::before {
   content: "";
   position: absolute;
   display: block;
@@ -177,8 +180,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additionally-checkbox__input + span::before,
-  .additionally-checkbox__input:checked + span::before {
+  .program-additionally__input + span::before,
+  .program-additionally__input:checked + span::before {
     top: -4px;
     left: 3px;
     width: 39px;
@@ -187,8 +190,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additionally-checkbox__input + .program-additionally__span--vitamin::before,
-  .additionally-checkbox__input + .program-additionally__span--vitamin:checked::before {
+  .program-additionally__input + .program-additionally__span--vitamin::before,
+  .program-additionally__input + .program-additionally__span--vitamin:checked::before {
     top: -5px;
     left: -2px;
     width: 39px;
@@ -197,15 +200,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additionally-checkbox__input:checked + span::before {
+  .program-additionally__input:checked + span::before {
     background-position: 10px 11px;
   }
 }
 
-.additionally-checkbox .program-additionally__span::before {
+.program-additionally .program-additionally__span::before {
   border: 1px solid $special_grey;
 }
 
-.additionally-checkbox:hover .program-additionally__span::before {
+.program-additionally:hover .program-additionally__span::before {
   border: 1px solid #bababa;
 }

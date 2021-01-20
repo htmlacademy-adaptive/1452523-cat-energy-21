@@ -1,4 +1,73 @@
 .field-connect {
+  margin: 0;
+  border: none;
+  padding: 0 0 19px;
+}
+
+.field-connect__legend {
+  position: relative;
+  color: $basic-black;
+  font-size: 24px;
+  line-height: 31px;
+  padding: 20px 0 35px;
+  display: block;
+  background: $basic-white;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 76px;
+    padding-top: 75px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+    padding-bottom: 79px;
+  }
+}
+
+
+.field-connect__span {
+  position: relative;
+  z-index: 1;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    white-space: nowrap;
+    width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 0;
+    margin-right: -40px;
+  }
+  }
+
+
+.field-connect__legend span::after,
+.field-connect__legend span::before {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 20px;
+}
+
+.field-connect__legend span::before {
+  @media (min-width: $tablet-width) {
+    left: -100vw;
+  }
+}
+
+.field-connect__contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.field-connect__contacts-details {
   font-size: 16px;
   text-transform: uppercase;
   color: $dark-grey;
@@ -25,12 +94,18 @@
     &:not(:last-child) {
       padding-bottom: 0;
     }
+
+    &--email {
+      margin-right: 83px;
+      padding-bottom: 0;
+    }
   }
 }
 
 .field-connect__label {
   padding-right: 11px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -40,48 +115,6 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 17px;
-  }
-}
-
-.field-connect__input {
-  text-transform: uppercase;
-  border: 1px solid $special_grey;
-  width: 100%;
-
-  &--email {
-    padding: 16px 42px 11px 15px;
-  }
-
-  &--phone {
-    padding: 16px 27px 11px 14px;
-  }
-
-  &::placeholder {
-    color: $basic-black;
-    font-family: $oswald;
-    font-size: 16px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::placeholder {
-      font-size: 20px;
-    }
-
-    &--email {
-      padding: 19px 42px 14px 24px;
-    }
-
-    &--phone {
-      padding: 21px 27px 13px 15px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 20px 40px 14px 19px;
-
-    &--phone {
-      padding-left: 11px;
-    }
   }
 }
 
@@ -104,12 +137,44 @@
   }
 }
 
-.email {
-  align-items: center;
-}
+.field-connect__input {
+  text-transform: uppercase;
+  border: 1px solid $special_grey;
+  width: 100%;
+  font-family: $oswald;
+  font-size: 16px;
 
-.phone {
-  align-items: center;
+  &--email {
+    padding: 16px 42px 11px 15px;
+  }
+
+  &--phone {
+    padding: 16px 27px 11px 14px;
+  }
+
+  &::placeholder {
+    color: $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+   font-size: 20px;
+
+    &--email {
+      padding: 19px 42px 14px 24px;
+    }
+
+    &--phone {
+      padding: 21px 27px 13px 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 40px 14px 19px;
+
+    &--phone {
+      padding-left: 11px;
+    }
+  }
 }
 
 .field-connect__img {
@@ -124,24 +189,10 @@
   &:invalid {
     fill: #ff8282;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .field-connect__img {
+  @media (min-width: $tablet-width) {
     right: 16px;
     top: 17px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .email-phone {
-    display: flex;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .email {
-    margin-right: 83px;
-    padding-bottom: 0;
-  }
-}

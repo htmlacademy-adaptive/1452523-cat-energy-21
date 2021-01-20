@@ -11,11 +11,11 @@
   </head>
 
   <body class="page-body">
-    <div class="page__color page__color--index">
+    <div class="page-body__color page-body__color--index">
       <header class="page-body__header">
-        <nav class="main-nav main-nav--closed main-nav--no-border container">
+        <nav class="main-nav main-nav--closed main-nav--no-border">
         <div class="main-nav__button main-nav__button--no-border">
-          <div class="main-nav__div">
+          <div class="main-nav__div container">
             <div class="main-nav__nav">
             <a class="main-nav__logo link" href="index.html">
               <picture>
@@ -44,21 +44,22 @@
           </button>
         </div>
         </div>
+
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a
                 href="index.html"
-                class="link link--active link--white link--active-white"
+                class="site-list__link link link--active link--white link--active-white"
                 >Главная</a
               >
             </li>
             <li class="site-list__item">
-              <a href="catalog.html" class="link link--white"
+              <a href="catalog.html" class="site-list__link link link--white"
                 >Каталог продукции</a
               >
             </li>
             <li class="site-list__item">
-              <a href="form.html" class="link link--white"
+              <a href="form.html" class="site-list__link link link--white"
                 >Подбор программы</a
               >
             </li>
@@ -68,7 +69,7 @@
 
       <main class="page-body__main index">
         <section class="product container--main-form">
-          <div class="flex-text">
+          <div class="product__flex-text">
             <h1 class="product__title">
               Функциональное <br />питание для котов
             </h1>
@@ -83,9 +84,9 @@
           >
         </section>
 
-        <div class="options container">
+        <div class="option container">
 
-          <section class="option__option option__option--slim option">
+          <section class="option__option option__option--slim">
             <h2 class="option__tittle option__tittle--slim">Похудение</h2>
             <p class="option__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -95,7 +96,7 @@
             <a class="option__link" href="catalog.html" aria-label="ссылка на каталог slim"">Каталог Slim</a>
           </section>
 
-          <section class="option__option option__option--pro option">
+          <section class="option__option option__option--pro">
             <h2 class="option__tittle option__tittle--pro">Набор массы</h2>
             <p class="option__text">
               Заработать авторитет среди дворовых котов&nbsp;</br> и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
@@ -127,102 +128,102 @@
         </section>
 
         <section class="example">
-          <div class="example--container">
-            <div class="example__text example__text--common container">
-              <h2 class="example__tittle">Живой пример</h2>
-              <p class="example__text__p">
+          <div class="example__container">
+            <div class="example__text example__text--common">
+              <div class="example__container-text">
+              <h2 class="example__tittle container">Живой пример</h2>
+              <p class="example__text-p container">
                 Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
                 на Cat Energy Slim. Отличный результат без изнуряющих
                 тренировок! При этом он не менял своих привычек и по-прежнему
                 спит по 16 часов в день.
               </p>
 
-              <div class="time-weight-expenses">
-                <div class="time-weight__flex">
-                  <div class="time-weight">
+              <div class="time-weight-expenses container">
+                <div class="time-weight-expenses__flex">
+                  <div class="time-weight-expenses__time-weight">
                     <h2
-                      class="time-weight__tittle time-weight__tittle--kilogram"
+                      class="time-weight-expenses__tittle time-weight-expenses__tittle--kilogram"
                     >
                       5 кг
                     </h2>
-                    <div class="time-weight__border">
-                      <p class="time-weight__subtittle time-weight__subtittle--lost">Снижение веса</p>
+                    <div class="time-weight-expenses__border">
+                      <p class="time-weight-expenses__subtittle time-weight-expenses__subtittle--lost">Снижение веса</p>
                     </div>
                   </div>
-                  <div class="time-weight">
-                    <h2 class="time-weight__tittle time-weight__tittle--days">
+                  <div class="time-weight-expenses__time-weight">
+                    <h2 class="time-weight-expenses__tittle time-weight-expenses__tittle--days">
                       60 дней
                     </h2>
-                    <div class="time-weight__border">
-                      <p class="time-weight__subtittle time-weight__subtittle--time">Затрачено времени</p>
+                    <div class="time-weight-expenses__border">
+                      <p class="time-weight-expenses__subtittle time-weight-expenses__subtittle--time">Затрачено времени</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="expenses">
-                  <p class="expenses__d">Затраты на питание:</p>
-                  <p class="expenses__d">15 000 РУБ.</p>
+                <div class="time-weight-expenses__expenses container">
+                  <p class="time-weight-expenses__expenses-d">Затраты на питание:</p>
+                  <p class="time-weight-expenses__expenses-d">15 000 РУБ.</p>
+                </div>
                 </div>
               </div>
-            </div>
-            <div class="image-range">
-              <div class="image-range__image-cat">
-                <picture>
 
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x"
+              <div class="image-range">
+                <div class="image-range__image-cat">
+                  <picture>
 
-                />
-                <source
-                  type="image/webp"
-                  srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x"
-                />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x"
+                  />
 
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/cat-fat-tablet.png    1x,
-                    img/cat-fat-tablet@2x.png 2x
-                  ">
-                <img
-                  class="image-range__image--before"
-                  src="img/cat-fat.png"
-                  srcset="img/cat-fat@2x.png"
-                  alt="Котик, требуюший заботы и утраты лишних килограмм"
+                  <source
+                    type="image/webp"
+                    srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x"
+                  />
 
-                />
-              </picture>
-
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x"
-
-                />
-                <source
-                  type="image/webp"
-                  srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x"
-                />
-
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/cat-skinny-tablet.png    1x,
-                    img/cat-skinny-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  class="image-range__image--after"
-                  src="img/cat-skinny.png"
-                  srcset="img/cat-skinny@2x.png"
-                  alt="Котик в хорошей форме"
-
-                />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/cat-fat-tablet.png    1x,
+                      img/cat-fat-tablet@2x.png 2x"
+                    >
+                  <img
+                    class="image-range__image image-range__image--before"
+                    src="img/cat-fat-tablet.png"
+                    srcset="img/cat-fat-tablet@2x.png"
+                    alt="Котик, требуюший заботы и утраты лишних килограмм"
+                  />
                 </picture>
-                </div>
+
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x"
+
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/cat-skinny-tablet.png    1x,
+                      img/cat-skinny-tablet@2x.png 2x"
+                  />
+                  <img
+                    class="image-range__image image-range__image--after"
+                    src="img/cat-skinny.png"
+                    srcset="img/cat-skinny@2x.png"
+                    alt="Котик в хорошей форме"
+                  />
+                </picture>
+              </div>
+
                 <div class="range-controls">
                   <p class="range-controls__text" tabindex="0" aria-label="Таким котик был">Было</p>
                   <div class="range-controls__scale">
@@ -263,22 +264,24 @@
         </div>
 
         <div class="footer__social">
-          <div class="footer__social--wrapper container">
-            <div class="picture-footer">
+          <div class="footer__social-wrapper container">
+
+            <div class="footer__social-list picture-footer">
               <a class="picture-footer__logo" href="index.html" aria-label="Ссылка на главную страницу Cat Energy">
                 <img class="picture-footer__image" src="img/footer-logo.svg" width="128" height="24"/>
               </a>
             </div>
-            <ul class="social-items__list">
+
+            <ul class="footer__social-list social-items__list">
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--vkontakte"
+                  class="social-items__link"
                   href="https://vk.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в vk"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--vk"
+                    class="social-items__svg social-items__svg--vk"
                     width="23"
                     height="13"
                     xmlns="http://www.w3.org/2000/svg"
@@ -297,13 +300,13 @@
 
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--instagram"
+                  class="social-items__link"
                   href="https://www.instagram.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в instagram"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--ig"
+                    class="social-items__svg social-items__svg--ig"
                     width="16"
                     height="16"
                     xmlns="http://www.w3.org/2000/svg"
@@ -322,13 +325,13 @@
 
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--facebook"
+                  class="social-items__link"
                   href="https://www.facebook.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в facebook"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--fb"
+                    class="social-items__svg social-items__svg--fb"
                     width="13"
                     height="20"
                     viewBox="0 0 14 28"
@@ -350,7 +353,7 @@
               </li>
             </ul>
 
-            <ul class="htmlacademy__list">
+            <ul class="footer__social-list htmlacademy__list">
               <li class="htmlacademy__text">
                 <a class="htmlacademy__a" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива профессиональный HTML и CSS, уровень 2">
                   HTML Academy

@@ -11,11 +11,12 @@
 </head>
 
 <body class="page-body">
-  <div class="page__color">
+  <div class="page-body__color">
     <header class="page-body__header">
-      <div class="container">
-        <nav class="main-nav main-nav--closed">
-          <div class="main-nav__div">
+
+        <nav class="main-nav main-nav--closed main-nav--no-border">
+          <div class="main-nav__button main-nav__button--no-border">
+          <div class="main-nav__div container">
             <div class="main-nav__nav">
               <a class="main-nav__logo link" href="index.html">
                 <picture>
@@ -34,6 +35,8 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
+          </div>
+
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -47,11 +50,15 @@
             </li>
           </ul>
         </nav>
-      </div>
+
     </header>
 
-    <main class="page-body__main catalog container">
-      <h1 class="catalog__headline">Каталог продукции</h1>
+    <main class="page-body__main catalog">
+      <h1 class="catalog__headline">
+        <span class="catalog__span container">
+          Каталог продукции
+        </span>
+      </h1>
 
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -556,13 +563,13 @@
         </li>
       </ul>
 
-
-      <h2 class="additional-goods__caption">
+  <div class="container">
+      <h2 class="additional-goods">
         <span>Дополнительные товары</span>
       </h2>
       <div class="additional-goods__gift-list">
         <div class="additional-goods__gift">
-          <ul class="additional-goods">
+          <ul class="additional-goods__list">
             <li class="additional-goods__item">
               <div class="additional-goods__headline-details">
                 <h3 class="additional-goods__headline">Сахарозаменитель</h3>
@@ -640,7 +647,7 @@
           </section>
         </div>
       </div>
-
+  </div>
   </main>
 
       <footer class="page-body__footer">
@@ -669,7 +676,7 @@
         </div>
 
         <div class="footer__social">
-          <div class="footer__social--wrapper container">
+          <div class="footer__social--wrapper">
             <div class="picture-footer">
               <a class="picture-footer__logo" href="index.html" aria-label="Ссылка на главную страницу Cat Energy">
                 <img class="picture-footer__image" src="img/footer-logo.svg" width="128" height="24"/>
@@ -678,13 +685,13 @@
             <ul class="social-items__list">
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--vkontakte"
+                  class="social-items__link"
                   href="https://vk.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в vk"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--vk"
+                    class="social-items__svg social-items__svg--vk"
                     width="23"
                     height="13"
                     xmlns="http://www.w3.org/2000/svg"
@@ -703,13 +710,13 @@
 
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--instagram"
+                  class="social-items__link"
                   href="https://www.instagram.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в instagram"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--ig"
+                    class="social-items__svg social-items__svg--ig"
                     width="16"
                     height="16"
                     xmlns="http://www.w3.org/2000/svg"
@@ -728,13 +735,13 @@
 
               <li class="social-items__item">
                 <a
-                  class="social-items__link social__link--facebook"
+                  class="social-items__link"
                   href="https://www.facebook.com/htmlacademy"
                   href="blank.html"
                   aria-label="страница Cat Energy в facebook"
                 >
                   <svg
-                    class="social-item__svg social-item__svg--fb"
+                    class="social-items__svg social-items__svg--fb"
                     width="13"
                     height="20"
                     viewBox="0 0 14 28"
@@ -756,7 +763,7 @@
               </li>
             </ul>
 
-            <ul class="htmlacademy__list">
+            <ul class="htmlacademy__list container">
               <li class="htmlacademy__text">
                 <a class="htmlacademy__a" href="https://htmlacademy.ru/intensive/adaptive" aria-label="лендинг интенсива профессиональный HTML и CSS, уровень 2">
                   HTML Academy

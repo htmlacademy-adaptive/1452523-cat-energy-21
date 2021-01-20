@@ -79,7 +79,7 @@
   }
 }
 
-.flex-text {
+.product__flex-text {
   background: url("../img/background-cat.jpg");
   background-size: 320px 302px;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-bottom: 525px;
+    margin-bottom: 527px;
     margin-left: 0;
 
     &--index {
