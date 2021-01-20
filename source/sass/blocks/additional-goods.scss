@@ -27,11 +27,12 @@
   position: relative;
   background-color: $basic-white;
   z-index: 1;
+  padding-right: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-left: -40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-left: -37px;
+    padding-left: 37px;
+    padding-right: 36px;
   }
 }
 
@@ -42,9 +43,13 @@
   height: 2px;
   background-color: $basic-green;
   position: absolute;
-  top: 20px;
+  top: 19px;
   z-index: -1;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -145,6 +150,7 @@
     justify-content: space-between;
     width: 287px;
     margin-right: 44px;
+    padding-top: 7px;
   }
 }
 

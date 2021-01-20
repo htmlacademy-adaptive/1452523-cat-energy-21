@@ -1,46 +1,60 @@
 .field-connect {
-  margin: 0;
   border: none;
-  padding: 0 0 19px;
+  padding: 0 0 21px;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 633px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .field-connect__legend {
   position: relative;
   color: $basic-black;
   font-size: 24px;
-  line-height: 31px;
-  padding: 20px 0 35px;
+  line-height: 29px;
+  padding-top: 22px;
+  padding-bottom: 32px;
   display: block;
   background: $basic-white;
   margin: 0;
+  width: 200px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 76px;
+    padding-bottom: 73px;
     padding-top: 75px;
     width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 63px;
-    padding-bottom: 79px;
+    padding-top: 65px;
+    padding-bottom: 75px;
   }
 }
 
-
-.field-connect__span {
+.field-connect__legend span {
+  padding-right: 10px;
+  margin-right: -10px;
+  margin-left: -10px;
+  padding-left: 10px;
   position: relative;
   z-index: 1;
   background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     white-space: nowrap;
-    width: 100%;
     font-size: 36px;
     line-height: 36px;
-    padding-right: 0;
-    margin-right: -40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    padding-left: 40px;
   }
-  }
+}
 
 
 .field-connect__legend span::after,
@@ -52,7 +66,11 @@
   position: absolute;
   z-index: -1;
   left: 0;
-  top: 20px;
+  top: 23px;
+
+  @media (min-width: $tablet-width) {
+    top: 30px;
+  }
 }
 
 .field-connect__legend span::before {
@@ -79,7 +97,7 @@
   grid-template-columns: max-content 1fr;
 
   &:not(:last-child) {
-    padding-bottom: 14px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -89,7 +107,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+    width: 570px;
+    margin-right: 77px;
 
     &:not(:last-child) {
       padding-bottom: 0;
@@ -109,7 +128,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    padding-right: 16px;
+    padding-right: 18px;
     padding-bottom: 0;
   }
 
@@ -145,11 +164,11 @@
   font-size: 16px;
 
   &--email {
-    padding: 16px 42px 11px 15px;
+    padding: 10px 42px 10px 15px;
   }
 
   &--phone {
-    padding: 16px 27px 11px 14px;
+    padding: 10px 27px 10px 14px;
   }
 
   &::placeholder {
@@ -157,23 +176,19 @@
   }
 
   @media (min-width: $tablet-width) {
-   font-size: 20px;
+    font-size: 20px;
 
     &--email {
-      padding: 19px 42px 14px 24px;
+      padding: 10px 42px 10px 24px;
     }
 
     &--phone {
-      padding: 21px 27px 13px 15px;
+      padding: 10px 27px 10px 15px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 40px 14px 19px;
-
-    &--phone {
-      padding-left: 11px;
-    }
+    padding: 9px 40px 9px 19px;
   }
 }
 
@@ -195,4 +210,3 @@
     top: 17px;
   }
 }
-

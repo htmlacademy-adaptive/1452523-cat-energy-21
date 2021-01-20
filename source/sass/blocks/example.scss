@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 29px 0 0px;
+    padding: 29px 0 0;
     background: linear-gradient(to top, $light-grey 0, $light-grey 43%, $basic-white 43%, $basic-white 100%);
   }
 
@@ -28,8 +28,8 @@
 
 .example__container-text {
   @media (min-width: $desktop-width) {
-  width: 570px;
-}
+    width: 570px;
+  }
 }
 
 .example__text {
@@ -97,6 +97,4 @@
   .image__range {
     align-items: end;
   }
-
-
 }

@@ -22,8 +22,8 @@
 }
 
 .main-nav__button {
-border-bottom: 1px solid $grey-line-2;
-width: 100vw;
+  border-bottom: 1px solid $grey-line-2;
+  width: 100vw;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -98,8 +98,6 @@ width: 100vw;
   background-color: $basic-black;
   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
 }
-
-
 
 .main-nav--opened .button-burger {
   top: 0;

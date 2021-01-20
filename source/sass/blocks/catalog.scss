@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 49px;
+    padding-top: 44px;
   }
 }
 
@@ -56,7 +56,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 38.5px 38px 40px;
+    padding: 38.5px 38px 39px;
     min-height: 411px;
     margin-left: 0;
     display: flex;
@@ -216,7 +216,7 @@
 
 
     &--show {
-      padding-top: 120px;
+      padding-top: 121px;
     }
 
     &--show::before {

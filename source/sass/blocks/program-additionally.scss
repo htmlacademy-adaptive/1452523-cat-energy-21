@@ -1,12 +1,14 @@
 .program-additionally {
   border: none;
-  margin: 0;
   color: $special-dark-grey;
   font-size: 16px;
   padding: 0 0 22px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 17px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +44,8 @@
   @media (min-width: $tablet-width) {
     margin-right: -40px;
     padding-right: 40px;
+    margin-left: -40px;
+    padding-left: 40px;
   }
 }
 
@@ -55,6 +59,10 @@
   top: 20px;
   left: 0;
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 29px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -72,6 +80,7 @@
     flex-direction: row;
     padding-top: 23px;
     justify-content: space-between;
+    padding-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +94,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-right: 99px;
+    padding-right: 95px;
     display: flex;
     text-align: left;
     min-width: 208px;
@@ -98,14 +107,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 90px;
+    padding-right: 100px;
 
     &:nth-child(2) {
-      padding-right: 120px;
+      padding-right: 135px;
     }
 
     &:nth-child(3) {
-      padding-right: 190px;
+      padding-right: 200px;
     }
 
     &:last-child {
@@ -133,9 +142,6 @@
     }
   }
 }
-
-
-
 
 .program-additionally__input + span::before {
   content: "";

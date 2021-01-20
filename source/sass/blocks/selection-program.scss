@@ -4,37 +4,43 @@
 
 .selection-program__legend {
   font-size: 36px;
+  font-weight: normal;
   color: $basic-black;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0 auto;
   padding-left: 0;
   padding-top: 15px;
   padding-right: 0;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     padding-top: 31px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;
+    width: 1220px;
   }
 }
 
 .selection-program__text {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
+  width: 280px;
   padding-top: 28px;
   text-transform: uppercase;
   font-size: 14px;
   color: $basic-black;
-  margin-left: 0;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     font-size: 20px;
     line-height: 30px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }

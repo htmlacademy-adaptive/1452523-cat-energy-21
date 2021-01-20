@@ -1,7 +1,7 @@
 .field-checkbox {
   border: none;
   margin: 0;
-  padding: 26px 0 2px 45px;
+  padding: 26px 0 2px 66px;
   border-bottom: 1px solid $grey-line;
   color: $special-dark-grey;
   font-size: 16px;
@@ -27,10 +27,18 @@
 .field-checkbox__label {
   padding-bottom: 19px;
   position: relative;
+  margin: 0 auto;
+  width: 280px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-bottom: 23px;
+    width: 545px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
   }
 }
 
@@ -52,14 +60,19 @@
   display: block;
   border: 1px solid $special_grey;
   border-radius: 50%;
-}
 
-@media (min-width: $tablet-width) {
-  .field-checkbox .field-checkbox__span::before {
+  @media (min-width: $tablet-width) {
     left: -58px;
     bottom: 19px;
     width: 36px;
     height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -59px;
+    bottom: 21px;
+    width: 39px;
+    height: 40px;
   }
 }
 
@@ -77,10 +90,9 @@
   height: 14px;
   border-radius: 50%;
   background-color: $basic-green;
-}
 
-@media (min-width: $tablet-width) {
-  .field-checkbox__input:checked + span::after {
+
+  @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
     left: -48px;
@@ -90,5 +102,10 @@
     height: 18px;
     border-radius: 50%;
     background-color: $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -49px;
+    bottom: 31px;
   }
 }

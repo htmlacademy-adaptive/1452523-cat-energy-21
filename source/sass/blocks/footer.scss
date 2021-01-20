@@ -35,16 +35,15 @@
 
 
 .footer__social-list {
-
   @media (min-width: $tablet-width) {
-  padding-right: 156px;
+    padding-right: 156px;
 
-  &:last-child {
-    padding-right: 0;
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 415px;
   }
-}
 }
