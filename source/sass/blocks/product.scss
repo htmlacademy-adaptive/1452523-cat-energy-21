@@ -42,11 +42,11 @@
       width: 709px;
       height: 609px;
       background-repeat: no-repeat;
+      background-size: 709px 609px;
 
       @media (min-resolution: 2dppx) {
         content: "";
         background-image: url("../img/cat-energy-food-tablet2x.png");
-        background-size: 709px 609px;
       }
     }
   }
