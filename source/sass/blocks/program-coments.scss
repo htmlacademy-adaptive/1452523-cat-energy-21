@@ -1,6 +1,12 @@
 .program-comments {
   border: none;
   padding: 0;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .program-comments__legend {
@@ -9,6 +15,8 @@
   padding: 0 0 32px;
   display: block;
   width: 100%;
+  z-index: 1;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -17,17 +25,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
+    padding-top: 42px;
     padding-bottom: 69px;
   }
 }
 
 .program-comments__legend span {
-  position: relative;
-  z-index: 1;
-  background: $basic-white;
   padding-right: 22px;
   margin-right: -22px;
+  background: $basic-white;
 
   @media (min-width: $tablet-width) {
     margin-right: -40px;
@@ -37,8 +43,8 @@
   }
 }
 
-.program-comments__legend span::after,
-.program-comments__legend span::before {
+.program-comments__legend::after,
+.program-comments__legend::before {
   content: "";
   width: 100vw;
   height: 2px;
@@ -49,12 +55,16 @@
   left: 0;
 
   @media (min-width: $tablet-width) {
-    top: 29px;
+    top: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 73px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .program-comments__legend span::before {
+  .program-comments__legend::before {
     left: -100vw;
   }
 }
@@ -63,24 +73,28 @@
   border: 1px solid $color-border-input;
   min-height: 150px;
   width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-style: normal;
+  padding: 5px 11px 0 11px;
 
   &::placeholder {
     color: $dark-grey;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding: 4px 11px 0 11px;
-    font-family: $oswald;
-    font-weight: 400;
-    font-style: normal;
+    padding: 0;
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 6px;
-    min-height: 175px;
-    width: 631px;
+    height: 175px;
+    padding: 9px 13px 0 17px;
 
     &::placeholder {
       font-size: 20px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
   }
 }

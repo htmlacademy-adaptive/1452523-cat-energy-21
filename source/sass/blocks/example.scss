@@ -49,13 +49,13 @@
   font-style: normal;
   box-sizing: border-box;
   padding-bottom: 23px;
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
   font-family: $arial;
   padding-top: 29px;
+  width: 284px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -63,6 +63,7 @@
     line-height: 24px;
     padding-bottom: 54px;
     padding-top: 48px;
+    width: 708px;
 
     &--common {
       padding-bottom: 60px;
@@ -73,7 +74,7 @@
     padding-right: 59px;
     width: 492px;
     padding-top: 132px;
-    padding-bottom: 65px;
+    padding-bottom: 68px;
     margin: 0;
   }
 }

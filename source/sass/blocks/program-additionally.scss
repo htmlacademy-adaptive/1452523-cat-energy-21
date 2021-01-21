@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    padding: 50px 0 29px;
+    padding: 50px 0 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +41,7 @@
   z-index: 1;
   background: $basic-white;
   padding-right: 22px;
+  display: inline-block;
 
   @media (min-width: $tablet-width) {
     margin-right: -40px;
@@ -50,24 +51,24 @@
   }
 }
 
-.program-additionally__legend span::after,
-.program-additionally__legend span::before {
+.program-additionally__legend::after,
+.program-additionally__legend::before {
   content: "";
   width: 100vw;
   height: 2px;
   background-color: $basic-green;
   position: absolute;
-  top: 20px;
+  top: 34px;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 
   @media (min-width: $tablet-width) {
-    top: 29px;
+    top: 83px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .program-additionally__legend span::before {
+  .program-additionally__legend::before {
     left: -100vw;
   }
 }

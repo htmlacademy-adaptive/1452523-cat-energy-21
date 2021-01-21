@@ -13,7 +13,7 @@
     border: 1px solid $color-border-input;
     padding-bottom: 7px;
     padding-left: 86px;
-    padding-top: 32px;
+    padding-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,8 +64,8 @@
   @media (min-width: $tablet-width) {
     left: -58px;
     bottom: 19px;
-    width: 36px;
-    height: 36px;
+    width: 41px;
+    height: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,8 +95,8 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    left: -48px;
-    bottom: 29px;
+    left: -46px;
+    bottom: 30px;
     display: block;
     width: 18px;
     height: 18px;

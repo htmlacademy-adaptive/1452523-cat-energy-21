@@ -1,6 +1,6 @@
 .field-connect {
   border: none;
-  padding: 0 0 21px;
+  padding: 0 0 19px;
   margin: 0 auto;
   width: 280px;
 
@@ -17,11 +17,12 @@
   position: relative;
   color: $basic-black;
   font-size: 24px;
-  line-height: 29px;
-  padding: 22px 0 32px 0;
+  line-height: 27px;
+  padding: 25px 0 32px 0;
   display: block;
-  width: 100%;
 
+  z-index: 1;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 73px;
@@ -30,7 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 65px;
+    padding-top: 67px;
     padding-bottom: 75px;
   }
 }
@@ -40,23 +41,22 @@
   margin-right: -10px;
   margin-left: -10px;
   padding-left: 10px;
-  position: relative;
-  z-index: 1;
   background-color: $basic-white;
+  display: inline-block;
+  width: 211px;
 
   @media (min-width: $tablet-width) {
-    white-space: nowrap;
     font-size: 36px;
     line-height: 36px;
     padding-right: 40px;
     margin-left: -40px;
     padding-left: 40px;
+    width: 595px;
   }
 }
 
-
-.field-connect__legend span::after,
-.field-connect__legend span::before {
+.field-connect__legend::after,
+.field-connect__legend::before {
   content: "";
   width: 100vw;
   height: 2px;
@@ -64,14 +64,18 @@
   position: absolute;
   z-index: -1;
   left: 0;
-  top: 23px;
+  top: 41px;
 
   @media (min-width: $tablet-width) {
-    top: 30px;
+    top: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 88px;
   }
 }
 
-.field-connect__legend span::before {
+.field-connect__legend::before {
   @media (min-width: $tablet-width) {
     left: -100vw;
   }
@@ -95,7 +99,7 @@
   grid-template-columns: max-content 1fr;
 
   &:not(:last-child) {
-    padding-bottom: 10px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: $tablet-width) {

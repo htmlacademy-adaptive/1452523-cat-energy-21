@@ -62,18 +62,18 @@
       content: "";
       background-image: url("../img/cat-energy-food-desktop.png");
       position: absolute;
-      top: 10px;
+      top: 15px;
       left: 448px;
       box-sizing: border-box;
       z-index: -1;
       width: 552px;
       height: 500px;
       margin-left: 0;
+      background-size: 552px 500px;
 
       @media (min-resolution: 2dppx) {
         content: "";
         background-image: url("../img/cat-energy-food-desktop2x.png");
-        background-size: 552px 500px;
       }
     }
   }
@@ -122,7 +122,7 @@
     padding-right: 0;
     font-size: 60px;
     font-weight: normal;
-    padding-top: 93px;
+    padding-top: 97px;
   }
 }
 
