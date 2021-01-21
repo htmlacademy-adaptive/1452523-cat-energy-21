@@ -38,8 +38,9 @@
 
 .program-additionally__legend span {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background: $basic-white;
+  padding-right: 22px;
 
   @media (min-width: $tablet-width) {
     margin-right: -40px;

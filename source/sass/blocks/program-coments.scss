@@ -26,6 +26,8 @@
   position: relative;
   z-index: 1;
   background: $basic-white;
+  padding-right: 22px;
+  margin-right: -22px;
 
   @media (min-width: $tablet-width) {
     margin-right: -40px;

@@ -43,6 +43,8 @@
 }
 
 .social-items__svg {
+  fill: #666666;
+
   &:hover {
     fill: $basic-green;
   }
@@ -66,5 +68,15 @@
       width: 28px;
       height: 25px;
     }
+  }
+}
+
+.social-item__svg {
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }
