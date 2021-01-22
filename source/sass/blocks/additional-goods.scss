@@ -1,4 +1,4 @@
-.additional-goods {
+.additional-goods-span {
   display: block;
   font-size: 24px;
   font-family: $oswald;
@@ -25,7 +25,7 @@
   }
 }
 
-.additional-goods span {
+.additional-goods-span span {
   position: relative;
   background-color: $basic-white;
   z-index: 1;
@@ -40,8 +40,8 @@
   }
 }
 
-.additional-goods::after,
-.additional-goods::before {
+.additional-goods-span::after,
+.additional-goods-span::before {
   content: "";
   width: 100vw;
   height: 2px;
@@ -61,7 +61,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additional-goods::before {
+  .additional-goods-span::before {
     left: -100vw;
   }
 }
@@ -75,7 +75,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .additional-goods__gift-list {
+  .additional-goods {
     display: flex;
   }
 }
