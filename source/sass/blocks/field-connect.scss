@@ -198,10 +198,7 @@
   position: absolute;
   right: 14px;
   top: 15px;
-
-  &:disabled {
-    fill: $basic-green;
-  }
+  stroke: $basic-black;
 
   &:invalid {
     fill: #ff8282;
@@ -211,4 +208,8 @@
     right: 16px;
     top: 17px;
   }
+}
+
+.field-connect__input[disabled] + .field-connect__img {
+  stroke: $basic-green;
 }

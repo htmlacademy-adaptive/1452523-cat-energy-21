@@ -1,4 +1,4 @@
-.footer__social {
+.footer {
   text-align: center;
   list-style-type: none;
   background-color: $basic-grey;
@@ -16,7 +16,7 @@
   }
 }
 
-.footer__social-wrapper {
+.footer__social {
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 27px;
@@ -30,20 +30,5 @@
   @media (min-width: $desktop-width) {
     padding-top: 24px;
     width: 1220px;
-  }
-}
-
-
-.footer__social-list {
-  @media (min-width: $tablet-width) {
-    padding-right: 156px;
-
-    &:last-child {
-      padding-right: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 415px;
   }
 }

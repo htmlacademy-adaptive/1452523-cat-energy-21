@@ -1,4 +1,4 @@
-.social-items__list {
+.social-items {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -45,14 +45,6 @@
 .social-items__svg {
   fill: #666666;
 
-  &:hover {
-    fill: $basic-green;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
-
   @media (min-width: $tablet-width) {
     &--vk {
       width: 30px;
@@ -69,10 +61,9 @@
       height: 25px;
     }
   }
-}
 
-.social-item__svg {
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $basic-green;
   }
 
