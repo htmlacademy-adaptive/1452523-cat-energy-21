@@ -7,10 +7,8 @@
 }
 
 .address__text {
-  display: flex;
-  padding: 28px 20px 26px;
+  padding-top: 28px;
   padding-bottom: 26px;
-  justify-content: space-between;
   flex-direction: row;
   margin-top: 0;
   margin-bottom: 0;
@@ -20,6 +18,7 @@
   font-size: 14px;
   line-height: 20px;
   color: $dark-grey;
+
 
   &--grey {
     background-color: $basic-grey;
@@ -40,14 +39,19 @@
     width: 570px;
     top: 95px;
     z-index: 2;
-    left: 111px;
     padding: 63px 84px 56px 74px;
     background-color: $basic-white;
+    left: calc(50% - 610px);
 
     &--grey {
       background-color: $basic-white;
     }
   }
+}
+
+.address__text-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .address__tittle {
@@ -64,6 +68,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 160px;
   }
 }
 

@@ -2,22 +2,22 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 20px 8px 17px 0;
+  padding: 20px 8px 13px 0;
   margin-top: 0;
   margin-bottom: 0;
   border-bottom: 1px solid $grey-line;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 13px 0 0 28px;
+    padding-top: 5px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 130px;
   }
-}
 
-.social-item {
-  border-bottom: 1px solid $grey-line;
-
-  &:last-child {
-    border: none;
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-right: 383px;
   }
 }
 
@@ -42,7 +42,9 @@
   color: $dark-grey;
 }
 
-.social-item__svg {
+.social-items__svg {
+  fill: #666666;
+
   &:hover {
     fill: $basic-green;
   }
@@ -66,5 +68,15 @@
       width: 28px;
       height: 25px;
     }
+  }
+}
+
+.social-item__svg {
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }

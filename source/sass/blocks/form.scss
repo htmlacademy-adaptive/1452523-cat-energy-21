@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 31px;
-  padding-top: 20px;
+  padding-top: 22px;
   font-family: $arial;
   font-size: 14px;
 
@@ -23,12 +23,10 @@
 .button-span {
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-bottom: 82px;
+    padding-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {
-    .button-span {
-      padding-bottom: 84px;
-    }
+    padding-bottom: 80px;
   }
 }

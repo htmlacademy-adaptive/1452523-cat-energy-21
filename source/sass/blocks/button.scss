@@ -13,6 +13,7 @@
   &--green {
     color: $basic-white;
     background-color: $basic-green;
+    margin: 0 auto;
 
     &:hover {
       background-color: #5eaa2f;
@@ -28,7 +29,7 @@
     color: $dark-grey;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-right: 20px;
+    margin: 0 auto;
 
     &:hover {
       background-color: $special_grey-2;
@@ -68,6 +69,10 @@
       padding-top: 10px;
       padding-bottom: 11px;
     }
+
+    &--green {
+      margin: 0;
+    }
   }
 }
 
@@ -80,8 +85,8 @@
 
     &--catalog-add {
       width: 244px;
-      margin-top: -5px;
-      margin-bottom: 13px;
+      margin-top: -7px;
+      margin-bottom: 16px;
     }
 
     &--form {

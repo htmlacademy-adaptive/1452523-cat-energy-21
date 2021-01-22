@@ -3,9 +3,10 @@
   color: $light-black;
   font-weight: 400;
   padding-top: 19px;
-  padding-bottom: 33px;
+  padding-bottom: 32px;
   margin-top: 0;
   margin-bottom: 0;
+  border-bottom: 1px solid $special_grey-2;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -17,21 +18,29 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 46px;
+    padding-top: 47px;
   }
 }
 
 .catalog__list {
   list-style-type: none;
   padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     padding-top: 140px;
+    width: 708px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.catalog__span {
+  display: block;
 }
 
 .catalog__item {
@@ -47,16 +56,16 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    padding: 38px;
+    padding: 38.5px 38px 39px;
     min-height: 411px;
     margin-left: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-bottom: 143px;
+    margin-bottom: 142px;
     position: relative;
     background-color: $basic-grey;
-    margin-right: 56px;
+    margin-right: 59px;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -78,7 +87,7 @@
     width: 245px;
     margin-right: 80px;
     padding: 34px 38px 40px;
-    margin-bottom: 138px;
+    margin-bottom: 141px;
 
     &:nth-child(2n) {
       margin-right: 80px;
@@ -117,7 +126,7 @@
     display: block;
     margin-top: 0;
     padding-bottom: 0;
-    width: 250px;
+    width: 248px;
   }
 
   @media (min-width: $desktop-width) {
@@ -130,14 +139,18 @@
   padding-top: 19px;
   padding-bottom: 7px;
   display: flex;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    padding-bottom: 31px;
+    padding-bottom: 32px;
   }
 }
 
 .catalog__img {
+  width: auto;
+  height: auto;
+
   @media (min-width: $tablet-width) {
     padding-left: 41px;
     margin-top: -131px;
@@ -195,15 +208,15 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding-top: 26px;
+    padding-top: 27px;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 24px;
     width: 159px;
     margin: 0 auto;
 
 
     &--show {
-      padding-top: 120px;
+      padding-top: 121px;
     }
 
     &--show::before {
@@ -225,9 +238,11 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 38px;
+    line-height: 20px;
+    padding-bottom: 22px;
 
     &--show {
-      padding-top: 160px;
+      padding-top: 162px;
     }
 
     &--show::before {
@@ -257,7 +272,7 @@
     font-size: 16px;
     padding-bottom: 1px;
     border-bottom: 1px solid $special_grey;
-    width: 252px;
+    width: 248px;
   }
 
   @media (min-width: $desktop-width) {
@@ -304,7 +319,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-top: 13px;
+    padding-top: 4px;
     padding-bottom: 83px;
   }
 }

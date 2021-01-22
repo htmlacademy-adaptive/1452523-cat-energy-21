@@ -4,15 +4,17 @@
   position: relative;
 
   &::before {
-    display: block;
+    display: inline-block;
     content: "";
     background-image: url("../img/cat-energy-food.png");
     width: 280px;
     height: 270px;
     position: absolute;
     bottom: 41px;
-    left: 20px;
+    margin: 0 auto;
     box-sizing: border-box;
+    left: 0;
+    right: 0;
 
     @media (min-resolution: 2dppx) {
       content: "";
@@ -24,7 +26,7 @@
   @media (min-width: $tablet-width) {
     color: $basic-black;
     padding-top: 0;
-    padding-left: 120px;
+    padding-left: 48px;
     z-index: 1;
     position: relative;
 
@@ -34,17 +36,17 @@
       background-image: url("../img/cat-energy-food-tablet.png");
       position: absolute;
       top: 248px;
-      left: 30px;
+      left: -42px;
       box-sizing: border-box;
       z-index: -1;
       width: 709px;
       height: 609px;
       background-repeat: no-repeat;
+      background-size: 709px 609px;
 
       @media (min-resolution: 2dppx) {
         content: "";
         background-image: url("../img/cat-energy-food-tablet2x.png");
-        background-size: 709px 609px;
       }
     }
   }
@@ -52,8 +54,7 @@
   @media (min-width: $desktop-width) {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 40px;
     width: 1220px;
 
     &::before {
@@ -61,23 +62,24 @@
       content: "";
       background-image: url("../img/cat-energy-food-desktop.png");
       position: absolute;
-      bottom: -240px;
-      left: 195px;
+      top: 15px;
+      left: 448px;
       box-sizing: border-box;
       z-index: -1;
       width: 552px;
       height: 500px;
+      margin-left: 0;
+      background-size: 552px 500px;
 
       @media (min-resolution: 2dppx) {
         content: "";
         background-image: url("../img/cat-energy-food-desktop2x.png");
-        background-size: 552px 500px;
       }
     }
   }
 }
 
-.flex-text {
+.product__flex-text {
   background: url("../img/background-cat.jpg");
   background-size: 320px 302px;
   background-repeat: no-repeat;
@@ -96,7 +98,7 @@
 
   @media (min-width: $desktop-width) {
     background: none;
-    padding-left: 0;
+    padding-left: 40px;
   }
 }
 
@@ -105,22 +107,22 @@
   line-height: 36px;
   margin: 0 auto;
   font-weight: 400;
-  padding-top: 27px;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) {
     line-height: 60px;
     text-align: left;
     font-size: 60px;
     margin-left: 0;
-    padding-top: 60px;
+    padding-top: 48px;
     margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 0;
-    font-size: 42px;
+    font-size: 60px;
     font-weight: normal;
-    line-height: 42px;
+    padding-top: 97px;
   }
 }
 
@@ -133,12 +135,16 @@
   padding-bottom: 160px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
-    padding-left: 9px;
+    padding-top: 35px;
     text-align: left;
-    padding-bottom: 50px;
+    padding-bottom: 45px;
     margin-left: 0;
     margin-right: 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 47px;
   }
 }
 
@@ -147,7 +153,7 @@
 }
 
 .product__btn {
-  margin-top: 139px;
+  margin-top: 140px;
   background-color: $basic-green;
   font-size: 16px;
   color: $basic-white;
@@ -164,12 +170,21 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-bottom: 525px;
+    margin-bottom: 527px;
     margin-left: 0;
+
+    &--index {
+      font-size: 20px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 18px;
+      padding-right: 22px;
+      width: 240px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 270px;
-    margin-left: 80px;
+    margin-bottom: 188px;
+    margin-left: 41px;
   }
 }

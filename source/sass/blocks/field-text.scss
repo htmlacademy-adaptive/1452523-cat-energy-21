@@ -1,21 +1,49 @@
 .field-text {
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid $grey-line;
+  padding: 40px 0 23px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 72px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 564px;
+    margin-right: 81px;
+    padding-bottom: 0;
+  }
+}
+
+.field-text__label {
   padding-bottom: 13px;
   white-space: nowrap;
   display: grid;
   grid-template-columns: max-content 1fr;
+  margin: 0 auto;
+  width: 280px;
 
   &:last-child {
     padding-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 23px;
+    padding-bottom: 19px;
     font-size: 20px;
     padding-left: 0;
+    width: 631px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 14px;
+    padding-bottom: 18px;
+    width: 565px;
   }
 }
 
@@ -24,6 +52,7 @@
   color: $dark-grey;
   margin-top: auto;
   margin-bottom: auto;
+  white-space: wrap;
 
   @media (min-width: $tablet-width) {
     padding-right: 18px;
@@ -56,19 +85,16 @@
     border: 1px solid $special_grey;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border: 2px solid #ff8282;
   }
 
   @media (min-width: $tablet-width) {
     width: 100%;
-
-    &::placeholder {
-      font-size: 20px;
-    }
+    font-size: 20px;
 
     &--name {
-      padding: 13px 437px 14px 16px;
+      padding: 11px 437px 10px 16px;
     }
 
     &--weidth {
@@ -81,8 +107,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    padding: 11px 0 15px 17px;
+
+    padding: 11px 0 11px 17px;
 
     &--name {
       padding-right: 376px;
