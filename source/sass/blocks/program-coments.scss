@@ -1,0 +1,100 @@
+.program-comments {
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.program-comments__legend {
+  position: relative;
+  font-size: 24px;
+  padding: 0 0 32px;
+  display: block;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    padding-top: 36px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 42px;
+    padding-bottom: 69px;
+  }
+}
+
+.program-comments__legend span {
+  padding-right: 22px;
+  margin-right: -22px;
+  background: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: -40px;
+  }
+}
+
+.program-comments__legend::after,
+.program-comments__legend::before {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+  position: absolute;
+  top: 20px;
+  z-index: -1;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 73px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-comments__legend::before {
+    left: -100vw;
+  }
+}
+
+.program-comments__textarea {
+  border: 1px solid $color-border-input;
+  min-height: 150px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-style: normal;
+  padding: 5px 11px 0 11px;
+
+  &::placeholder {
+    color: $dark-grey;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 175px;
+    padding: 9px 13px 0 17px;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
+  }
+}

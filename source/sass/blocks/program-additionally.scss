@@ -1,0 +1,222 @@
+.program-additionally {
+  border: none;
+  color: $special-dark-grey;
+  font-size: 16px;
+  padding: 0 0 22px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 17px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 25px;
+  }
+}
+
+.program-additionally__legend {
+  font-size: 24px;
+  padding: 14px 0 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-black;
+  display: block;
+  width: 100%;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    padding: 50px 0 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+  }
+}
+
+.program-additionally__legend span {
+  position: relative;
+  z-index: 1;
+  background: $basic-white;
+  padding-right: 22px;
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    padding-left: 40px;
+  }
+}
+
+.program-additionally__legend::after,
+.program-additionally__legend::before {
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+  position: absolute;
+  top: 34px;
+  left: 0;
+  z-index: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 83px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-additionally__legend::before {
+    left: -100vw;
+  }
+}
+
+.program-additionally__flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 23px;
+    justify-content: space-between;
+    padding-right: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
+.program-additionally__label {
+  padding-bottom: 12px;
+  cursor: pointer;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 95px;
+    display: flex;
+    text-align: left;
+    min-width: 208px;
+    justify-content: start;
+    padding-bottom: 43px;
+
+    &:last-child {
+      padding-right: 138px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 100px;
+
+    &:nth-child(2) {
+      padding-right: 135px;
+    }
+
+    &:nth-child(3) {
+      padding-right: 200px;
+    }
+
+    &:last-child {
+      padding-right: 97px;
+    }
+  }
+}
+
+.program-additionally__span {
+  font-size: 16px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-style: normal;
+  color: $basic-black;
+  text-transform: uppercase;
+  padding-left: 46px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-left: 62px;
+
+    &--vitamin {
+      padding-left: 55px;
+    }
+  }
+}
+
+.program-additionally__input + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 29px;
+  height: 31px;
+  border: 1px solid $special_grey;
+  left: 1px;
+  top: 0;
+}
+
+.program-additionally__input::before .program-additionally__span {
+  border: 1px solid $special_grey;
+}
+
+.program-additionally__input::before:hover .program-additionally__span {
+  border: 1px solid #bababa;
+}
+
+.program-additionally__input::before:disabled .program-additionally__span {
+  opacity: 30%;
+}
+
+.program-additionally__input:checked + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 8px;
+  left: 0;
+  bottom: 17px;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-additionally__input + span::before,
+  .program-additionally__input:checked + span::before {
+    top: -4px;
+    left: 3px;
+    width: 39px;
+    height: 38px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-additionally__input + .program-additionally__span--vitamin::before,
+  .program-additionally__input + .program-additionally__span--vitamin:checked::before {
+    top: -5px;
+    left: -2px;
+    width: 39px;
+    height: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-additionally__input:checked + span::before {
+    background-position: 10px 11px;
+  }
+}
+
+.program-additionally .program-additionally__span::before {
+  border: 1px solid $special_grey;
+}
+
+.program-additionally:hover .program-additionally__span::before {
+  border: 1px solid #bababa;
+}

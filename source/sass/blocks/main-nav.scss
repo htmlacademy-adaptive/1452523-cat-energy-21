@@ -1,0 +1,166 @@
+.main-nav {
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  &--no-border {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.main-nav__button {
+  border-bottom: 1px solid $grey-line-2;
+  width: 100vw;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 174px;
+  }
+}
+
+.main-nav__div {
+  display: flex;
+  justify-content: start;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+}
+
+.main-nav__nav {
+  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-right: 61px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 10px;
+
+    border: none;
+  }
+}
+
+.no-js .main-nav__list {
+  display: flex;
+}
+
+.main-nav--closed .site-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-nav--opened .page-body__header {
+  border: none;
+}
+
+.main-nav--opened {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-nav .button-burger::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
+
+.main-nav--opened .button-burger {
+  top: 0;
+  right: 0;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+    right: 8px;
+    top: 4px;
+  }
+
+  &::after {
+    top: 4px;
+    right: 0;
+    left: 1px;
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav .button-burger {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav .main-nav__list {
+    justify-content: flex-end;
+  }
+}
+
+.main-nav__logo {
+  opacity: 100%;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 60%;
+  }
+}
+
+.main-nav__img {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}

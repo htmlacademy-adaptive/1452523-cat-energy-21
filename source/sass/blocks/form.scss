@@ -1,0 +1,32 @@
+.form__span {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 31px;
+  padding-top: 22px;
+  font-family: $arial;
+  font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 66px;
+    font-size: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 80px;
+  }
+}
+
+.button-span {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
+}

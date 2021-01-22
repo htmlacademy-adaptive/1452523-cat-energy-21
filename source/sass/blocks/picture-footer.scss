@@ -1,0 +1,23 @@
+.picture-footer {
+  border-bottom: 1px solid $grey-line;
+  padding-bottom: 25px;
+
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}

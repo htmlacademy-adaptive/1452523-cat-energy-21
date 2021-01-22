@@ -1,0 +1,145 @@
+.advantages {
+  color: $basic-black;
+
+  padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    border-bottom: 1px solid $grey-line-2;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 27px;
+    border: none;
+    padding-bottom: 3px;
+  }
+}
+
+.advantages__tittle {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 230px;
+    padding-left: 0;
+    padding-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    padding-top: 42px;
+  }
+}
+
+.advantages__item {
+  font-family: $arial;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 1px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  line-height: 18px;
+  box-sizing: border-box;
+  color: $dark-grey;
+  min-height: 60px;
+  min-width: 250px;
+  padding-left: 80px;
+  max-width: 440px;
+  padding-top: 22px;
+  background-position: 0 19px;
+
+  br {
+    display: none;
+  }
+
+  &--leaf {
+    background-image: url("../img/leaf.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--boiling {
+    background-image: url("../img/boiling.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--food {
+    background-image: url("../img/food.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--alarm {
+    background-image: url("../img/alarm-clock.svg");
+    background-repeat: no-repeat;
+    padding-right: 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    padding: 172px 0 60px;
+    min-height: 280px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 75px;
+    font-size: 16px;
+    margin-bottom: 13px;
+
+    br {
+      display: block;
+    }
+
+    &--leaf {
+      background-image: url("../img/1.png");
+      background-repeat: no-repeat;
+    }
+
+    &--boiling {
+      background-image: url("../img/2.png");
+      background-repeat: no-repeat;
+    }
+
+    &--food {
+      background-image: url("../img/3.png");
+      background-repeat: no-repeat;
+    }
+
+    &--alarm {
+      background-image: url("../img/4.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 284px;
+    padding: 151px 45px 0 0;
+    margin-right: -36px;
+    background-position: 0 -1px;
+    margin-bottom: 0;
+
+    &--alarm {
+      padding-right: 0;
+    }
+  }
+}
